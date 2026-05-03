@@ -15,7 +15,7 @@
     <span></span><span></span><span></span>
   </button>
   <div class="logo">Los!</div>
-  <div style="width:34px"></div>
+  <div id="langSwitcher"></div>
 </header>
 
 <!-- SLIDE MENU -->
@@ -24,12 +24,12 @@
   <div class="menu-head">
     <button class="menu-close" id="menuClose" aria-label="Close navigation menu">✕</button>
     <div class="menu-logo">Los!</div>
-    <div class="menu-tagline">Walking tours · Oslo</div>
+    <div class="menu-tagline" id="menuTagline">Walking tours · Oslo</div>
   </div>
   <div class="menu-nav">
-    <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
-    <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
-    <a class="menu-item" href="privacy.html">⚖&nbsp;&nbsp;Privacy Policy</a>
+    <a class="menu-item" id="navHome" href="index.html">⌂&nbsp;&nbsp;Home</a>
+    <a class="menu-item" id="navAbout" href="about.html">i&nbsp;&nbsp;About</a>
+    <a class="menu-item" id="navPrivacy" href="privacy.html">⚖&nbsp;&nbsp;Privacy Policy</a>
   </div>
 </nav>
 
@@ -40,25 +40,25 @@
   </div>
 
   <div class="front-content">
-    <p class="eyebrow">Self-guided walking tours</p>
-    <h1 class="front-headline">Discover Oslo on foot</h1>
+    <p class="eyebrow" id="frontEyebrow">Self-guided walking tours</p>
+    <h1 class="front-headline" id="frontHeadline">Discover Oslo on foot</h1>
     <p class="front-intro">Welcome to Los!, your guide to the people and places of Oslo. Los! navigates you through the streets of the city. You will be given riddles and clues in different places, and your job is to find the answer.</p>
 
     <div class="section-divider"></div>
-    <p class="tips-label">Tips &amp; Tricks</p>
+    <p class="tips-label" id="tipsLabel">Tips &amp; Tricks</p>
     <ul class="tips-list">
-      <li data-n="1">The locations where you will find the answers are shown in <strong>bold</strong>. If you are not familiar with the city, enter these places into your preferred online maps service.</li>
-      <li data-n="2">The duration of the tours is indicated, but may depend on your walking pace and possible stops along the way. We have made some recommendations on cafés and similar stops that might interest you.</li>
-      <li data-n="3">At the end of the tour, we will show you how much time you spent. If you are part of a group, why not make it a competition!</li>
+      <li data-n="1" id="tip1">The locations where you will find the answers are shown in <strong>bold</strong>. If you are not familiar with the city, enter these places into your preferred online maps service.</li>
+      <li data-n="2" id="tip2">The duration of the tours is indicated, but may depend on your walking pace and possible stops along the way. We have made some recommendations on cafés and similar stops that might interest you.</li>
+      <li data-n="3" id="tip3">At the end of the tour, we will show you how much time you spent. If you are part of a group, why not make it a competition!</li>
     </ul>
 
     <div class="section-divider"></div>
-    <p class="tips-label">Walking Tours</p>
+    <p class="tips-label" id="toursLabel">Walking Tours</p>
 
     <!-- Tour: City Centre -->
     <div class="tour-card">
-      <h2 class="tour-card-title">City Centre Tour</h2>
-      <p class="tour-card-desc">The first tour starts by the Nationaltheatret and takes you around the central-western part of the city. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!</p>
+      <h2 class="tour-card-title" id="tour1Title">City Centre Tour</h2>
+      <p class="tour-card-desc" id="tour1Desc">The first tour starts by the Nationaltheatret and takes you around the central-western part of the city. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!</p>
       <div class="tour-card-meta">
         <span class="tour-meta-chip">🚶 ~4–5 km</span>
         <span class="tour-meta-chip">🕐 ~1 hour</span>
@@ -71,10 +71,10 @@
     <!-- Tour: Akerselva (coming soon) -->
     <div class="tour-card tour-card--soon">
       <div class="tour-card-header">
-        <h2 class="tour-card-title">Akerselva &amp; Oslo's Industrial Past</h2>
-        <span class="tour-soon-badge">Soon</span>
+        <h2 class="tour-card-title" id="tour2Title">Akerselva &amp; Oslo's Industrial Past</h2>
+        <span class="tour-soon-badge" id="soonBadge">Soon</span>
       </div>
-      <p class="tour-card-desc">The tour starts at Nydalen, so take the T-bane and find the closest river — Akerselva! From there, you will walk and solve tasks on your way down towards the city, whilst discovering Oslo’s industrial past.</p>
+      <p class="tour-card-desc" id="tour2Desc">The tour starts at Nydalen, so take the T-bane and find the closest river — Akerselva! From there, you will walk and solve tasks on your way down towards the city, whilst discovering Oslo’s industrial past.</p>
       <div class="tour-card-meta">
         <span class="tour-meta-chip">🚶 ~5 km</span>
         <span class="tour-meta-chip">🕐 ~1.5 hours</span>
@@ -84,9 +84,10 @@
   </div>
 </div>
 
+<script src="translations.js"></script>
 <script src="game.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', initMenu);
+  document.addEventListener('DOMContentLoaded', () => { initMenu(); buildLangSwitcher(); applyTranslations(); });
 </script>
 </body>
 </html>
