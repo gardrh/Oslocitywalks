@@ -493,6 +493,32 @@ body {
   line-height: 1.12;
   margin-bottom: 16px;
 }
+.finish-time-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--ink-20);
+  border-radius: var(--r);
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+.finish-time-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: 4px;
+}
+.finish-time {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
 .finish-body {
   font-size: 1rem;
   line-height: 1.75;
