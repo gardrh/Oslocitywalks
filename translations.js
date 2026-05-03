@@ -389,98 +389,99 @@ const t = {
   }
 };
 
-/* ── LANGUAGE HELPERS ── */
+/* ══════════════════════════════════════════
+   LANGUAGE HELPERS
+══════════════════════════════════════════ */
 
 function getLang() {
-  return localStorage.getItem('loslo_lang') || 'en';
+  return localStorage.getItem('los_lang') || 'en';
 }
 
 function setLang(code) {
-  localStorage.setItem('loslo_lang', code);
-  document.documentElement.lang = code;
+  localStorage.setItem('los_lang', code);
+  document.documentElement.lang = LANGUAGES[code]?.lang || code;
   applyTranslations();
+  // If on game page, re-render current scene in new language
+  if (typeof tourId !== 'undefined' && tourId) {
+    tourScenes = getScenes(tourId);
+    renderScene();
+  }
 }
 
 function T(key) {
   const lang = getLang();
-  return (t.ui[lang] && t.ui[lang][key]) || t.ui.en[key] || key;
+  return (t.ui[lang] && t.ui[lang][key] !== undefined)
+    ? t.ui[lang][key]
+    : (t.ui.en[key] || key);
 }
 
 function getScenes(tourId) {
   const lang = getLang();
-  const langScenes = t.scenes[tourId]?.[lang];
-  const enScenes   = t.scenes[tourId]?.en;
+  const langScenes = t.scenes[tourId] && t.scenes[tourId][lang];
+  const enScenes   = t.scenes[tourId] && t.scenes[tourId].en;
   return (langScenes && langScenes.length) ? langScenes : (enScenes || []);
 }
 
-/* ── APPLY TRANSLATIONS TO PAGE ── */
+/* ── SAFE SET HELPERS ── */
+function _set(id, html) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = html;
+}
+function _setText(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+/* ── APPLY TRANSLATIONS TO CURRENT PAGE ── */
 function applyTranslations() {
   const lang = getLang();
-  document.documentElement.lang = lang;
+  document.documentElement.lang = LANGUAGES[lang]?.lang || lang;
 
-  // Helper: set text/HTML of element if it exists
-  const set = (id, html) => {
-    const el = document.getElementById(id);
-    if (el) el.innerHTML = html;
-  };
-  const setText = (id, text) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = text;
-  };
-  const setAll = (cls, html) => {
-    document.querySelectorAll('.' + cls).forEach(el => el.innerHTML = html);
-  };
+  // ── Menu (all pages) ──
+  _set('menuTagline', T('tagline'));
+  _set('navHome',     T('navHome'));
+  _set('navAbout',    T('navAbout'));
+  _set('navPrivacy',  T('navPrivacy'));
+  // game.html has a "Continue Tour" link instead of navHome
+  const contLink = document.getElementById('menuContinueLink');
+  if (contLink) {
+    const tourParam = new URLSearchParams(window.location.search).get('tour') || 'citycentre';
+    contLink.href = 'game.html?tour=' + tourParam;
+  }
 
-  // Menu tagline
-  set('menuTagline', T('tagline'));
-  set('menuTagline2', T('tagline'));
-
-  // Menu nav links
-  set('navHome',    T('navHome'));
-  set('navAbout',   T('navAbout'));
-  set('navPrivacy', T('navPrivacy'));
-  set('navHome2',    T('navHome'));
-  set('navAbout2',   T('navAbout'));
-  set('navPrivacy2', T('navPrivacy'));
-
-  // Front page
-  set('frontEyebrow',   T('eyebrow'));
-  set('frontHeadline',  T('headline'));
-  set('tipsLabel',      T('tipsLabel'));
-  set('toursLabel',     T('toursLabel'));
-  set('tip1',           T('tip1'));
-  set('tip2',           T('tip2'));
-  set('tip3',           T('tip3'));
-  set('tour1Title',     T('tour1Title'));
-  set('tour1Desc',      T('tour1Desc'));
-  set('tour2Title',     T('tour2Title'));
-  set('tour2Desc',      T('tour2Desc'));
-  set('soonBadge',      T('soon'));
-  const startBtns = document.querySelectorAll('.tour-start-btn');
-  startBtns.forEach(btn => {
+  // ── Front page (index.html) ──
+  _set('frontEyebrow',  T('eyebrow'));
+  _set('frontHeadline', T('headline'));
+  _set('tipsLabel',     T('tipsLabel'));
+  _set('toursLabel',    T('toursLabel'));
+  _set('tip1',          T('tip1'));
+  _set('tip2',          T('tip2'));
+  _set('tip3',          T('tip3'));
+  _set('tour1Title',    T('tour1Title'));
+  _set('tour1Desc',     T('tour1Desc'));
+  _set('tour2Title',    T('tour2Title'));
+  _set('tour2Desc',     T('tour2Desc'));
+  _setText('soonBadge', T('soon'));
+  document.querySelectorAll('.tour-start-btn').forEach(btn => {
     btn.innerHTML = T('startTour') + ' <span class="arrow">→</span>';
   });
 
-  // Game page
-  set('answerBtnLabel',  T('answer'));
-  set('hintBtnLabel',    T('hint'));
-  const input = document.getElementById('answerInput');
-  if (input) input.placeholder = T('answerPlaceholder');
-  const ansBtn = document.getElementById('answerBtn');
-  if (ansBtn && ansBtn.textContent.trim() !== (T('finishTour').replace(' →',''))) {
-    ansBtn.textContent = T('answer');
-  }
+  // ── Game page (game.html) ──
+  const ansBtn  = document.getElementById('answerBtn');
   const hintBtn = document.getElementById('hintBtn');
-  if (hintBtn) hintBtn.innerHTML = T('hint');
+  const input   = document.getElementById('answerInput');
+  if (ansBtn)  ansBtn.textContent  = T('answer');
+  if (hintBtn) hintBtn.innerHTML   = T('hint');
+  if (input)   input.placeholder   = T('answerPlaceholder');
 
-  // Finish page
-  set('finishTourComplete', T('tourComplete'));
-  set('finishBody',         T('finishBody'));
-  set('finishTimeLbl',      T('yourTime'));
-  set('finishFeedbackBtn',  T('leaveFeedback'));
-  set('finishBackBtn',      T('backHome'));
+  // ── Finish page (finish.html) ──
+  _setText('finishTourComplete', T('tourComplete'));
+  _set('finishBody',        T('finishBody'));
+  _setText('finishTimeLbl', T('yourTime'));
+  _set('finishFeedbackBtn', T('leaveFeedback'));
+  _set('finishBackBtn',     T('backHome'));
 
-  // Language switcher active state
+  // ── Language switcher active state ──
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
   });
@@ -496,7 +497,7 @@ function buildLangSwitcher() {
     btn.className = 'lang-btn';
     btn.dataset.lang = code;
     btn.textContent = info.label;
-    btn.setAttribute('aria-label', `Switch language to ${info.label}`);
+    btn.setAttribute('aria-label', 'Switch language to ' + info.label);
     btn.addEventListener('click', () => setLang(code));
     container.appendChild(btn);
   });
