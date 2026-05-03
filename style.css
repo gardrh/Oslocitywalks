@@ -11,8 +11,8 @@
   --ink-60: rgba(12,26,26,0.6);
   --ink-20: rgba(12,26,26,0.12);
   --white: #ffffff;
-  --green: #4CB85A;
-  --green-dark: #38A346;
+  --green: #2E7D3A;
+  --green-dark: #236030;
   --red: #D95246;
   --amber: #EFA030;
   --card-bg: rgba(255,255,255,0.92);
@@ -152,7 +152,7 @@ body {
   gap: 12px;
   padding: 13px 24px;
   color: rgba(255,255,255,0.75);
-  font-size: 0.92rem;
+  font-size: 1rem;
   cursor: pointer;
   border-left: 2.5px solid transparent;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
@@ -234,7 +234,7 @@ body {
   margin-bottom: 10px;
 }
 .front-intro {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.72;
   color: var(--ink-60);
   margin-bottom: 26px;
@@ -259,7 +259,7 @@ body {
   margin-bottom: 28px;
 }
 .tips-list li {
-  font-size: 0.88rem;
+  font-size: 1rem;
   line-height: 1.65;
   padding: 11px 0 11px 28px;
   position: relative;
@@ -287,7 +287,7 @@ body {
   color: white;
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.97rem;
+  font-size: 1rem;
   letter-spacing: 0.02em;
   border: none;
   border-radius: var(--r);
@@ -310,7 +310,7 @@ body {
   background: var(--ink-20);
   border-radius: 99px;
   padding: 9px 16px;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   color: var(--ink);
 }
 
@@ -360,7 +360,7 @@ body {
   background: rgba(12,26,26,0.06);
   border-radius: var(--r-sm);
   padding: 9px 13px;
-  font-size: 0.73rem;
+  font-size: 0.8rem;
   color: var(--ink-60);
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -372,7 +372,7 @@ body {
   border: 1px solid var(--card-border);
   border-radius: var(--r);
   padding: 20px 18px;
-  font-size: 0.92rem;
+  font-size: 1rem;
   line-height: 1.78;
   color: var(--ink);
   margin-bottom: 18px;
@@ -386,7 +386,7 @@ body {
   display: none;
   border-radius: var(--r-sm);
   padding: 10px 14px;
-  font-size: 0.84rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 11px;
   gap: 8px;
@@ -437,7 +437,7 @@ body {
   border: none;
   border-radius: var(--r);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: opacity 0.15s, transform 0.12s;
@@ -458,7 +458,7 @@ body {
   margin: 0 auto;
 }
 .about-body p {
-  font-size: 0.91rem;
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--ink);
   padding-bottom: 14px;
@@ -498,7 +498,7 @@ body {
   margin-bottom: 16px;
 }
 .finish-body {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--ink-60);
   margin-bottom: 32px;
@@ -511,7 +511,7 @@ body {
   padding: 15px;
   border-radius: var(--r);
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
   border: none;
@@ -536,3 +536,19 @@ body {
   }
 }
 button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
+
+/* ── FOCUS RINGS (keyboard navigation) ── */
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+.menu-item:focus-visible,
+.menu-close:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 2px;
+}
+.answer-input:focus-visible {
+  outline: none; /* handled by box-shadow */
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(12,26,26,0.18);
+}
