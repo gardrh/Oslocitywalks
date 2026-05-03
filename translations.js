@@ -552,20 +552,18 @@ function showConsentBanner() {
     no: { msg: 'Vi bruker informasjonskapsler for å forstå hvordan folk bruker Los! Dette hjelper oss å forbedre appen. Se vår <a href="privacy.html">personvernerklæring</a>.', accept: 'Godta', decline: 'Avslå' },
     es: { msg: 'Usamos cookies para entender cómo se usa Los! Esto nos ayuda a mejorar la app. Consulta nuestra <a href="privacy.html">política de privacidad</a>.', accept: 'Aceptar', decline: 'Rechazar' },
     de: { msg: 'Wir verwenden Cookies, um zu verstehen, wie Los! genutzt wird. Das hilft uns, die App zu verbessern. Siehe unsere <a href="privacy.html">Datenschutzerklärung</a>.', accept: 'Akzeptieren', decline: 'Ablehnen' },
-    fr: { msg: 'Nous utilisons des cookies pour comprendre comment Los! est utilisé, afin d'améliorer l'app. Voir notre <a href="privacy.html">politique de confidentialité</a>.', accept: 'Accepter', decline: 'Refuser' },
+    fr: { msg: "Nous utilisons des cookies pour comprendre comment Los! est utilisé, afin d'améliorer l'app. Voir notre <a href='privacy.html'>politique de confidentialité</a>.", accept: 'Accepter', decline: 'Refuser' },
   };
   const tx = texts[lang] || texts.en;
 
   const banner = document.createElement('div');
   banner.className = 'consent-banner';
   banner.id = 'consentBanner';
-  banner.innerHTML = \`
-    <p class="consent-text">\${tx.msg}</p>
-    <div class="consent-btns">
-      <button class="consent-btn consent-btn--accept" id="consentAccept">\${tx.accept}</button>
-      <button class="consent-btn consent-btn--decline" id="consentDecline">\${tx.decline}</button>
-    </div>
-  \`;
+  banner.innerHTML = '<p class="consent-text">' + tx.msg + '</p>' +
+    '<div class="consent-btns">' +
+    '<button class="consent-btn consent-btn--accept" id="consentAccept">' + tx.accept + '</button>' +
+    '<button class="consent-btn consent-btn--decline" id="consentDecline">' + tx.decline + '</button>' +
+    '</div>';
   document.body.appendChild(banner);
 
   document.getElementById('consentAccept').addEventListener('click', () => {
