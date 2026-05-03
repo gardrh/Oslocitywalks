@@ -187,7 +187,7 @@ function formatElapsed(ms) {
      Execute as: Me  |  Who has access: Anyone
   5. Copy the deployment URL and paste it below.
 ──────────────────────────────────────────────────── */
-const SHEET_URL = ''; // ← paste your Apps Script URL here
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-r9F2mKe4BhgBKJ7ZKMzsNQraMdXG0BOBsCHy3vcBd4iN7K/exec';
 
 function submitScore(tour, elapsedMs, duration) {
   if (!SHEET_URL) return;
