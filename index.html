@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los! – Walking Tours Oslo</title>
+  <title>Los! – Tour</title>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,6 +28,7 @@
   </div>
   <div class="menu-nav">
     <a class="menu-item" id="navHome" href="index.html">⌂  Home</a>
+    <a class="menu-item" id="menuContinueLink" href="game.html">↗&nbsp;&nbsp;Continue Tour</a>
     <a class="menu-item" id="navAbout" href="about.html">i  About</a>
     <a class="menu-item" id="navPrivacy" href="privacy.html">⚖  Privacy Policy</a>
   </div>
@@ -35,59 +36,56 @@
 
 <!-- PAGE -->
 <div class="page-wrap">
-  <div class="skyline-wrap">
+  <div class="skyline-wrap sm">
     <img src="osloskyline.png" alt="Oslo skyline silhouette" />
   </div>
 
-  <div class="front-content">
-    <p class="eyebrow" id="frontEyebrow">Self-guided walking tours</p>
-    <h1 class="front-headline" id="frontHeadline">Discover Oslo on foot</h1>
-    <p class="front-intro">Welcome to Los!, your guide to the people and places of Oslo. Los! navigates you through the streets of the city. You will be given riddles and clues in different places, and your job is to find the answer.</p>
+  <div class="progress-bar-wrap">
+    <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="progress-meta">
+      <span class="chapter-pill" id="chapterLabel">Chapter 1</span>
+      <span class="scene-count" id="progressLabel">1 of 5</span>
+    </div>
+  </div>
 
-    <div class="section-divider"></div>
-    <p class="tips-label" id="tipsLabel">Tips &amp; Tricks</p>
-    <ul class="tips-list">
-      <li data-n="1" id="tip1">The locations where you will find the answers are shown in <strong>bold</strong>. If you are not familiar with the city, enter these places into your preferred online maps service.</li>
-      <li data-n="2" id="tip2">The duration of the tours is indicated, but may depend on your walking pace and possible stops along the way. We have made some recommendations on cafés and similar stops that might interest you.</li>
-      <li data-n="3" id="tip3">At the end of the tour, we will show you how much time you spent. If you are part of a group, why not make it a competition!</li>
-    </ul>
+  <div class="game-content">
 
-    <div class="section-divider"></div>
-    <p class="tips-label" id="toursLabel">Walking Tours</p>
+    <div class="scene-card" id="sceneCard"></div>
 
-    <!-- Tour: City Centre -->
-    <div class="tour-card">
-      <h2 class="tour-card-title" id="tour1Title">City Centre Tour</h2>
-      <p class="tour-card-desc" id="tour1Desc">The first tour starts by the Nationaltheatret and takes you around the central-western part of the city. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!</p>
-      <div class="tour-card-meta">
-        <span class="tour-meta-chip">🚶 ~4–5 km</span>
-        <span class="tour-meta-chip">🕐 ~1 hour</span>
-      </div>
-      <a href="game.html?tour=citycentre" class="tour-start-btn" aria-label="Start the City Centre Tour">
-        Start Tour <span class="arrow">→</span>
-      </a>
+    <!-- Feedback sits above the input -->
+    <div class="feedback" id="feedback" role="status" aria-live="polite" aria-atomic="true">
+      <span class="fb-icon" id="fbIcon"></span>
+      <span id="fbText"></span>
     </div>
 
-    <!-- Tour: Akerselva (coming soon) -->
-    <div class="tour-card tour-card--soon">
-      <div class="tour-card-header">
-        <h2 class="tour-card-title" id="tour2Title">Akerselva &amp; Oslo's Industrial Past</h2>
-        <span class="tour-soon-badge" id="soonBadge">Soon</span>
-      </div>
-      <p class="tour-card-desc" id="tour2Desc">The tour starts at Nydalen, so take the T-bane and find the closest river — Akerselva! From there, you will walk and solve tasks on your way down towards the city, whilst discovering Oslo’s industrial past.</p>
-      <div class="tour-card-meta">
-        <span class="tour-meta-chip">🚶 ~5 km</span>
-        <span class="tour-meta-chip">🕐 ~1.5 hours</span>
-      </div>
-    </div>
+    <input
+      class="answer-input"
+      id="answerInput"
+      placeholder="Type your answer here…"
+      aria-label="Your answer"
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="false"
+    />
 
+    <div class="btn-row">
+      <button class="btn btn-answer" id="answerBtn" aria-label="Submit your answer">Answer</button>
+      <button class="btn btn-hint" id="hintBtn" aria-label="Get a hint">💡 Hint</button>
+    </div>
   </div>
 </div>
 
 <script src="translations.js"></script>
 <script src="game.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => { initMenu(); buildLangSwitcher(); applyTranslations(); initConsent(); });
+  document.addEventListener('DOMContentLoaded', () => {
+    initMenu();
+    buildLangSwitcher();
+    initGame();
+    initConsent();
+  });
 </script>
 </body>
 </html>
