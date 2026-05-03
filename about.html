@@ -11,7 +11,7 @@
 
 <!-- HEADER -->
 <header class="header">
-  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+  <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menuPanel">
     <span></span><span></span><span></span>
   </button>
   <div class="logo">LOSlo</div>
@@ -20,9 +20,9 @@
 
 <!-- SLIDE MENU -->
 <div class="menu-overlay" id="menuOverlay"></div>
-<nav class="menu-panel" id="menuPanel">
+<nav class="menu-panel" id="menuPanel" aria-label="Main navigation" aria-hidden="true">
   <div class="menu-head">
-    <button class="menu-close" id="menuClose">✕</button>
+    <button class="menu-close" id="menuClose" aria-label="Close navigation menu">✕</button>
     <div class="menu-logo">LOSlo</div>
     <div class="menu-tagline">Walking tours · Oslo</div>
   </div>
