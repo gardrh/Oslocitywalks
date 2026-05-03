@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renaud de Vichys forbannelse</title>
+  <title>LOSlo – Walking Tour Oslo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="game">
-  <h1 class="title">Renaud de Vichys forbannelse</h1>
 
-  <div class="castle">
-    <img src="maulmont.png" alt="Chateau Maulmont" style="width:100%;height:180px;object-fit:contain;" />
+<!-- HEADER -->
+<header class="header">
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">LOSlo</div>
+  <div style="width:34px"></div>
+</header>
+
+<!-- SLIDE MENU -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="menu-panel" id="menuPanel">
+  <div class="menu-head">
+    <button class="menu-close" id="menuClose">✕</button>
+    <div class="menu-logo">LOSlo</div>
+    <div class="menu-tagline">Walking tours · Oslo</div>
+  </div>
+  <div class="menu-nav">
+    <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
+    <a class="menu-item" href="game.html">↗&nbsp;&nbsp;Start Tour</a>
+    <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
+  </div>
+</nav>
+
+<!-- PAGE -->
+<div class="page-wrap">
+  <div class="skyline-wrap">
+    <img src="osloskyline.png" alt="Oslo skyline" />
   </div>
 
-  <div class="story" id="story"></div>
+  <div class="front-content">
+    <p class="eyebrow">Self-guided walking tour</p>
+    <h1 class="front-headline">Discover Oslo on foot</h1>
+    <p class="front-intro">Welcome to LOSlo — your guide to the people and places of Oslo. You will be given riddles and clues at different locations across the city, and your job is to find the answers.</p>
 
-  <input id="input" placeholder="Skriv svar..." />
+    <div class="section-divider"></div>
+    <p class="tips-label">Tips &amp; Tricks</p>
+    <ul class="tips-list">
+      <li data-n="1">Do not update or refresh the webpage while on tour — all progress will be lost.</li>
+      <li data-n="2">Locations where you'll find the answers are shown in <strong>bold</strong>. If unfamiliar with the city, enter these into your maps app.</li>
+      <li data-n="3">Tour duration is approximate and may vary based on your walking pace and any stops along the way.</li>
+    </ul>
 
-  <div class="btnRow">
-    <button id="submitBtn">SVAR</button>
-    <button id="hintBtn">HINT</button>
+    <a href="game.html" class="start-btn">
+      Start Tour <span class="arrow">→</span>
+    </a>
+    <div class="duration-chip">
+      <span>🕐</span> Approximately 2 hours on foot
+    </div>
   </div>
 </div>
-<script src="game.js"></script>
+
+<script src="sommer26.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', initMenu);
+</script>
 </body>
 </html>
