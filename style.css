@@ -189,6 +189,8 @@ body {
 */
 .skyline-wrap {
   width: 100%;
+  max-width: 480px;       /* constrain to content width on desktop */
+  margin: 0 auto;         /* center it */
   height: 210px;
   display: flex;
   align-items: flex-end;
@@ -197,6 +199,7 @@ body {
 }
 .skyline-wrap img {
   width: 80%;
+  max-width: 340px;       /* never wider than a natural desktop size */
   height: auto;
   display: block;
   flex-shrink: 0;
