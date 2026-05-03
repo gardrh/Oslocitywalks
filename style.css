@@ -177,9 +177,15 @@ body {
 }
 
 /* ── SKYLINE ── */
+/*
+  Image is 1771x914px, aspect 1.938:1.
+  We show it full-width and use mask-position to crop into
+  the lower portion where the actual skyline silhouette lives,
+  hiding the empty black sky at the top.
+*/
 .skyline-wrap {
   width: 100%;
-  height: 150px;
+  height: 140px;
   position: relative;
   overflow: hidden;
 }
@@ -190,14 +196,18 @@ body {
   background-color: var(--sand);
   -webkit-mask-image: url('osloskyline.png');
   mask-image: url('osloskyline.png');
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  /* fill width, let height scale naturally (~51.6% of width) */
+  -webkit-mask-size: 100% auto;
+  mask-size: 100% auto;
+  /* anchor to bottom so we see the buildings, not black sky */
   -webkit-mask-position: center bottom;
   mask-position: center bottom;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-.skyline-wrap.sm { height: 96px; }
+.skyline-wrap.sm {
+  height: 110px;
+}
 
 /* ── SHARED TYPOGRAPHY ── */
 .eyebrow {
