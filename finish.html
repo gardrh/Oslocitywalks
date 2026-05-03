@@ -38,6 +38,13 @@
   <div class="finish-content">
     <div class="finish-badge">🎉</div>
     <h1 class="finish-title">Tour complete!</h1>
+
+    <!-- Time display — hidden until JS populates it -->
+    <div class="finish-time-wrap" style="display:none" aria-live="polite">
+      <p class="finish-time-label">Your time</p>
+      <p class="finish-time" id="finishTime"></p>
+    </div>
+
     <p class="finish-body">
       Dried cod has long been an important Norwegian export, and is a key staple in the Portuguese dish bacalao. This has been used as an explanation as to why Norwegians are big coffee drinkers — dried cod sent to Portugal and later Brasil, where they grow coffee, resulted in a wish to send something back.<br><br>
       Congratulations, you have finished the tour. Yet this is where your real adventure in Oslo begins. You have made your way to <strong>SALT</strong>, a sauna, restaurant, and entertainment venue at the centre of the city. Here you may jump into a sauna, get a bite to eat, or catch up on some local entertainment.<br><br>
@@ -52,7 +59,10 @@
 
 <script src="sommer26.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', initMenu);
+  document.addEventListener('DOMContentLoaded', () => {
+    initMenu();
+    initFinish();
+  });
 </script>
 </body>
 </html>
