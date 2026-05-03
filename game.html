@@ -15,7 +15,7 @@
     <span></span><span></span><span></span>
   </button>
   <div class="logo">Los!</div>
-  <div style="width:34px"></div>
+  <div id="langSwitcher"></div>
 </header>
 
 <!-- SLIDE MENU -->
@@ -24,7 +24,7 @@
   <div class="menu-head">
     <button class="menu-close" id="menuClose" aria-label="Close navigation menu">✕</button>
     <div class="menu-logo">Los!</div>
-    <div class="menu-tagline">Walking tours · Oslo</div>
+    <div class="menu-tagline" id="menuTagline">Walking tours · Oslo</div>
   </div>
   <div class="menu-nav">
     <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
@@ -77,6 +77,7 @@
   </div>
 </div>
 
+<script src="translations.js"></script>
 <script src="game.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
