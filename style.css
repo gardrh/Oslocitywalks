@@ -178,38 +178,25 @@ body {
 
 /* ── SKYLINE ── */
 /*
-  Image: 1771x914px, aspect 1.938:1.
-  Content fills nearly the full width.
-  Spire tip sits at ~9.3% from top (row 85/914).
-  At 80% display width with padding, image renders ~360x186px.
-
-  Strategy:
-  - Scale image to 80% of viewport width, horizontally centered
-  - Anchor to bottom → crops black sky at top automatically
-  - Front page: tall enough to show full spire (~220px container)
-  - Inner pages (.sm): shorter crop showing just building tops (~130px)
+  Image: 1771x914px with transparent background (black removed).
+  Silhouette is the sand colour, displayed as <img>.
+  80% width → air on both sides. Anchored to bottom of container.
+  Front page: 210px tall shows full spire.
+  Inner pages (.sm): 130px shows just the roofline mass.
 */
 .skyline-wrap {
   width: 100%;
   height: 210px;
-  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
 }
-.skyline-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: var(--sand);
-  -webkit-mask-image: url('osloskyline.png');
-  mask-image: url('osloskyline.png');
-  /* 80% wide → air on both sides; auto height keeps aspect ratio */
-  -webkit-mask-size: 80% auto;
-  mask-size: 80% auto;
-  /* center horizontally, anchor to bottom */
-  -webkit-mask-position: center bottom;
-  mask-position: center bottom;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.skyline-wrap img {
+  width: 80%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 .skyline-wrap.sm {
   height: 130px;
