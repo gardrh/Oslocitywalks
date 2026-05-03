@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOSlo – About</title>
+  <title>LOSlo – Tour</title>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +28,7 @@
   </div>
   <div class="menu-nav">
     <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
-    <a class="menu-item" href="game.html">↗&nbsp;&nbsp;Start Tour</a>
+    <a class="menu-item" id="menuContinueLink" href="game.html">↗&nbsp;&nbsp;Continue Tour</a>
     <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
   </div>
 </nav>
@@ -39,21 +39,56 @@
     <img src="osloskyline.png" alt="Oslo skyline silhouette" />
   </div>
 
-  <div class="about-content">
-    <p class="eyebrow">The project</p>
-    <h1 class="page-title">About LOSlo</h1>
-    <div class="about-body">
-      <p>LOSlo is a free, self-guided walking tour app for Oslo. The idea is simple: show up, follow the clues, and discover the city's history, people, and places at your own pace — no guide needed, no booking required.</p>
-      <p>Each tour takes you through real streets and public spaces, stopping at statues, buildings, and landmarks that each carry a story. The answers are always somewhere nearby — look around, read the environment, and enjoy the walk.</p>
-      <p>LOSlo is currently in a <strong>pilot stage</strong>. The first tour is live, more are in development. The app is free to use and always will be.</p>
-      <p>LOSlo is developed by <strong>Gard Ringen Høibjerg</strong>. If you have feedback, spot an error, or want to get in touch, reach out at <a href="mailto:gardrh@gmail.com" class="about-link">gardrh@gmail.com</a>.</p>
+  <div class="progress-bar-wrap">
+    <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div class="progress-meta">
+      <span class="chapter-pill" id="chapterLabel">Chapter 1</span>
+      <span class="scene-count" id="progressLabel">1 of 5</span>
+    </div>
+  </div>
+
+  <div class="game-content">
+
+    <div class="scene-card" id="sceneCard"></div>
+
+    <!-- Feedback sits above the input -->
+    <div class="feedback" id="feedback" role="status" aria-live="polite" aria-atomic="true">
+      <span class="fb-icon" id="fbIcon"></span>
+      <span id="fbText"></span>
+    </div>
+
+    <input
+      class="answer-input"
+      id="answerInput"
+      placeholder="Type your answer here…"
+      aria-label="Your answer"
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="false"
+    />
+
+    <div class="btn-row">
+      <button class="btn btn-answer" id="answerBtn" aria-label="Submit your answer">Answer</button>
+      <button class="btn btn-hint" id="hintBtn" aria-label="Get a hint">💡 Hint</button>
     </div>
   </div>
 </div>
 
 <script src="game.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', initMenu);
+  document.addEventListener('DOMContentLoaded', () => {
+    initMenu();
+    initGame();
+    // Show tour name in header bar
+    const id = getActiveTourId();
+    const bar = document.getElementById('tourTitleBar');
+    if (bar && tours[id]) bar.textContent = tours[id].title;
+    // Fix "Continue Tour" menu link to keep tour param
+    const continueLink = document.getElementById('menuContinueLink');
+    if (continueLink) continueLink.href = `game.html?tour=${id}`;
+  });
 </script>
 </body>
 </html>
