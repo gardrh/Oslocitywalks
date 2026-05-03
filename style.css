@@ -317,6 +317,115 @@ body {
   color: var(--ink);
 }
 
+
+/* ── TOUR CARDS (front page) ── */
+.tour-card {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: var(--r);
+  padding: 18px 18px 18px;
+  margin-bottom: 12px;
+  color: var(--ink);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.tour-card--soon {
+  opacity: 0.55;
+}
+
+.tour-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.tour-card-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.tour-soon-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--ink-20);
+  color: var(--ink-60);
+  border-radius: 99px;
+  padding: 4px 10px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 3px;
+}
+.tour-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--ink-60);
+  margin-bottom: 14px;
+}
+.tour-card-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.tour-meta-chip {
+  font-size: 0.78rem;
+  background: var(--ink-20);
+  border-radius: 99px;
+  padding: 4px 10px;
+  color: var(--ink);
+}
+.tour-start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px;
+  background: var(--green);
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--r);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.12s;
+  touch-action: manipulation;
+}
+.tour-start-btn:hover { opacity: 0.87; }
+.tour-start-btn:active { transform: scale(0.98); }
+.tour-start-btn .arrow { transition: transform 0.2s; }
+.tour-start-btn:hover .arrow { transform: translateX(3px); }
+
+/* ── TOUR TITLE BAR (game page) ── */
+.tour-title-bar {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  padding: 6px 20px 0;
+}
+
+/* ── FINISH TOUR NAME ── */
+.finish-tour-name {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin-bottom: 8px;
+  min-height: 1em;
+}
+
 /* ── GAME PAGE ── */
 .progress-bar-wrap {
   padding: 10px 20px 0;
