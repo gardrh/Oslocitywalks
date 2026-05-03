@@ -15,7 +15,7 @@
     <span></span><span></span><span></span>
   </button>
   <div class="logo">Los!</div>
-  <div style="width:34px"></div>
+  <div id="langSwitcher"></div>
 </header>
 
 <!-- SLIDE MENU -->
@@ -24,7 +24,7 @@
   <div class="menu-head">
     <button class="menu-close" id="menuClose" aria-label="Close navigation menu">✕</button>
     <div class="menu-logo">Los!</div>
-    <div class="menu-tagline">Walking tours · Oslo</div>
+    <div class="menu-tagline" id="menuTagline">Walking tours · Oslo</div>
   </div>
   <div class="menu-nav">
     <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
@@ -39,11 +39,11 @@
   <div class="finish-content">
     <div class="finish-badge">🎉</div>
     <p class="finish-tour-name" id="finishTourName"></p>
-    <h1 class="finish-title">Tour complete!</h1>
+    <h1 class="finish-title" id="finishTourComplete">Tour complete!</h1>
 
     <!-- Time display — hidden until JS populates it -->
     <div class="finish-time-wrap" style="display:none" aria-live="polite">
-      <p class="finish-time-label">Your time</p>
+      <p class="finish-time-label" id="finishTimeLbl">Your time</p>
       <p class="finish-time" id="finishTime"></p>
     </div>
 
@@ -53,12 +53,13 @@
       Have a lovely stay in Oslo!
     </p>
     <div class="finish-actions">
-      <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" class="finish-btn finish-btn-primary">Leave feedback →</a>
+      <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" class="finish-btn finish-btn-primary" id="finishFeedbackBtn">Leave feedback →</a>
       <a href="index.html" class="finish-btn finish-btn-secondary">Back to home</a>
     </div>
   </div>
 </div>
 
+<script src="translations.js"></script>
 <script src="game.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
