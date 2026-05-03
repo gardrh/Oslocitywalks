@@ -502,3 +502,79 @@ function buildLangSwitcher() {
     container.appendChild(btn);
   });
 }
+
+/* ══════════════════════════════════════════
+   GOOGLE ANALYTICS + COOKIE CONSENT
+   GA only fires after explicit user consent.
+   Consent choice stored in localStorage.
+══════════════════════════════════════════ */
+
+const GA_ID = 'G-WSDKG42SWP';
+const CONSENT_KEY = 'los_cookie_consent'; // 'accepted' | 'declined'
+
+/* Load GA script dynamically — only called after consent */
+function loadGA() {
+  if (document.getElementById('ga-script')) return; // already loaded
+  const s = document.createElement('script');
+  s.id    = 'ga-script';
+  s.async = true;
+  s.src   = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  document.head.appendChild(s);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_ID, { anonymize_ip: true });
+}
+
+/* Called on page load — fires GA if already consented */
+function initConsent() {
+  const choice = localStorage.getItem(CONSENT_KEY);
+  if (choice === 'accepted') {
+    loadGA();
+    return; // no banner needed
+  }
+  if (choice === 'declined') {
+    return; // no banner, no GA
+  }
+  // No choice yet — show banner
+  showConsentBanner();
+}
+
+function showConsentBanner() {
+  // Don't show on privacy page
+  if (window.location.pathname.includes('privacy')) return;
+
+  const lang = getLang();
+  const texts = {
+    en: { msg: 'We use cookies to understand how people use Los! This helps us improve the app. See our <a href="privacy.html">Privacy Policy</a>.', accept: 'Accept', decline: 'Decline' },
+    no: { msg: 'Vi bruker informasjonskapsler for å forstå hvordan folk bruker Los! Dette hjelper oss å forbedre appen. Se vår <a href="privacy.html">personvernerklæring</a>.', accept: 'Godta', decline: 'Avslå' },
+    es: { msg: 'Usamos cookies para entender cómo se usa Los! Esto nos ayuda a mejorar la app. Consulta nuestra <a href="privacy.html">política de privacidad</a>.', accept: 'Aceptar', decline: 'Rechazar' },
+    de: { msg: 'Wir verwenden Cookies, um zu verstehen, wie Los! genutzt wird. Das hilft uns, die App zu verbessern. Siehe unsere <a href="privacy.html">Datenschutzerklärung</a>.', accept: 'Akzeptieren', decline: 'Ablehnen' },
+    fr: { msg: 'Nous utilisons des cookies pour comprendre comment Los! est utilisé, afin d'améliorer l'app. Voir notre <a href="privacy.html">politique de confidentialité</a>.', accept: 'Accepter', decline: 'Refuser' },
+  };
+  const tx = texts[lang] || texts.en;
+
+  const banner = document.createElement('div');
+  banner.className = 'consent-banner';
+  banner.id = 'consentBanner';
+  banner.innerHTML = \`
+    <p class="consent-text">\${tx.msg}</p>
+    <div class="consent-btns">
+      <button class="consent-btn consent-btn--accept" id="consentAccept">\${tx.accept}</button>
+      <button class="consent-btn consent-btn--decline" id="consentDecline">\${tx.decline}</button>
+    </div>
+  \`;
+  document.body.appendChild(banner);
+
+  document.getElementById('consentAccept').addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'accepted');
+    banner.classList.add('hidden');
+    loadGA();
+  });
+  document.getElementById('consentDecline').addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'declined');
+    banner.classList.add('hidden');
+  });
+}
