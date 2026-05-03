@@ -70,6 +70,12 @@ const scenes = [
 let currentScene = parseInt(sessionStorage.getItem('loslo_scene') || '0');
 let hintIndex    = 0;
 
+/* ── TIMER ── */
+// Record start time only on first visit (scene 0, no saved time yet)
+if (currentScene === 0 && !sessionStorage.getItem('loslo_start')) {
+  sessionStorage.setItem('loslo_start', Date.now().toString());
+}
+
 /* ── INIT (runs on game.html load) ── */
 function initGame() {
   renderScene();
@@ -114,6 +120,10 @@ function handleAnswer() {
     sessionStorage.setItem('loslo_scene', currentScene);
     if (currentScene >= scenes.length) {
       sessionStorage.removeItem('loslo_scene');
+      // Save elapsed time for finish page
+      const startTime = parseInt(sessionStorage.getItem('loslo_start') || Date.now());
+      const elapsedMs = Date.now() - startTime;
+      sessionStorage.setItem('loslo_elapsed', elapsedMs.toString());
       window.location.href = 'finish.html';
     } else {
       renderScene();
@@ -172,4 +182,82 @@ function initMenu() {
   menuBtn.addEventListener('click', openMenu);
   menuClose.addEventListener('click', closeMenu);
   menuOverlay.addEventListener('click', closeMenu);
+}
+
+/* ── TIME FORMATTING ── */
+function formatElapsed(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours   = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  if (hours > 0) {
+    return `${hours}h ${minutes}m`;
+  } else if (minutes > 0) {
+    return `${minutes}m ${seconds}s`;
+  } else {
+    return `${seconds}s`;
+  }
+}
+
+/* ── GOOGLE SHEETS SCORE SUBMISSION ── */
+/*
+  HOW TO SET UP GOOGLE SHEETS LOGGING:
+  ─────────────────────────────────────
+  1. Go to https://sheets.google.com and create a new spreadsheet.
+  2. Name the columns in row 1: Date | Time (ms) | Duration
+  3. Go to Extensions → Apps Script.
+  4. Replace the default code with the following:
+
+     function doPost(e) {
+       const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+       const data  = JSON.parse(e.postData.contents);
+       sheet.appendRow([
+         new Date().toISOString(),
+         data.elapsed_ms,
+         data.duration
+       ]);
+       return ContentService
+         .createTextOutput(JSON.stringify({ status: 'ok' }))
+         .setMimeType(ContentService.MimeType.JSON);
+     }
+
+  5. Click Deploy → New deployment → Web app.
+     - Execute as: Me
+     - Who has access: Anyone
+  6. Copy the deployment URL and paste it below as SHEET_URL.
+  7. Save and you're done — completions are logged automatically.
+*/
+
+const SHEET_URL = ''; // ← paste your Apps Script deployment URL here
+
+function submitScore(elapsedMs, duration) {
+  if (!SHEET_URL) return; // skip if not configured
+  fetch(SHEET_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ elapsed_ms: elapsedMs, duration })
+  }).catch(() => {}); // silent fail — not critical
+}
+
+/* ── FINISH PAGE INIT ── */
+function initFinish() {
+  const elapsedMs = parseInt(sessionStorage.getItem('loslo_elapsed') || '0');
+  const duration  = elapsedMs > 0 ? formatElapsed(elapsedMs) : null;
+
+  // Show time on finish page
+  const timeEl = document.getElementById('finishTime');
+  if (timeEl && duration) {
+    timeEl.textContent = duration;
+    timeEl.closest('.finish-time-wrap').style.display = 'flex';
+  }
+
+  // Send to Google Sheets
+  if (elapsedMs > 0) {
+    submitScore(elapsedMs, duration || '—');
+  }
+
+  // Clean up sessionStorage
+  sessionStorage.removeItem('loslo_start');
+  sessionStorage.removeItem('loslo_elapsed');
 }
