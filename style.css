@@ -363,20 +363,6 @@ body {
   margin: 0 auto;
 }
 
-.no-refresh {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(12,26,26,0.06);
-  border-radius: var(--r-sm);
-  padding: 9px 13px;
-  font-size: 0.8rem;
-  color: var(--ink-60);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  margin-bottom: 16px;
-}
-
 .scene-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
