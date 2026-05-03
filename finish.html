@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOSlo – Tour Complete</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">LOSlo</div>
+  <div style="width:34px"></div>
+</header>
+
+<!-- SLIDE MENU -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="menu-panel" id="menuPanel">
+  <div class="menu-head">
+    <button class="menu-close" id="menuClose">✕</button>
+    <div class="menu-logo">LOSlo</div>
+    <div class="menu-tagline">Walking tours · Oslo</div>
+  </div>
+  <div class="menu-nav">
+    <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
+    <a class="menu-item" href="game.html">↗&nbsp;&nbsp;Start Tour</a>
+    <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
+  </div>
+</nav>
+
+<!-- PAGE -->
+<div class="page-wrap">
+  <div class="finish-content">
+    <div class="finish-badge">🎉</div>
+    <h1 class="finish-title">Tour complete!</h1>
+    <p class="finish-body">
+      Congratulations — you've finished the tour. Yet this is where your real adventure in Oslo begins. You've made your way to <strong>SALT</strong>, a sauna, restaurant, and entertainment venue at the heart of the city. Jump into a sauna, grab a bite to eat, or catch some local entertainment.<br><br>
+      We hope you enjoyed this tour. Your feedback helps us improve and develop future routes.
+    </p>
+    <div class="finish-actions">
+      <button class="finish-btn finish-btn-primary">Leave feedback →</button>
+      <a href="index.html" class="finish-btn finish-btn-secondary">Back to home</a>
+    </div>
+  </div>
+</div>
+
+<script src="sommer26.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', initMenu);
+</script>
+</body>
+</html>

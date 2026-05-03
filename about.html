@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOSlo – About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <button class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="logo">LOSlo</div>
+  <div style="width:34px"></div>
+</header>
+
+<!-- SLIDE MENU -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="menu-panel" id="menuPanel">
+  <div class="menu-head">
+    <button class="menu-close" id="menuClose">✕</button>
+    <div class="menu-logo">LOSlo</div>
+    <div class="menu-tagline">Walking tours · Oslo</div>
+  </div>
+  <div class="menu-nav">
+    <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
+    <a class="menu-item" href="game.html">↗&nbsp;&nbsp;Start Tour</a>
+    <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
+  </div>
+</nav>
+
+<!-- PAGE -->
+<div class="page-wrap">
+  <div class="skyline-wrap sm">
+    <img src="osloskyline.png" alt="Oslo skyline" />
+  </div>
+
+  <div class="about-content">
+    <p class="eyebrow">The project</p>
+    <h1 class="page-title">About LOSlo</h1>
+    <div class="about-body">
+      <p>LOSlo is a self-guided walking tour designed to help you discover the hidden stories and remarkable people behind Oslo's streets, squares, and buildings.</p>
+      <p>Each tour is carefully researched and built to be completed on foot. You'll encounter history, architecture, art, and local culture — entirely at your own pace.</p>
+      <p>Tours are regularly updated and new routes are in development. If you have suggestions or spot an error, we'd love to hear from you.</p>
+      <p><strong>Have a great walk! 🚶</strong></p>
+    </div>
+  </div>
+</div>
+
+<script src="sommer26.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', initMenu);
+</script>
+</body>
+</html>
