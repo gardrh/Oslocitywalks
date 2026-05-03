@@ -178,14 +178,20 @@ body {
 
 /* ── SKYLINE ── */
 /*
-  Image is 1771x914px, aspect 1.938:1.
-  We show it full-width and use mask-position to crop into
-  the lower portion where the actual skyline silhouette lives,
-  hiding the empty black sky at the top.
+  Image: 1771x914px, aspect 1.938:1.
+  Content fills nearly the full width.
+  Spire tip sits at ~9.3% from top (row 85/914).
+  At 80% display width with padding, image renders ~360x186px.
+
+  Strategy:
+  - Scale image to 80% of viewport width, horizontally centered
+  - Anchor to bottom → crops black sky at top automatically
+  - Front page: tall enough to show full spire (~220px container)
+  - Inner pages (.sm): shorter crop showing just building tops (~130px)
 */
 .skyline-wrap {
   width: 100%;
-  height: 140px;
+  height: 210px;
   position: relative;
   overflow: hidden;
 }
@@ -196,17 +202,17 @@ body {
   background-color: var(--sand);
   -webkit-mask-image: url('osloskyline.png');
   mask-image: url('osloskyline.png');
-  /* fill width, let height scale naturally (~51.6% of width) */
-  -webkit-mask-size: 100% auto;
-  mask-size: 100% auto;
-  /* anchor to bottom so we see the buildings, not black sky */
+  /* 80% wide → air on both sides; auto height keeps aspect ratio */
+  -webkit-mask-size: 80% auto;
+  mask-size: 80% auto;
+  /* center horizontally, anchor to bottom */
   -webkit-mask-position: center bottom;
   mask-position: center bottom;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
 .skyline-wrap.sm {
-  height: 110px;
+  height: 130px;
 }
 
 /* ── SHARED TYPOGRAPHY ── */
