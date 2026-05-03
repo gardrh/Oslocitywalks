@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOSlo – Walking Tour Oslo</title>
+  <title>LOSlo – Walking Tours Oslo</title>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +28,6 @@
   </div>
   <div class="menu-nav">
     <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
-    <a class="menu-item" href="game.html">↗&nbsp;&nbsp;Start Tour</a>
     <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
   </div>
 </nav>
@@ -40,27 +39,57 @@
   </div>
 
   <div class="front-content">
-    <p class="eyebrow">Self-guided walking tour</p>
+    <p class="eyebrow">Self-guided walking tours</p>
     <h1 class="front-headline">Discover Oslo on foot</h1>
     <p class="front-intro">Welcome to LOSlo — your guide to the people and places of Oslo. You will be given riddles and clues at different locations across the city, and your job is to find the answers.</p>
 
     <div class="section-divider"></div>
     <p class="tips-label">Tips &amp; Tricks</p>
     <ul class="tips-list">
-<li data-n="1">Locations where you'll find the answers are shown in <strong>bold</strong>. If unfamiliar with the city, enter these into your maps app.</li>
+      <li data-n="1">Locations where you'll find the answers are shown in <strong>bold</strong>. If unfamiliar with the city, enter these into your maps app.</li>
       <li data-n="2">Tour duration is approximate and may vary based on your walking pace and any stops along the way.</li>
+      <li data-n="3">At the end of the tour, we will show you how much time you spent. If you are part of a group, why not make it a competition!</li>
     </ul>
 
-    <a href="game.html" class="start-btn" aria-label="Start the walking tour">
-      Start Tour <span class="arrow">→</span>
+    <div class="section-divider"></div>
+    <p class="tips-label">Walking Tours</p>
+
+    <!-- Tour: City Centre -->
+    <a href="game.html?tour=citycentre" class="tour-card" aria-label="Start the City Centre Tour">
+      <div class="tour-card-header">
+        <div>
+          <p class="tour-card-eyebrow">Tour 1</p>
+          <h2 class="tour-card-title">City Centre Tour</h2>
+        </div>
+        <span class="tour-card-arrow">→</span>
+      </div>
+      <p class="tour-card-desc">The tour starts by Nationaltheatret and takes you around the centre-western part of the city — getting to know local people and places along the way.</p>
+      <div class="tour-card-meta">
+        <span class="tour-meta-chip">🚶 ~4–5 km</span>
+        <span class="tour-meta-chip">🕐 ~1 hour</span>
+      </div>
     </a>
-    <div class="duration-chip">
-      <span>🕐</span> Approximately 2 hours on foot
+
+    <!-- Tour: Akerselva (coming soon) -->
+    <div class="tour-card tour-card--soon" aria-label="Akerselva tour — coming soon">
+      <div class="tour-card-header">
+        <div>
+          <p class="tour-card-eyebrow">Tour 2</p>
+          <h2 class="tour-card-title">Akerselva &amp; Oslo's Industrial Past</h2>
+        </div>
+        <span class="tour-soon-badge">Soon</span>
+      </div>
+      <p class="tour-card-desc">Starting at Nydalen, walk down along the river Akerselva and discover Oslo's industrial past on your way into the city.</p>
+      <div class="tour-card-meta">
+        <span class="tour-meta-chip">🚶 ~5 km</span>
+        <span class="tour-meta-chip">🕐 ~1.5 hours</span>
+      </div>
     </div>
+
   </div>
 </div>
 
-<script src="sommer26.js"></script>
+<script src="game.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', initMenu);
 </script>
