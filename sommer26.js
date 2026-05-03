@@ -94,6 +94,8 @@ function renderScene() {
   document.getElementById('progressFill').style.width = pct + '%';
   document.getElementById('progressLabel').textContent =
     `${currentScene + 1} of ${scenes.length}`;
+  const track = document.getElementById('progressTrack');
+  if (track) track.setAttribute('aria-valuenow', pct);
 
   document.getElementById('answerInput').style.display = '';
   document.getElementById('answerBtn').textContent = 'Answer';
@@ -155,10 +157,16 @@ function initMenu() {
   function openMenu() {
     menuOverlay.classList.add('open');
     menuPanel.classList.add('open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    menuPanel.setAttribute('aria-hidden', 'false');
+    menuClose.focus();
   }
   function closeMenu() {
     menuOverlay.classList.remove('open');
     menuPanel.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuPanel.setAttribute('aria-hidden', 'true');
+    menuBtn.focus();
   }
 
   menuBtn.addEventListener('click', openMenu);
