@@ -204,11 +204,11 @@ body {
 
 /* ── SHARED TYPOGRAPHY ── */
 .eyebrow {
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
   margin-bottom: 6px;
 }
 
@@ -239,7 +239,7 @@ body {
 .front-intro {
   font-size: 1rem;
   line-height: 1.72;
-  color: var(--ink-60);
+  color: var(--ink);
   margin-bottom: 26px;
 }
 
@@ -250,11 +250,11 @@ body {
 }
 
 .tips-label {
-  font-size: 0.67rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
   margin-bottom: 10px;
 }
 .tips-list {
@@ -275,8 +275,8 @@ body {
   position: absolute;
   left: 0; top: 12px;
   font-weight: 500;
-  font-size: 0.78rem;
-  color: var(--ink-60);
+  font-size: 0.82rem;
+  color: var(--ink);
 }
 
 .start-btn {
@@ -313,7 +313,7 @@ body {
   background: var(--ink-20);
   border-radius: 99px;
   padding: 9px 16px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--ink);
 }
 
@@ -362,9 +362,9 @@ body {
   margin-top: 3px;
 }
 .tour-card-desc {
-  font-size: 0.9rem;
-  line-height: 1.65;
-  color: var(--ink-60);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink);
   margin-bottom: 14px;
 }
 .tour-card-meta {
@@ -374,7 +374,7 @@ body {
   margin-bottom: 16px;
 }
 .tour-meta-chip {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   background: var(--ink-20);
   border-radius: 99px;
   padding: 4px 10px;
@@ -407,21 +407,21 @@ body {
 /* ── TOUR TITLE BAR (game page) ── */
 .tour-title-bar {
   text-align: center;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
   padding: 6px 20px 0;
 }
 
 /* ── FINISH TOUR NAME ── */
 .finish-tour-name {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
   margin-bottom: 8px;
   min-height: 1em;
 }
@@ -451,13 +451,13 @@ body {
   margin-top: 7px;
 }
 .chapter-pill {
-  font-size: 0.67rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
 }
-.scene-count { font-size: 0.67rem; color: var(--ink-60); }
+.scene-count { font-size: 0.82rem; color: var(--ink); }
 
 .game-content {
   padding: 16px 20px max(52px, calc(24px + env(safe-area-inset-bottom)));
@@ -556,8 +556,8 @@ body {
   margin: 0 auto;
 }
 .about-body p {
-  font-size: 1rem;
-  line-height: 1.75;
+  font-size: 1.05rem;
+  line-height: 1.8;
   color: var(--ink);
   padding-bottom: 14px;
   margin-bottom: 14px;
@@ -566,7 +566,8 @@ body {
 .about-body p:last-child { border-bottom: none; margin-bottom: 0; }
 .about-link {
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: underline;
   text-underline-offset: 3px;
 }
 
@@ -605,11 +606,11 @@ body {
   margin-bottom: 24px;
 }
 .finish-time-label {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-60);
+  color: var(--ink);
   margin-bottom: 4px;
 }
 .finish-time {
@@ -622,9 +623,9 @@ body {
 }
 
 .finish-body {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--ink-60);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ink);
   margin-bottom: 32px;
 }
 .finish-body strong { color: var(--ink); font-weight: 600; }
@@ -646,7 +647,7 @@ body {
 }
 .finish-btn:hover { opacity: 0.85; }
 .finish-btn-primary { background: var(--ink); color: white; }
-.finish-btn-secondary { background: var(--ink-20); color: var(--ink); }
+.finish-btn-secondary { background: rgba(12,26,26,0.14); color: var(--ink); border: 1.5px solid rgba(12,26,26,0.2); }
 
 /* ── TOUCH FIXES ── */
 @media (hover: none) {
