@@ -6,46 +6,63 @@
 /* ── SCENE DATA ── */
 const scenes = [
   {
-    chapter: "Chapter 1",
-    text: "Make your way to the plaza between <b>Nationaltheateret</b> and <b>Nationaltheateret T-bane station</b>.\n\nThe National Theater was built in 1899, originally through private financing, and first received government support in 1928.\n\nAt the plaza you will find a smiling woman with curly hair. What is her name?",
+    chapter: "Scene 1",
+    text: "Make your way to the plaza between <b>Nationaltheateret</b> and <b>Nationaltheateret T-bane station</b>.\n\nThe National Theater was built in 1899. The theater was originally built through private finanziation, and first received government support in 1928.\n\nAt the plaza you will find a smiling woman with curly hair. What is her name?",
     answers: ["wenche foss", "wenche"],
     hints: [
-      "She is standing close to the fountain.",
-      "Look for the statue on the Nationaltheateret side of the plaza."
+      "She is standing close to the fountain."
     ]
   },
   {
-    chapter: "Chapter 2",
-    text: "Wenche Foss (1917–2011) was one of the most famous actresses in Norway, with a career spanning from 1935 to 2009, in both theater and film.\n\nShe is one of several women who shaped this city. Make your way up the castle hill to <b>Slottsparken</b> (the castle park). There you will find a statue of a woman surrounded by flowers, staring into the ground. Who is she?\n\n<i>On your way, you might catch the changing of the guards at 13:30.</i>",
+    chapter: "Scene 2",
+    text: "Wenche Foss (1917–2011) was one of the most famous actresses in Norway, with a career starting in 1935 and lasting until 2009. She played in both the theater and in films.\n\nWenche Foss is one of several women who have had influence on the city. Make your way up the castle hill to <b>Slottsparken</b> (the castle park). There, you will find a statue of a woman surrounded by flowers, staring into the ground. Who is she?\n\n<i>On your way, you might be able to see the changing of the guards at 13:30!</i>",
     answers: ["camilla collett", "collett"],
     hints: [
-      "Make your way to the rear-left of the castle.",
-      "The statue is partially hidden among trees near the back of Slottsparken."
+      "Make your way to the rear-left of the castle."
     ]
   },
   {
-    chapter: "Chapter 3",
-    text: "Camilla Collett was a Norwegian writer and an early pioneer of realism. Her book <i>Amtmandens Døtre</i> deals with the difficulties of being a woman. The statue was made by Gustav Vigeland.\n\nContinue down the road behind the castle and cross the street to <b>Parkveien 45</b>. Today it is the Government Representational House. Originally, it was owned by a local merchant and known under a different name.\n\nWhat was the building originally known as?",
+    chapter: "Scene 3",
+    text: "Camilla Collett was a Norwegian writer, and an early writer in the genre of \"realism\", which sought to describe reality as it is. One of her books, <i>Amtmandens Døtre</i>, deals with the difficulties of being a woman. The statue was made by Gustav Vigeland, primarily known for the Vigeland sculpture park between Majorstua and Frogner.\n\nContinue down the road in the back of the castle and walk across the street to <b>Parkveien 45</b>. Today, the house is the Government Representational House (Statens representasjonsbolig). Originally, however, it was owned by a local merchant and known under a different name.\n\nWhat was the building originally known as?",
     answers: ["villa parafina", "parafina"],
     hints: [
-      "Find the blue plaque hanging on the wall.",
-      "Look near the entrance of the building on the street-facing wall."
+      "Find the blue plaque hanging on the wall."
     ]
   },
   {
-    chapter: "Chapter 4",
-    text: "Before Norway found its own oil, petroleum importers like Frederik Sundt — who financed Villa Parafina in 1877 — supplied the country with kerosene (Nor. Parafin) used for illumination.\n\nFrom Villa Parafina, follow the road along the castle park towards <b>Solli plass</b>. There you will find a statue of a man holding a key, standing in front of one of Oslo's hippest hotels.\n\nWho made the statue?",
+    chapter: "Scene 4",
+    text: "Before Norway found its own oil, petroleum importers like Frederik Sundt, who financed Villa Parafina in 1877, supplied the country with kerosene (Nor. Parafin), that was used for illumination.\n\nFrom Villa Parafina, follow the road that stretches along the castle park towards <b>Solli plass</b>. There, you will find a statue of a man with a key. The statue is standing in front of what is now one of the hippest hotels in Oslo.\n\nWho made the statue?",
     answers: ["rodin", "auguste rodin"],
     hints: [
-      "The man is dressed in a long robe.",
-      "The name of the sculpture is inscribed at the base of the statue."
+      "The man is dressed in a robe.",
+      "The name of the sculpture is written at the base of the statue."
     ]
   },
   {
-    chapter: "Chapter 5",
-    text: "The Man with the Key, by Auguste Rodin, was unveiled in 1902. Rodin himself was by all accounts never in Oslo, but stirred significant cultural debate in the city.\n\nAmong those opposed to the statue was Gustav Vigeland — the very sculptor behind the Camilla Collett statue — who argued that art in Oslo's public spaces should be reserved for Norwegian artists.\n\n<i>More chapters coming soon — this tour is still growing!</i>",
-    answers: ["_finish_"],
-    hints: ["This is the final chapter for now. Press Answer to complete the tour!"]
+    chapter: "Scene 5",
+    text: "The Man with the Key, by Auguste Rodin. It was unveiled in 1902. Rodin himself was by all accounts never in Oslo, but nevertheless made an impact on the cultural debate in the city. Amongst those opposed to the statue was Gustav Vigeland, who made the statue of Camilla Collett (as well as his famous park). One of the arguments was that art in the public spaces of Oslo should be reserved for Norwegian artists.\n\nNow, follow the tram line going down towards <b>Aker Brygge</b> and <b>Rådhusplassen</b>. At the big plaza, you will find a man standing next to a cannon.\n\nWhat is his name?",
+    answers: ["tordenskiold", "peter tordenskiold", "peter wessel"],
+    hints: [
+      "Look for the statue near the waterfront at Rådhusplassen."
+    ]
+  },
+  {
+    chapter: "Scene 6",
+    text: "Peter Tordenskiold (1690–1720) was a navy officer in the Danish-Norwegian navy, and became famous following a range of battles with Sweden. During one battle at the southern coast of Norway in 1714, his ship was running out of ammunition, and a representative was sent to the enemy to request borrowing gunpowder. The answer received: No!\n\nNow, follow the docks to your right along the <b>Akershus fortress</b> towards a dark period of Norway's recent history. On your left, you will find a number of empty chairs.\n\nWhat is the name of the artist?",
+    answers: ["antony gormley", "gormley"],
+    hints: [
+      "You have to walk for a bit.",
+      "The place is at the end of the fortress walls."
+    ]
+  },
+  {
+    chapter: "Scene 7",
+    text: "During World War II, Norwegians assisted the German occupational forces in deporting 772 Jews from Norway. Most of them were sent to Auschwitz, and only 37 survived.\n\nNow, the tour is almost over. Continue along the docks past the cruise ship terminal until you reach a place with strange looking A-framed structures. The buildings are inspired by structures that are used to dry cod in Northern Norway.\n\nWhat is the name of the venue?",
+    answers: ["salt"],
+    hints: [
+      "The structures are right next to the cruise ship terminal.",
+      "It's not pepper."
+    ]
   }
 ];
 
@@ -78,21 +95,13 @@ function renderScene() {
   document.getElementById('progressLabel').textContent =
     `${currentScene + 1} of ${scenes.length}`;
 
-  const isFinal = s.answers[0] === '_finish_';
-  document.getElementById('answerInput').style.display = isFinal ? 'none' : '';
-  document.getElementById('answerBtn').textContent = isFinal ? 'Finish Tour →' : 'Answer';
+  document.getElementById('answerInput').style.display = '';
+  document.getElementById('answerBtn').textContent = 'Answer';
 }
 
 /* ── HANDLE ANSWER ── */
 function handleAnswer() {
   const s = scenes[currentScene];
-
-  if (s.answers[0] === '_finish_') {
-    sessionStorage.removeItem('loslo_scene');
-    window.location.href = 'finish.html';
-    return;
-  }
-
   const val = document.getElementById('answerInput').value.trim().toLowerCase();
   if (!val) return;
 
