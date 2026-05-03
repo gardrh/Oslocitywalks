@@ -28,7 +28,10 @@
   padding: 0;
   -webkit-tap-highlight-color: transparent;
 }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 18px; /* base: 1rem = 18px. Scales all rem values up for comfort */
+}
 
 body {
   background: var(--sky);
@@ -45,7 +48,7 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  height: 56px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,7 +153,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 13px 24px;
+  padding: 16px 24px;
   color: rgba(255,255,255,0.75);
   font-size: 1rem;
   cursor: pointer;
@@ -166,7 +169,7 @@ body {
 
 /* ── PAGE WRAPPER ── */
 .page-wrap {
-  padding-top: 56px;
+  padding-top: 60px;
   min-height: 100vh;
   animation: fadeUp 0.22s ease;
 }
@@ -238,7 +241,7 @@ body {
 }
 .front-intro {
   font-size: 1rem;
-  line-height: 1.72;
+  line-height: 1.8;
   color: var(--ink);
   margin-bottom: 26px;
 }
@@ -263,8 +266,8 @@ body {
 }
 .tips-list li {
   font-size: 1rem;
-  line-height: 1.65;
-  padding: 11px 0 11px 28px;
+  line-height: 1.75;
+  padding: 13px 0 13px 28px;
   position: relative;
   color: var(--ink);
   border-bottom: 1px solid var(--ink-20);
@@ -363,7 +366,7 @@ body {
 }
 .tour-card-desc {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--ink);
   margin-bottom: 14px;
 }
@@ -386,7 +389,7 @@ body {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  padding: 13px;
+  padding: 16px;
   background: var(--green);
   color: white;
   font-family: 'DM Sans', sans-serif;
@@ -469,9 +472,9 @@ body {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: var(--r);
-  padding: 20px 18px;
+  padding: 22px 20px;
   font-size: 1rem;
-  line-height: 1.78;
+  line-height: 1.85;
   color: var(--ink);
   margin-bottom: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
@@ -507,7 +510,7 @@ body {
 
 .answer-input {
   width: 100%;
-  padding: 13px 15px;
+  padding: 15px 16px;
   border-radius: var(--r);
   border: 1.5px solid rgba(12,26,26,0.14);
   background: rgba(255,255,255,0.88);
@@ -531,7 +534,7 @@ body {
   gap: 9px;
 }
 .btn {
-  padding: 13px 18px;
+  padding: 16px 18px;
   border: none;
   border-radius: var(--r);
   font-family: 'DM Sans', sans-serif;
@@ -633,7 +636,7 @@ body {
 .finish-btn {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 17px;
   border-radius: var(--r);
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
