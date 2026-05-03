@@ -29,7 +29,7 @@ let hintIndex    = 0;
 /* ── INIT GAME ── */
 function initGame() {
   tourId     = getActiveTourId();
-  tourScenes = tours[tourId].scenes;
+  tourScenes = getScenes(tourId);
 
   // Restore progress for this specific tour
   const saved = parseInt(sessionStorage.getItem(`los!_scene_${tourId}`) || '0');
