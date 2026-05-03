@@ -27,10 +27,10 @@
     <div class="menu-tagline" id="menuTagline">Walking tours · Oslo</div>
   </div>
   <div class="menu-nav">
-    <a class="menu-item" href="index.html">⌂&nbsp;&nbsp;Home</a>
+    <a class="menu-item" id="navHome" href="index.html">⌂  Home</a>
     <a class="menu-item" id="menuContinueLink" href="game.html">↗&nbsp;&nbsp;Continue Tour</a>
-    <a class="menu-item" href="about.html">i&nbsp;&nbsp;About</a>
-    <a class="menu-item" href="privacy.html">⚖&nbsp;&nbsp;Privacy Policy</a>
+    <a class="menu-item" id="navAbout" href="about.html">i  About</a>
+    <a class="menu-item" id="navPrivacy" href="privacy.html">⚖  Privacy Policy</a>
   </div>
 </nav>
 
@@ -82,14 +82,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     initMenu();
-    initGame();
-    // Show tour name in header bar
-    const id = getActiveTourId();
-    const bar = document.getElementById('tourTitleBar');
-    if (bar && tours[id]) bar.textContent = tours[id].title;
-    // Fix "Continue Tour" menu link to keep tour param
-    const continueLink = document.getElementById('menuContinueLink');
-    if (continueLink) continueLink.href = `game.html?tour=${id}`;
+    buildLangSwitcher();
+    initGame(); // calls applyTranslations() + renderScene() internally
   });
 </script>
 </body>
