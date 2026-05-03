@@ -22,6 +22,7 @@ const t = {
       navPrivacy:     '⚖\u00a0\u00a0Privacy Policy',
       eyebrow:        'Self-guided walking tours',
       headline:       'Discover Oslo on foot',
+      frontIntro:     'Welcome to Los!, your guide to the people and places of Oslo. Los! navigates you through the streets of the city. You will be given riddles and clues in different places, and your job is to find the answer.',
       tipsLabel:      'Tips & Tricks',
       toursLabel:     'Walking Tours',
       tip1:           'The locations where you will find the answers are shown in <strong>bold</strong>. If you are not familiar with the city, enter these places into your preferred online maps service.',
@@ -51,6 +52,7 @@ const t = {
       navPrivacy:     '⚖\u00a0\u00a0Personvern',
       eyebrow:        'Selvguidede byvandringer',
       headline:       'Oppdag Oslo til fots',
+      frontIntro:     'Velkommen til Los!, din guide til Oslos mennesker og steder. Los! navigerer deg gjennom byens gater. Du vil få gåter og ledetråder på forskjellige steder, og din oppgave er å finne svaret.',
       tipsLabel:      'Tips og triks',
       toursLabel:     'Byvandringer',
       tip1:           'Stedene der du finner svarene er vist i <strong>fet skrift</strong>. Hvis du ikke er kjent i byen, skriv inn stedene i din foretrukne kartjeneste.',
@@ -80,6 +82,7 @@ const t = {
       navPrivacy:     '⚖\u00a0\u00a0Privacidad',
       eyebrow:        'Rutas autoguiadas a pie',
       headline:       'Descubre Oslo a pie',
+      frontIntro:     'Bienvenido a Los!, tu guía por las personas y los lugares de Oslo. Los! te lleva por las calles de la ciudad. Recibirás acertijos y pistas en diferentes lugares, y tu misión es encontrar la respuesta.',
       tipsLabel:      'Consejos',
       toursLabel:     'Rutas',
       tip1:           'Los lugares donde encontrarás las respuestas se muestran en <strong>negrita</strong>. Si no conoces la ciudad, introduce estos lugares en tu aplicación de mapas preferida.',
@@ -109,6 +112,7 @@ const t = {
       navPrivacy:     '⚖\u00a0\u00a0Datenschutz',
       eyebrow:        'Selbstgeführte Stadtrundgänge',
       headline:       'Oslo zu Fuß entdecken',
+      frontIntro:     'Willkommen bei Los!, deinem Führer durch die Menschen und Orte Oslos. Los! navigiert dich durch die Straßen der Stadt. Du erhältst Rätsel und Hinweise an verschiedenen Orten, und deine Aufgabe ist es, die Antwort zu finden.',
       tipsLabel:      'Tipps & Hinweise',
       toursLabel:     'Stadtrundgänge',
       tip1:           'Die Orte, an denen du die Antworten findest, sind <strong>fett gedruckt</strong>. Falls du die Stadt nicht kennst, gib diese Orte in deinen bevorzugten Kartendienst ein.',
@@ -138,6 +142,7 @@ const t = {
       navPrivacy:     '⚖\u00a0\u00a0Confidentialité',
       eyebrow:        'Visites autoguides à pied',
       headline:       'Découvrez Oslo à pied',
+      frontIntro:     'Bienvenue sur Los! ! votre guide des personnes et des lieux d’Oslo. Los! vous guide à travers les rues de la ville. Vous recevrez des énigmes et des indices à différents endroits, et votre mission est de trouver la réponse.',
       tipsLabel:      'Conseils pratiques',
       toursLabel:     'Visites',
       tip1:           'Les lieux où vous trouverez les réponses sont indiqués en <strong>gras</strong>. Si vous ne connaissez pas la ville, saisissez ces lieux dans votre application de cartographie préférée.',
@@ -451,6 +456,7 @@ function applyTranslations() {
 
   // ── Front page (index.html) ──
   _set('frontEyebrow',  T('eyebrow'));
+  _set('frontIntro',    T('frontIntro'));
   _set('frontHeadline', T('headline'));
   _set('tipsLabel',     T('tipsLabel'));
   _set('toursLabel',    T('toursLabel'));
