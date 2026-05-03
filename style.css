@@ -466,6 +466,11 @@ body {
   border-bottom: 1px solid var(--ink-20);
 }
 .about-body p:last-child { border-bottom: none; margin-bottom: 0; }
+.about-link {
+  color: var(--ink);
+  font-weight: 500;
+  text-underline-offset: 3px;
+}
 
 /* ── FINISH PAGE ── */
 .finish-content {
