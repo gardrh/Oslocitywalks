@@ -432,6 +432,37 @@ body {
   min-height: 1em;
 }
 
+
+/* ── LANGUAGE SWITCHER ── */
+#langSwitcher {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  opacity: 0.45;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: opacity 0.15s, background 0.15s;
+  touch-action: manipulation;
+  line-height: 1;
+}
+.lang-btn:hover { opacity: 0.8; background: var(--ink-20); }
+.lang-btn--active {
+  opacity: 1;
+  background: var(--ink);
+  color: white;
+}
+.lang-btn--active:hover { opacity: 1; background: var(--ink); }
+
 /* ── GAME PAGE ── */
 .progress-bar-wrap {
   padding: 10px 20px 0;
