@@ -5,7 +5,9 @@
 
 /* ── TOURS (scene data lives in translations.js) ── */
 const tours = {
-  citycentre: { title: "City Centre Tour" },
+  seaside:    { title: "Westside/Seaside Tour" },
+  greathits:  { title: "Oslo’s Greatest Hits" },
+  citycentre: { title: "Oslo City Centre Tour" },
   akerselva:  { title: "Akerselva and Oslo’s Industrial Past" }
 };
 
@@ -17,7 +19,7 @@ const tours = {
 function getActiveTourId() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('tour');
-  return (id && tours[id]) ? id : 'citycentre';
+  return (id && tours[id]) ? id : 'seaside';
 }
 
 /* ── STATE ── */
