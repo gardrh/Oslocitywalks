@@ -42,12 +42,12 @@ const t = {
       finishBody:     'Congratulations — you have finished the tour! Yet this is where your real adventure in Oslo begins. We have led you to one of the many wonderful places in the city centre; from here you can easily make your way to wherever you wish.<br><br>We hope you enjoyed this tour. If you would like to provide feedback, you may do so via this <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>. Your feedback helps us improve both the app and the development of future tours.<br><br>Have a lovely stay in Oslo!',
       tour1Title:     'Westside/Seaside Tour',
       tour1Desc:      'The first tour starts by the Nationaltheatret and takes you around the central-western part of the city, and along the seaside. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!',
-      tour2Title:     'Oslo’s Greatest Hits',
-      tour2Desc:      'Starting at the bottom of Karl Johan, this tour takes you through a selection of the key sights in Oslo. Sometimes, all we want is to catch the highlights. If that is your jam, this is the tour for you! About 4–5 km, roughly one hour.',
-      tour3Title:     'Oslo City Centre Tour',
-      tour3Desc:      'Starting at the bottom of Karl Johan, this tour takes you through known and lesser-known sights throughout the city centre, highlighting historical events. About 4–5 km, roughly one hour.',
-      tour4Title:     'Akerselva & Oslo’s Industrial Past',
-      tour4Desc:      'The tour starts at Nydalen — take the T-bane and find the closest river: Akerselva! Walk and solve tasks on your way down towards the city, discovering Oslo’s industrial past. About 5 km, roughly 1.5 hours.',
+      tour2Title:     'Oslo and Norway’s Becoming',
+      tour2Desc:      'Starting at the bottom of Karl Johan, this tour takes you through the history of how Oslo and Norway became what they are today — through conflict, culture and independence. About 4–5 km, roughly one hour.',
+      tour3Title:     'Oslo’s Greatest Hits',
+      tour3Desc:      'Starting at the bottom of Karl Johan, this tour takes you through a selection of the key sights in Oslo. About 4–5 km, roughly one hour.',
+      tour4Title:     'Oslo City Centre Tour',
+      tour4Desc:      'Starting at the bottom of Karl Johan, this tour takes you through known and lesser-known sights throughout the city centre. About 4–5 km, roughly one hour.',
       tip4:           '⚠️ Translations are made from English by machine — certain errors might occur. If they bother you, please let us know!',
       aboutEyebrow:   'The project',
       aboutTitle:     'About Los!',
@@ -85,12 +85,12 @@ const t = {
       finishBody:     'Gratulerer — du har fullført turen! Men dette er egentlig her eventyrene i Oslo begynner. Vi har ledet deg til et av byens mange fine steder i sentrum; herfra kan du enkelt finne veien videre dit du ønsker.<br><br>Vi håper du likte turen. Hvis du ønsker å gi tilbakemelding, kan du gjøre det via dette <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">skjemaet</a>. Tilbakemeldingene dine hjelper oss med å forbedre appen og utvikle fremtidige turer.<br><br>God tur i Oslo!',
       tour1Title:     'Sentrumsturen',
       tour1Desc:      'Den første turen starter ved Nationaltheatret og tar deg rundt i den sentrum-vestlige delen av byen. Turen lar deg bli kjent med lokale mennesker og steder. Ruten er ca. 4–5 km, avhengig av veivalg, og tar omtrent én time — avhengig av ferdighetene dine!',
-      tour2Title:     'Oslos store høydepunkter',
-      tour2Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom et utvalg av byens viktigste severdigheter. Perfekt om du vil ta det beste av Oslo på kort tid! Ca. 4–5 km, omtrent én time.',
-      tour3Title:     'Oslo sentrum-turen',
-      tour3Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom kjente og mindre kjente steder i sentrum, med fokus på historiske hendelser. Ca. 4–5 km, omtrent én time.',
-      tour4Title:     'Akerselva og Oslos industrifortid',
-      tour4Desc:      'Turen starter på Nydalen — ta T-banen og finn nærmeste elv: Akerselva! Gå og løs oppgaver på vei ned mot byen mens du oppdager Oslos industrihistorie. Ca. 5 km, omtrent 1,5 timer.',
+      tour2Title:     'Oslo og Norges tilblivelse',
+      tour2Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom historien om hvordan Oslo og Norge ble det de er i dag — gjennom konflikt, kultur og selvstendighet. Ca. 4–5 km, omtrent én time.',
+      tour3Title:     'Oslos store høydepunkter',
+      tour3Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom et utvalg av byens viktigste severdigheter. Ca. 4–5 km, omtrent én time.',
+      tour4Title:     'Oslo sentrum-turen',
+      tour4Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom kjente og mindre kjente steder i sentrum. Ca. 4–5 km, omtrent én time.',
       tip4:           '⚠️ Oversettelser er gjort fra engelsk ved hjelp av maskin — visse feil kan forekomme. Si fra om noe er rart!',
       aboutEyebrow:   'Prosjektet',
       aboutTitle:     'Om Los!',
@@ -128,12 +128,12 @@ const t = {
       finishBody:     '¡Enhorabuena, has completado la ruta! Pero aquí es donde comienza tu verdadera aventura en Oslo. Te hemos llevado a uno de los muchos lugares maravillosos del centro de la ciudad; desde aquí puedes dirigirte fácilmente a donde desees.<br><br>Esperamos que hayas disfrutado de la ruta. Si deseas dejarnos tus comentarios, puedes hacerlo a través de este <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario</a>. Tus comentarios nos ayudan a mejorar la aplicación y a desarrollar futuras rutas.<br><br>¡Que disfrutes de tu estancia en Oslo!',
       tour1Title:     'Ruta por el centro',
       tour1Desc:      'La primera ruta comienza junto al Nationaltheatret y te lleva por la zona centro-occidental de la ciudad. La ruta te permite conocer a personas y lugares locales. El recorrido es de unos 4–5 km, según el camino que elijas, y dura aproximadamente una hora.',
-      tour2Title:     'Lo mejor de Oslo',
-      tour2Desc:      'Desde el final de Karl Johan, esta ruta te lleva por una selección de los principales puntos de interés de Oslo. Perfecta si quieres ver los imprescindibles. Unos 4–5 km, aproximadamente una hora.',
-      tour3Title:     'Ruta por el centro de Oslo',
-      tour3Desc:      'Desde el final de Karl Johan, esta ruta recorre lugares conocidos y poco conocidos del centro de la ciudad, destacando eventos históricos. Unos 4–5 km, aproximadamente una hora.',
-      tour4Title:     'Akerselva y el pasado industrial de Oslo',
-      tour4Desc:      'La ruta comienza en Nydalen — toma el T-bane y encuentra el río más cercano: ¡Akerselva! Camina y resuelve tareas hacia el centro, descubriendo el pasado industrial de Oslo. Unos 5 km, aproximadamente 1,5 horas.',
+      tour2Title:     'Oslo y el nacimiento de Noruega',
+      tour2Desc:      'Desde el final de Karl Johan, esta ruta te lleva por la historia de cómo Oslo y Noruega llegaron a ser lo que son hoy — a través del conflicto, la cultura y la independencia. Unos 4–5 km, aproximadamente una hora.',
+      tour3Title:     'Lo mejor de Oslo',
+      tour3Desc:      'Desde el final de Karl Johan, esta ruta te lleva por una selección de los principales puntos de interés de Oslo. Unos 4–5 km, aproximadamente una hora.',
+      tour4Title:     'Ruta por el centro de Oslo',
+      tour4Desc:      'Desde el final de Karl Johan, esta ruta recorre lugares conocidos y poco conocidos del centro de la ciudad. Unos 4–5 km, aproximadamente una hora.',
       tip4:           '⚠️ Las traducciones se realizan desde el inglés mediante máquina — pueden producirse ciertos errores. ¡Comúnicanos si algo te molesta!',
       aboutEyebrow:   'El proyecto',
       aboutTitle:     'Acerca de Los!',
@@ -171,12 +171,12 @@ const t = {
       finishBody:     'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Aber hier beginnt dein eigentliches Abenteuer in Oslo. Wir haben dich zu einem der vielen schönen Orte im Stadtzentrum geführt; von hier aus kannst du leicht deinen Weg dorthin finden, wohin du möchtest.<br><br>Wir hoffen, dass dir die Tour gefallen hat. Wenn du uns Feedback hinterlassen möchtest, kannst du das über dieses <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Formular</a> tun. Dein Feedback hilft uns, die App zu verbessern und zukünftige Touren zu entwickeln.<br><br>Genieß deinen Aufenthalt in Oslo!',
       tour1Title:     'Stadtzentrum-Tour',
       tour1Desc:      'Die erste Tour beginnt am Nationaltheatret und führt dich durch den zentral-westlichen Teil der Stadt. Unterwegs lernst du Menschen und Orte kennen. Der Weg ist etwa 4–5 km lang und dauert ungefähr eine Stunde.',
-      tour2Title:     'Oslos größte Highlights',
-      tour2Desc:      'Vom unteren Ende des Karl Johan aus nimmt dich diese Tour mit zu einer Auswahl der wichtigsten Sehenswürdigkeiten Oslos. Ca. 4–5 km, ungefähr eine Stunde.',
-      tour3Title:     'Oslo Stadtzentrum-Tour',
-      tour3Desc:      'Vom unteren Ende des Karl Johan aus führt dich diese Tour durch bekannte und weniger bekannte Orte im Stadtzentrum mit Fokus auf historische Ereignisse. Ca. 4–5 km, ungefähr eine Stunde.',
-      tour4Title:     'Akerselva und Oslos Industrievergangenheit',
-      tour4Desc:      'Die Tour beginnt in Nydalen — nimm die T-bane und finde den nächsten Fluss: Akerselva! Ca. 5 km, ungefähr 1,5 Stunden.',
+      tour2Title:     'Oslo und Norwegens Werden',
+      tour2Desc:      'Vom unteren Ende des Karl Johan aus führt dich diese Tour durch die Geschichte, wie Oslo und Norwegen wurden, was sie heute sind — durch Konflikt, Kultur und Unabhängigkeit. Ca. 4–5 km, ungefähr eine Stunde.',
+      tour3Title:     'Oslos größte Highlights',
+      tour3Desc:      'Vom unteren Ende des Karl Johan aus nimmt dich diese Tour mit zu einer Auswahl der wichtigsten Sehenswürdigkeiten Oslos. Ca. 4–5 km, ungefähr eine Stunde.',
+      tour4Title:     'Oslo Stadtzentrum-Tour',
+      tour4Desc:      'Vom unteren Ende des Karl Johan aus führt dich diese Tour durch bekannte und weniger bekannte Orte im Stadtzentrum. Ca. 4–5 km, ungefähr eine Stunde.',
       tip4:           '⚠️ Übersetzungen werden maschinell aus dem Englischen erstellt — es können Fehler auftreten. Sag uns Bescheid!',
       aboutEyebrow:   'Das Projekt',
       aboutTitle:     'Über Los!',
@@ -214,12 +214,12 @@ const t = {
       finishBody:     'Félicitations — vous avez terminé la visite\u00a0! Mais c\'est ici que commence votre véritable aventure à Oslo. Nous vous avons conduit vers l\'un des nombreux endroits merveilleux du centre-ville\u00a0; de là, vous pouvez facilement vous rendre où vous le souhaitez.<br><br>Nous espérons que cette visite vous a plu. Si vous souhaitez nous faire part de vos commentaires, vous pouvez le faire via ce <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire</a>. Vos retours nous aident à améliorer l\'application et à développer de futures visites.<br><br>Profitez bien de votre séjour à Oslo\u00a0!',
       tour1Title:     'Visite du centre-ville',
       tour1Desc:      'La première visite part du Nationaltheatret et vous emmène dans la partie centre-ouest de la ville. Vous ferez connaissance avec des personnages et des lieux locaux. Le parcours fait environ 4–5 km selon votre itinéraire et dure environ une heure.',
-      tour2Title:     'Les incontournables d’Oslo',
-      tour2Desc:      'Depuis le bas de Karl Johan, cette visite vous emène à travers une sélection des principaux sites d’Oslo. Environ 4–5 km, une heure environ.',
-      tour3Title:     'Visite du centre-ville d’Oslo',
-      tour3Desc:      'Depuis le bas de Karl Johan, cette visite vous fait découvrir des sites connus et moins connus du centre-ville. Environ 4–5 km, une heure environ.',
-      tour4Title:     'L’Akerselva et le passé industriel d’Oslo',
-      tour4Desc:      'La visite commence à Nydalen — prenez le T-bane et trouvez l’Akerselva! Environ 5 km, 1h30 environ.',
+      tour2Title:     'Oslo et la naissance de la Norvège',
+      tour2Desc:      'Depuis le bas de Karl Johan, cette visite vous guide à travers l’histoire d’Oslo et de la Norvège — conflits, culture et indépendance. Environ 4–5 km, une heure environ.',
+      tour3Title:     'Les incontournables d’Oslo',
+      tour3Desc:      'Depuis le bas de Karl Johan, cette visite vous emène à travers une sélection des principaux sites d’Oslo. Environ 4–5 km, une heure environ.',
+      tour4Title:     'Visite du centre-ville d’Oslo',
+      tour4Desc:      'Depuis le bas de Karl Johan, cette visite vous fait découvrir des sites connus et moins connus du centre-ville. Environ 4–5 km, une heure environ.',
       tip4:           '⚠️ Les traductions sont réalisées depuis l’anglais par machine — certaines erreurs peuvent survenir. N’hésitez pas à nous le signaler !',
       aboutEyebrow:   'Le projet',
       aboutTitle:     'À propos de Los!',
@@ -455,7 +455,61 @@ const t = {
           hints: ["Les structures se trouvent juste à côté du terminal de croisière.", "Ce n'est pas du poivre."]
         }
       ]
+    },
+
+    becoming: {
+      en: [
+        {
+          chapter: "Scene 1",
+          text: "Get to the square at the bottom of <b>Karl Johans gate</b>, in front of the railway station building called <b>Østbanehallen</b>. There you will find a beast that is not native to the Norwegian fauna, and some might wonder how it got there.\n\nWhich animal is standing at the square?",
+          answers: ["tiger"],
+          hints: ["It is bigger than a cat."]
+        },
+        {
+          chapter: "Scene 2",
+          text: "Tigerstaden — Tiger City — is one of Oslo’s most famous nicknames. The name has been ascribed to a poem by the great Norwegian author Bjørnstjerne Bjørnson, who wrote the lyrics for Norway’s national anthem. The tiger is meant to illustrate the many dangers that lurk in a big city.\n\nIn a dangerous city, many have sought refuge in religion. Make your way to <b>Stortinget</b> (the Norwegian Parliament). The building was opened in 1866, during a period when Norway was in a union controlled by Sweden. Right in front of the parliament, on your left when you face the square, there is a modern statue of a man who played an important role in this union.\n\nWho is the statue of?",
+          answers: ["christian fredrik", "kristian fredrik", "christian august"],
+          hints: ["He has a body — not just a torso and head."]
+        },
+        {
+          chapter: "Scene 3",
+          text: "In early 1814, Napoleon had lost the war and the Treaty of Kiel was signed. As always, the winner — amongst others Sweden — takes the spoils (Norway, then under Denmark). At the time, the man sculptured — Danish Crown Prince Christian VIII — was the governor-general in Norway, and opposed the Swedish claim. Long story short, he supported a process towards Norwegian independence, first by claiming the crown through hereditary right, before agreeing to be elected by the Norwegian Constituent Assembly on the 17th of May. That same day, the Norwegian constitution was signed.\n\nNorway did not become fully independent for another 91 years, entering a union with Sweden in August 1814.\n\nPolitics alone is not enough to build a nation. Keep walking down <b>Karl Johan</b> past Spikersuppa towards <b>Nationaltheatret</b>. Explore the building’s surroundings and find a strange-looking statue — stranger than normal.\n\nWho is the character the statue portrays?",
+          answers: ["jean de france"],
+          hints: ["The statue is beardless.", "Walk around the theatre — it is in the square on the opposite side."]
+        },
+        {
+          chapter: "Scene 4",
+          text: "Jean de France, played by Per Aabel at the National Theatre, was written by the Norwegian-Danish author Ludvig Holberg in 1744. It is about a Danish 20-year-old — Hans Frandsen — who travels to Paris and becomes obsessed with fashion. Upon his return, he is denied by his father and rejected by society. Although set in Denmark, the story resonates with a longstanding Northern European attitude towards “strange” outside influence.\n\nWhile some fear being too much, this was certainly not the case for our next character. Make your way up towards <b>Slottet</b> (the Royal Palace), where you will find a man on a horse.\n\n<i>If the Queen’s Park is open, it is a beautiful spot for a short stroll. Entrance to the left of the castle, open 18 May to 1 October.</i>\n\nWho is he?",
+          answers: ["karl johan", "jean baptiste bernadotte", "karl iii johan", "carl johan"],
+          hints: ["It is quite large — difficult to miss once you see the castle.", "Look for a small plaque at the base of the statue."]
+        },
+        {
+          chapter: "Scene 5",
+          text: "Karl Johan, the man who named the street you have been walking, was originally a French general — Jean Baptiste Bernadotte. In 1810, having recently left Napoleon’s army, he became the Crown Prince of Sweden. In 1814 he found himself to be king of potentially two Northern European countries.\n\nThe Norwegians were more interested in sovereignty with Christian Fredrik than a new union. War ensued, Norway was ill-prepared, and the country entered a union with Sweden from 1814 until finally becoming independent in 1905. Despite a turbulent start, the Norwegians grew fond of him over time.\n\nNow make your way to <b>Rådhusplassen</b> (Oslo City Hall square). In the big square, towards the sea, find the silver-coloured figure staring at the ocean.\n\nWhat is the name of the sculpture?",
+          answers: ["dykkar", "dykker", "diver"],
+          hints: ["It is very shiny.", "It is not Ola Enstad."]
+        },
+        {
+          chapter: "Scene 6",
+          text: "Make your way into <b>Akershus Festning</b> (Akershus Fortress) towards Festningsplassen. Construction of the fortress began around 1300, and it has been central to Norway’s defences ever since. Today it is the administrative headquarters of the Norwegian armed forces.\n\nOnce at Festningsplassen, you will find a statue of a large woman and a smaller man.\n\n<i>There are many cafés and restaurants close to Oslo City Hall — why not stop by Erketunet Gardsbakeri for a coffee?</i>\n\nWhat is the name of the artist?",
+          answers: ["gunnar t. janson", "gunnar janson", "janson"],
+          hints: ["It is at the centre of a large square, surrounded by trees."]
+        },
+        {
+          chapter: "Scene 7",
+          text: "The statue commemorates those who died during the German occupation of Norway from 9 April 1940 until 8 May 1945. Akershus Fortress was used by the occupying forces, and several resistance fighters were executed on its premises. When peace came, Vidkun Quisling — who had made himself head of state as a puppet for the Germans — met a similar fate at the fortress.\n\nNational identity is a result of conflict, turmoil, negotiations, cultural expressions and debate. Exit the fortress by following <b>Kirkegata</b>. Almost immediately, you will find a fashionable building with green doors and a grand entrance.\n\nWhat is the name of this building?",
+          answers: ["gamle logen"],
+          hints: ["If you reach a park, you have gone too far.", "It is next to the Otto Ruge statue."]
+        },
+        {
+          chapter: "Scene 8",
+          text: "Gamle Logen — the Old Lodge — was finished in 1839, originally built as a Freemason lodge, concert venue and ballroom. In 1849, the famous Norwegian violinist Ole Bull invited Myllargutten — the Miller Boy (Torgeir Augundsson) — to play for the urban elite. As he was about to start, his violin box would not open. After finally getting his fiddle out, all his fears disappeared.\n\nAn audience member later described the experience: <i>“The miller boy sat as one gazes loftily at the splendour of a river’s depths, and like bridges that linger over, so our seats shook at his rhythm.”</i>\n\nFor the final stop, take a right and walk down <b>Glacisgata</b> until you reach the waterfront. Follow the promenade until you find a large, architecturally striking building.\n\nWhat is the building?",
+          answers: ["opera house", "opera", "operahuset", "den norske opera", "den norske opera og ballett"],
+          hints: ["The answer can be the name of the building, or the activity that takes place there.", "Be sure to walk on the roof when you find it!"]
+        }
+      ]
     }
+
   }
 };
 
