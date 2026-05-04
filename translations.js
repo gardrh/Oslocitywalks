@@ -40,10 +40,23 @@ const t = {
       backHome:       'Back to home',
       tourComplete:   'Tour complete!',
       finishBody:     'Congratulations — you have finished the tour! Yet this is where your real adventure in Oslo begins. We have led you to one of the many wonderful places in the city centre; from here you can easily make your way to wherever you wish.<br><br>We hope you enjoyed this tour. If you would like to provide feedback, you may do so via this <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>. Your feedback helps us improve both the app and the development of future tours.<br><br>Have a lovely stay in Oslo!',
-      tour1Title:     'City Centre Tour',
-      tour1Desc:      'The first tour starts by the Nationaltheatret and takes you around the central-western part of the city. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!',
-      tour2Title:     'Akerselva & Oslo\'s Industrial Past',
-      tour2Desc:      'The tour starts at Nydalen, so take the T-bane and find the closest river — Akerselva! From there, you will walk and solve tasks on your way down towards the city, whilst discovering Oslo\'s industrial past.',
+      tour1Title:     'Westside/Seaside Tour',
+      tour1Desc:      'The first tour starts by the Nationaltheatret and takes you around the central-western part of the city, and along the seaside. The tour lets you get to know local people and places. The walk is about 4–5 km, depending on your route, and takes about one hour — depending on your skills!',
+      tour2Title:     'Oslo’s Greatest Hits',
+      tour2Desc:      'Starting at the bottom of Karl Johan, this tour takes you through a selection of the key sights in Oslo. Sometimes, all we want is to catch the highlights. If that is your jam, this is the tour for you! About 4–5 km, roughly one hour.',
+      tour3Title:     'Oslo City Centre Tour',
+      tour3Desc:      'Starting at the bottom of Karl Johan, this tour takes you through known and lesser-known sights throughout the city centre, highlighting historical events. About 4–5 km, roughly one hour.',
+      tour4Title:     'Akerselva & Oslo’s Industrial Past',
+      tour4Desc:      'The tour starts at Nydalen — take the T-bane and find the closest river: Akerselva! Walk and solve tasks on your way down towards the city, discovering Oslo’s industrial past. About 5 km, roughly 1.5 hours.',
+      tip4:           '⚠️ Translations are made from English by machine — certain errors might occur. If they bother you, please let us know!',
+      aboutEyebrow:   'The project',
+      aboutTitle:     'About Los!',
+      aboutP1:        '<em>Los</em> is a Norwegian word for a maritime pilot: a person who helps ships navigate in local waters. In the Oslofjord, you may see los-boats helping large cruise ships find their way to the docks.',
+      aboutP2:        'Los! is a <strong>free</strong>, self-guided walking tour app for Oslo. The idea is simple: show up, follow the clues, and discover the city’s history, people, and places at your own pace — no guide needed, no booking required.',
+      aboutP3:        'Each tour takes you through <strong>real streets and public spaces</strong>, stopping at statues, buildings, and landmarks that each carry a story. The answers are always somewhere nearby — look around, read the environment, and enjoy the walk.',
+      aboutP4:        'Los! is currently in a <strong>pilot stage</strong>. The first tour is live and more are in development. The app is <strong>free to use</strong>, but donations are very welcome.',
+      aboutP5:        'Los! is developed by <strong>Gard Ringen Høibjerg</strong>, and the team is motivated by helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, let us know through our <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>.',
+      finishBody:     'Congratulations — you have finished the tour! Yet this is where your real adventure in Oslo begins. We have led you to one of the many wonderful places in the city centre; from here you can easily make your way to wherever you wish.<br><br>We hope you enjoyed this tour. If you would like to provide feedback, you may do so via our <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>. Your feedback helps us improve both the app and the development of future tours.<br><br>Have a lovely stay in Oslo!',
     },
     no: {
       tagline:        'Byvandringer · Oslo',
@@ -72,8 +85,21 @@ const t = {
       finishBody:     'Gratulerer — du har fullført turen! Men dette er egentlig her eventyrene i Oslo begynner. Vi har ledet deg til et av byens mange fine steder i sentrum; herfra kan du enkelt finne veien videre dit du ønsker.<br><br>Vi håper du likte turen. Hvis du ønsker å gi tilbakemelding, kan du gjøre det via dette <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">skjemaet</a>. Tilbakemeldingene dine hjelper oss med å forbedre appen og utvikle fremtidige turer.<br><br>God tur i Oslo!',
       tour1Title:     'Sentrumsturen',
       tour1Desc:      'Den første turen starter ved Nationaltheatret og tar deg rundt i den sentrum-vestlige delen av byen. Turen lar deg bli kjent med lokale mennesker og steder. Ruten er ca. 4–5 km, avhengig av veivalg, og tar omtrent én time — avhengig av ferdighetene dine!',
-      tour2Title:     'Akerselva og Oslos industrifortid',
-      tour2Desc:      'Turen starter på Nydalen, så ta T-banen og finn nærmeste elv — Akerselva! Derfra går du og løser oppgaver på vei ned mot byen mens du oppdager Oslos industrihistorie.',
+      tour2Title:     'Oslos store høydepunkter',
+      tour2Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom et utvalg av byens viktigste severdigheter. Perfekt om du vil ta det beste av Oslo på kort tid! Ca. 4–5 km, omtrent én time.',
+      tour3Title:     'Oslo sentrum-turen',
+      tour3Desc:      'Fra bunnen av Karl Johan tar denne turen deg gjennom kjente og mindre kjente steder i sentrum, med fokus på historiske hendelser. Ca. 4–5 km, omtrent én time.',
+      tour4Title:     'Akerselva og Oslos industrifortid',
+      tour4Desc:      'Turen starter på Nydalen — ta T-banen og finn nærmeste elv: Akerselva! Gå og løs oppgaver på vei ned mot byen mens du oppdager Oslos industrihistorie. Ca. 5 km, omtrent 1,5 timer.',
+      tip4:           '⚠️ Oversettelser er gjort fra engelsk ved hjelp av maskin — visse feil kan forekomme. Si fra om noe er rart!',
+      aboutEyebrow:   'Prosjektet',
+      aboutTitle:     'Om Los!',
+      aboutP1:        '<em>Los</em> er et norsk ord for en person som hjelper skip med å navigere i lokale farvann. I Oslofjorden kan du se los-båter hjelpe store cruiseskip til kai.',
+      aboutP2:        'Los! er en <strong>gratis</strong> selvguidet byvandring for Oslo. Idéen er enkel: møt opp, følg ledetrådene og oppdag byens historie, mennesker og steder i ditt eget tempo — ingen guide nødvendig, ingen bestilling.',
+      aboutP3:        'Hver tur tar deg gjennom <strong>ekte gater og offentlige rom</strong>, med stopp ved statuer, bygninger og landemerker som alle bærer en historie. Svarene er alltid i nærheten — se deg rundt og nyt turen.',
+      aboutP4:        'Los! er for øyeblikket i en <strong>pilotfase</strong>. Den første turen er live og flere er under utvikling. Appen er <strong>gratis å bruke</strong>, men donasjoner mottas med takk.',
+      aboutP5:        'Los! er utviklet av <strong>Gard Ringen Høibjerg</strong>. Har du tilbakemeldinger, finner du feil, eller ønsker å ta kontakt, gi oss gjerne beskjed via vårt <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">tilbakemeldingsskjema</a>.',
+      finishBody:     'Gratulerer — du har fullført turen! Men dette er egentlig her eventyrene i Oslo begynner. Vi har ledet deg til et av byens mange flotte steder i sentrum; herfra kan du enkelt finne veien videre dit du ønsker.<br><br>Vi håper du likte turen. Tilbakemeldinger mottas gjerne via vårt <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">skjema</a>. God tur i Oslo!',
     },
     es: {
       tagline:        'Rutas a pie · Oslo',
@@ -102,8 +128,21 @@ const t = {
       finishBody:     '¡Enhorabuena, has completado la ruta! Pero aquí es donde comienza tu verdadera aventura en Oslo. Te hemos llevado a uno de los muchos lugares maravillosos del centro de la ciudad; desde aquí puedes dirigirte fácilmente a donde desees.<br><br>Esperamos que hayas disfrutado de la ruta. Si deseas dejarnos tus comentarios, puedes hacerlo a través de este <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario</a>. Tus comentarios nos ayudan a mejorar la aplicación y a desarrollar futuras rutas.<br><br>¡Que disfrutes de tu estancia en Oslo!',
       tour1Title:     'Ruta por el centro',
       tour1Desc:      'La primera ruta comienza junto al Nationaltheatret y te lleva por la zona centro-occidental de la ciudad. La ruta te permite conocer a personas y lugares locales. El recorrido es de unos 4–5 km, según el camino que elijas, y dura aproximadamente una hora.',
-      tour2Title:     'Akerselva y el pasado industrial de Oslo',
-      tour2Desc:      'La ruta comienza en Nydalen, así que toma el T-bane y busca el río más cercano: ¡el Akerselva! Desde allí caminarás resolviendo tareas en dirección al centro de la ciudad, descubriendo el pasado industrial de Oslo.',
+      tour2Title:     'Lo mejor de Oslo',
+      tour2Desc:      'Desde el final de Karl Johan, esta ruta te lleva por una selección de los principales puntos de interés de Oslo. Perfecta si quieres ver los imprescindibles. Unos 4–5 km, aproximadamente una hora.',
+      tour3Title:     'Ruta por el centro de Oslo',
+      tour3Desc:      'Desde el final de Karl Johan, esta ruta recorre lugares conocidos y poco conocidos del centro de la ciudad, destacando eventos históricos. Unos 4–5 km, aproximadamente una hora.',
+      tour4Title:     'Akerselva y el pasado industrial de Oslo',
+      tour4Desc:      'La ruta comienza en Nydalen — toma el T-bane y encuentra el río más cercano: ¡Akerselva! Camina y resuelve tareas hacia el centro, descubriendo el pasado industrial de Oslo. Unos 5 km, aproximadamente 1,5 horas.',
+      tip4:           '⚠️ Las traducciones se realizan desde el inglés mediante máquina — pueden producirse ciertos errores. ¡Comúnicanos si algo te molesta!',
+      aboutEyebrow:   'El proyecto',
+      aboutTitle:     'Acerca de Los!',
+      aboutP1:        '<em>Los</em> es una palabra noruega que designa al práctico marítimo: la persona que ayuda a los barcos a navegar por aguas locales. En el fiordo de Oslo, puede verse cómo los barcos prácticos guían a los grandes cruceros hasta el muelle.',
+      aboutP2:        'Los! es una aplicación <strong>gratuita</strong> de visitas autoguiadas a pie por Oslo. La idea es sencilla: preséntate, sigue las pistas y descubre la historia, las personas y los lugares de la ciudad a tu propio ritmo.',
+      aboutP3:        'Cada ruta te lleva por <strong>calles reales y espacios públicos</strong>, deteniéndose en estatuas, edificios y lugares emblemáticos. Las respuestas siempre están cerca — mira a tu alrededor y disfruta del paseo.',
+      aboutP4:        'Los! se encuentra actualmente en una <strong>fase piloto</strong>. La primera ruta está activa y se están desarrollando más. La app es <strong>gratuita</strong>, pero las donaciones son muy bienvenidas.',
+      aboutP5:        'Los! está desarrollada por <strong>Gard Ringen Høibjerg</strong>. Si tienes comentarios o quieres ponerte en contacto, háznoslo saber a través de nuestro <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario de comentarios</a>.',
+      finishBody:     '¡Enhorabuena — has completado la ruta! Pero aquí es donde comienza tu verdadera aventura en Oslo. Te hemos llevado a uno de los muchos lugares maravillosos del centro de la ciudad.<br><br>Esperamos que hayas disfrutado de la ruta. Puedes dejarnos tus comentarios a través de nuestro <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario</a>. ¡Que disfrutes de tu estancia en Oslo!',
     },
     de: {
       tagline:        'Stadtführungen zu Fuß · Oslo',
@@ -132,8 +171,21 @@ const t = {
       finishBody:     'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Aber hier beginnt dein eigentliches Abenteuer in Oslo. Wir haben dich zu einem der vielen schönen Orte im Stadtzentrum geführt; von hier aus kannst du leicht deinen Weg dorthin finden, wohin du möchtest.<br><br>Wir hoffen, dass dir die Tour gefallen hat. Wenn du uns Feedback hinterlassen möchtest, kannst du das über dieses <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Formular</a> tun. Dein Feedback hilft uns, die App zu verbessern und zukünftige Touren zu entwickeln.<br><br>Genieß deinen Aufenthalt in Oslo!',
       tour1Title:     'Stadtzentrum-Tour',
       tour1Desc:      'Die erste Tour beginnt am Nationaltheatret und führt dich durch den zentral-westlichen Teil der Stadt. Unterwegs lernst du Menschen und Orte kennen. Der Weg ist etwa 4–5 km lang und dauert ungefähr eine Stunde.',
-      tour2Title:     'Akerselva und Oslos Industrievergangenheit',
-      tour2Desc:      'Die Tour beginnt in Nydalen — nimm die T-bane und finde den nächsten Fluss: den Akerselva! Von dort gehst du auf dem Weg in die Innenstadt und löst Aufgaben, während du Oslos Industriegeschichte entdeckst.',
+      tour2Title:     'Oslos größte Highlights',
+      tour2Desc:      'Vom unteren Ende des Karl Johan aus nimmt dich diese Tour mit zu einer Auswahl der wichtigsten Sehenswürdigkeiten Oslos. Ca. 4–5 km, ungefähr eine Stunde.',
+      tour3Title:     'Oslo Stadtzentrum-Tour',
+      tour3Desc:      'Vom unteren Ende des Karl Johan aus führt dich diese Tour durch bekannte und weniger bekannte Orte im Stadtzentrum mit Fokus auf historische Ereignisse. Ca. 4–5 km, ungefähr eine Stunde.',
+      tour4Title:     'Akerselva und Oslos Industrievergangenheit',
+      tour4Desc:      'Die Tour beginnt in Nydalen — nimm die T-bane und finde den nächsten Fluss: Akerselva! Ca. 5 km, ungefähr 1,5 Stunden.',
+      tip4:           '⚠️ Übersetzungen werden maschinell aus dem Englischen erstellt — es können Fehler auftreten. Sag uns Bescheid!',
+      aboutEyebrow:   'Das Projekt',
+      aboutTitle:     'Über Los!',
+      aboutP1:        '<em>Los</em> ist ein norwegisches Wort für einen Lotsen: eine Person, die Schiffe durch lokale Gewässer navigiert. Im Oslofjord kann man los-Boote sehen, die großen Kreuzfahrtschiffen den Weg zum Hafen weisen.',
+      aboutP2:        'Los! ist eine <strong>kostenlose</strong> App für selbstgeführte Stadtrundgänge in Oslo. Komm vorbei, folge den Hinweisen und entdecke die Geschichte der Stadt in deinem eigenen Tempo.',
+      aboutP3:        'Jede Tour führt dich durch <strong>echte Straßen und öffentliche Räume</strong> mit Stopps an Statuen, Gebäuden und Wahrzeichen. Die Antworten sind immer in der Nähe — schau dich um und genieß den Spaziergang.',
+      aboutP4:        'Los! befindet sich derzeit in einer <strong>Pilotphase</strong>. Die erste Tour ist live und weitere sind in Entwicklung. Die App ist <strong>kostenlos</strong>, aber Spenden sind sehr willkommen.',
+      aboutP5:        'Los! wurde von <strong>Gard Ringen Høibjerg</strong> entwickelt. Feedback oder Fragen gerne über unser <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Feedback-Formular</a>.',
+      finishBody:     'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Aber hier beginnt dein eigentliches Abenteuer in Oslo. Wir haben dich zu einem der vielen schönen Orte im Stadtzentrum geführt.<br><br>Wir hoffen, dass dir die Tour gefallen hat. Feedback gerne über unser <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Formular</a>. Genieß deinen Aufenthalt in Oslo!',
     },
     fr: {
       tagline:        'Visites à pied · Oslo',
@@ -162,14 +214,27 @@ const t = {
       finishBody:     'Félicitations — vous avez terminé la visite\u00a0! Mais c\'est ici que commence votre véritable aventure à Oslo. Nous vous avons conduit vers l\'un des nombreux endroits merveilleux du centre-ville\u00a0; de là, vous pouvez facilement vous rendre où vous le souhaitez.<br><br>Nous espérons que cette visite vous a plu. Si vous souhaitez nous faire part de vos commentaires, vous pouvez le faire via ce <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire</a>. Vos retours nous aident à améliorer l\'application et à développer de futures visites.<br><br>Profitez bien de votre séjour à Oslo\u00a0!',
       tour1Title:     'Visite du centre-ville',
       tour1Desc:      'La première visite part du Nationaltheatret et vous emmène dans la partie centre-ouest de la ville. Vous ferez connaissance avec des personnages et des lieux locaux. Le parcours fait environ 4–5 km selon votre itinéraire et dure environ une heure.',
-      tour2Title:     'L\'Akerselva et le passé industriel d\'Oslo',
-      tour2Desc:      'La visite commence à Nydalen — prenez le T-bane et trouvez la rivière la plus proche\u00a0: l\'Akerselva\u00a0! De là, vous marcherez en résolvant des énigmes en direction du centre-ville, tout en découvrant le passé industriel d\'Oslo.',
+      tour2Title:     'Les incontournables d’Oslo',
+      tour2Desc:      'Depuis le bas de Karl Johan, cette visite vous emène à travers une sélection des principaux sites d’Oslo. Environ 4–5 km, une heure environ.',
+      tour3Title:     'Visite du centre-ville d’Oslo',
+      tour3Desc:      'Depuis le bas de Karl Johan, cette visite vous fait découvrir des sites connus et moins connus du centre-ville. Environ 4–5 km, une heure environ.',
+      tour4Title:     'L’Akerselva et le passé industriel d’Oslo',
+      tour4Desc:      'La visite commence à Nydalen — prenez le T-bane et trouvez l’Akerselva! Environ 5 km, 1h30 environ.',
+      tip4:           '⚠️ Les traductions sont réalisées depuis l’anglais par machine — certaines erreurs peuvent survenir. N’hésitez pas à nous le signaler !',
+      aboutEyebrow:   'Le projet',
+      aboutTitle:     'À propos de Los!',
+      aboutP1:        '<em>Los</em> est un mot norvégien désignant le pilote maritime. Dans le fjord d’Oslo, on peut voir des bateaux-pilotes guider les grands navires de croisière jusqu’aux quais.',
+      aboutP2:        'Los! est une application de visites <strong>gratuites</strong> et autoguides à pied à Oslo. Venez, suivez les indices et découvrez la ville à votre rythme.',
+      aboutP3:        'Chaque visite vous mène à travers de <strong>vraies rues et espaces publics</strong>, avec des arrêts à des statues, des bâtiments et des monuments. Les réponses sont toujours à proximité — profitez de la balade.',
+      aboutP4:        'Los! est actuellement en <strong>phase pilote</strong>. La première visite est en ligne et d’autres sont en développement. L’app est <strong>gratuite</strong>, mais les dons sont les bienvenus.',
+      aboutP5:        'Los! est développé par <strong>Gard Ringen Høibjerg</strong>. Pour tout commentaire, contactez-nous via notre <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire de retour</a>.',
+      finishBody:     'Félicitations — vous avez terminé la visite ! Mais c’est ici que commence votre véritable aventure à Oslo. Nous vous avons conduit vers l’un des nombreux endroits merveilleux du centre-ville.<br><br>Vos retours sont les bienvenus via notre <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire</a>. Profitez bien de votre séjour à Oslo !',
     }
   },
 
   /* ── SCENE DATA BY LANGUAGE ── */
   scenes: {
-    citycentre: {
+    seaside: {
       en: [
         {
           chapter: "Scene 1",
@@ -468,6 +533,11 @@ function applyTranslations() {
   _set('tour2Title',    T('tour2Title'));
   _set('tour2Desc',     T('tour2Desc'));
   _setText('soonBadge', T('soon'));
+  _set('tip4',          T('tip4'));
+  _set('tour3Title',    T('tour3Title'));
+  _set('tour3Desc',     T('tour3Desc'));
+  _set('tour4Title',    T('tour4Title'));
+  _set('tour4Desc',     T('tour4Desc'));
   document.querySelectorAll('.tour-start-btn').forEach(btn => {
     btn.innerHTML = T('startTour') + ' <span class="arrow">→</span>';
   });
@@ -479,6 +549,15 @@ function applyTranslations() {
   if (ansBtn)  ansBtn.textContent  = T('answer');
   if (hintBtn) hintBtn.innerHTML   = T('hint');
   if (input)   input.placeholder   = T('answerPlaceholder');
+
+  // ── About page (about.html) ──
+  _set('aboutEyebrow',  T('aboutEyebrow'));
+  _set('aboutTitle',    T('aboutTitle'));
+  _set('aboutP1',       T('aboutP1'));
+  _set('aboutP2',       T('aboutP2'));
+  _set('aboutP3',       T('aboutP3'));
+  _set('aboutP4',       T('aboutP4'));
+  _set('aboutP5',       T('aboutP5'));
 
   // ── Finish page (finish.html) ──
   _setText('finishTourComplete', T('tourComplete'));
