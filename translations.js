@@ -507,6 +507,210 @@ const t = {
           answers: ["opera house", "opera", "operahuset", "den norske opera", "den norske opera og ballett"],
           hints: ["The answer can be the name of the building, or the activity that takes place there.", "Be sure to walk on the roof when you find it!"]
         }
+      ],
+
+      no: [
+        {
+          chapter: "Scene 1",
+          text: "Gå til plassen nederst i <b>Karl Johans gate</b>, foran jernbanestasjonen <b>Østbanehallen</b>. Der vil du finne et dyr som ikke er hjemmehørende i norsk fauna — og mange lurer på hvordan det havnet der.\n\nHvilket dyr står på plassen?",
+          answers: ["tiger"],
+          hints: ["Det er større enn en katt."]
+        },
+        {
+          chapter: "Scene 2",
+          text: "Tigerstaden er et av Oslos mest kjente kallenavn. Navnet stammer fra et dikt av Bjørnstjerne Bjørnson, som også skrev teksten til Norges nasjonalsang. Tigeren er ment å illustrere farene som lurer i en stor by.\n\nI en farlig by har mange søkt tilflukt i religion. Gå til <b>Stortinget</b>. Bygningen åpnet i 1866, da Norge var i union med Sverige. Rett foran parlamentet, på venstre side, står en moderne statue av en mann som spilte en viktig rolle i denne unionen.\n\nHvem forestiller statuen?",
+          answers: ["christian fredrik", "kristian fredrik", "christian august"],
+          hints: ["Han har en kropp — ikke bare overkropp og hode."]
+        },
+        {
+          chapter: "Scene 3",
+          text: "Tidlig i 1814 hadde Napoleon tapt krigen og Kieltraktaten ble undertegnet. Som alltid tar vinnerne (bl.a. Sverige) byttet (Norge, da under Danmark). Den avbildede — dansk kronprins Christian VIII — var da stattholder i Norge og motarbeidet de svenske kravene. Han støttet en prosess mot norsk selvstendighet, og ble valgt av Riksforsamlingen den 17. mai. Samme dag ble grunnloven undertegnet.\n\nNorge ble likevel ikke fullt ut selvstendig på 91 år, da landet inngått union med Sverige i august 1814.\n\nGå videre nedover <b>Karl Johan</b> forbi Spikersuppa mot <b>Nationaltheatret</b>. Utforsk omgivelsene og finn en merkelig statue.\n\nHvilken person fremstiller statuen?",
+          answers: ["jean de france"],
+          hints: ["Statuen er skjeggfri.", "Gå rundt teateret — den er på plassen på den andre siden."]
+        },
+        {
+          chapter: "Scene 4",
+          text: "Jean de France, fremført av Per Aabel ved Nationaltheatret, ble skrevet av Ludvig Holberg i 1744. Stükket handler om den danske 20-åringen Hans Frandsen, som reiser til Paris og blir besatt av mote. Ved hjemkomsten avvises han av faren og det danske samfunnet.\n\nGå opp mot <b>Slottet</b>, der du vil finne en mann til hest.\n\n<i>Hvis Dronningens park er åpen, er det et flott sted for en liten spasertur. Inngang til venstre for slottet, åpent 18. mai til 1. oktober.</i>\n\nHvem er han?",
+          answers: ["karl johan", "jean baptiste bernadotte", "karl iii johan", "carl johan"],
+          hints: ["Ganske stor — vanskelig å gå glipp av når du ser slottet.", "Se etter en liten plakett på sokkelen."]
+        },
+        {
+          chapter: "Scene 5",
+          text: "Karl Johan, mannen som har gitt navn til gaten du har gått langs, var opprinnelig den franske generalen Jean Baptiste Bernadotte. I 1810 ble han kronprins av Sverige. I 1814 så han seg som potensiell konge av to nordeuropeiske land.\n\nNordmennene foretrakk selvstendighet med Christian Fredrik fremfor ny union. Krig fulgte, Norge var dårlig forberedt, og landet gikk inn i union med Sverige fra 1814 til selvstendigheten i 1905.\n\nGå til <b>Rådhusplassen</b>. I den store plassen mot sjøen, finn den sølvfargede figuren som stirrer utover havet.\n\nHva er navnet på skulpturen?",
+          answers: ["dykkar", "dykker", "diver"],
+          hints: ["Den er veldig blank.", "Det er ikke Ola Enstad."]
+        },
+        {
+          chapter: "Scene 6",
+          text: "Gå inn i <b>Akershus festning</b> mot Festningsplassen. Byggingen begynte rundt år 1300 og festningen har vært sentral i Norges forsvar siden da. I dag er det administrativt senter for Forsvaret.\n\nPå Festningsplassen finner du en statue av en stor kvinne og en mindre mann.\n\n<i>Det er mange kafeer nær Oslo Rådhus — stopp gjerne innom Erketunet Gardsbakeri.</i>\n\nHva heter kunstneren?",
+          answers: ["gunnar t. janson", "gunnar janson", "janson"],
+          hints: ["Den står på midten av en stor plass omgitt av trær."]
+        },
+        {
+          chapter: "Scene 7",
+          text: "Statuen minnes dem som døde under den tyske okkupasjonen av Norge fra 9. april 1940 til 8. mai 1945. Akershus festning ble brukt av okkupantene, og flere motstandsfolk ble henrettet her. Da freden kom, møtte Vidkun Quisling — som hadde gjort seg til statssjef som tysk marionett — samme skjebne.\n\nNasjonale identiteter formes gjennom konflikt, kamp, kultur og debatt. Gå ut av festningen langs <b>Kirkegata</b>. Nesten umiddelbart vil du finne en stilig bygning med grønne dører.\n\nHva heter bygningen?",
+          answers: ["gamle logen"],
+          hints: ["Har du nådd en park, har du gått for langt.", "Den ligger ved siden av Otto Ruge-statuen."]
+        },
+        {
+          chapter: "Scene 8",
+          text: "Gamle Logen sto ferdig i 1839, opprinnelig bygget som frimurerloge, konsertsal og ballsal. I 1849 inviterte den berømte fiolinisten Ole Bull Myllargutten — Torgeir Augundsson — til å spille for byens elite. Da han endelig fikk fatt i fela si, forsvant alle nervene.\n\nEt publikumsmedlem beskrev opplevelsen: <i>«Gutten satt som en som med ophøiet blik stirrer ind i en elvs dybder, og ligesom broer der hviler over, så skjalv våre seter i hans takt.»</i>\n\nFor den siste stansen, ta til høyre ned <b>Glacisgata</b> til sjøen. Følg promenaden til du finner en stor og arkitektonisk imponerende bygning.\n\nHva er bygningen?",
+          answers: ["opera house", "opera", "operahuset", "den norske opera", "den norske opera og ballett"],
+          hints: ["Svaret kan være navnet på bygningen eller aktiviteten som skjer der.", "Husk å ta en tur på taket!"]
+        }
+      ],
+
+      es: [
+        {
+          chapter: "Escena 1",
+          text: "Dirígete a la plaza al final de <b>Karl Johans gate</b>, frente al edificio de la estación de tren <b>Østbanehallen</b>. Allí encontrarás una bestia que no es nativa de la fauna noruega. ¿Cómo llegó hasta aquí?\n\n¿Qué animal hay en la plaza?",
+          answers: ["tiger", "tigre"],
+          hints: ["Es más grande que un gato."]
+        },
+        {
+          chapter: "Escena 2",
+          text: "Tigerstaden — Ciudad del Tigre — es uno de los apodos más famosos de Oslo. El nombre proviene de un poema de Bjørnstjerne Bjørnson, quien también escribió la letra del himno nacional noruego. El tigre representa los muchos peligros que acechan en una gran ciudad.\n\nEn una ciudad peligrosa, muchos han buscado refugio en la religión. Dirígete al <b>Stortinget</b> (el Parlamento noruego). El edificio se inauguró en 1866, cuando Noruega estaba en una unión controlada por Suecia. Justo frente al parlamento, a tu izquierda, hay una estatua moderna de un hombre que jugó un papel importante.\n\n¿Quién representa la estatua?",
+          answers: ["christian fredrik", "kristian fredrik", "christian august"],
+          hints: ["Tiene cuerpo completo, no solo busto y cabeza."]
+        },
+        {
+          chapter: "Escena 3",
+          text: "A principios de 1814, Napoleón había perdido la guerra y se firmó el Tratado de Kiel. El vencedor — entre otros Suecia — se queda con el botín (Noruega, entonces bajo Dinamarca). El hombre representado — el príncipe heredero danés Christian VIII — era entonces gobernador general de Noruega y se opuso a las pretensiones suecas. Apoyó la independencia noruega y fue elegido por la Asamblea Constituyente el 17 de mayo. Ese mismo día se firmó la constitución noruega.\n\nSigue por <b>Karl Johan</b> hacia el <b>Nationaltheatret</b>. Explora los alrededores y encuentra una estatua peculiar.\n\n¿Qué personaje representa la estatua?",
+          answers: ["jean de france"],
+          hints: ["La estatua no tiene barba.", "Rodea el teatro — está en la plaza del lado opuesto."]
+        },
+        {
+          chapter: "Escena 4",
+          text: "Jean de France, interpretado por Per Aabel en el Teatro Nacional, fue escrito por Ludvig Holberg en 1744. Trata de un joven danés de 20 años que viaja a París y se obsesiona con la moda. Al volver, su padre lo rechaza.\n\nDirígete hacia el <b>Slottet</b> (el Palacio Real), donde encontrarás a un hombre a caballo.\n\n<i>Si el Parque de la Reina está abierto, es un lugar precioso. Entrada a la izquierda del palacio, abierto del 18 de mayo al 1 de octubre.</i>\n\n¿Quién es?",
+          answers: ["karl johan", "jean baptiste bernadotte", "karl iii johan", "carl johan"],
+          hints: ["Es bastante grande — difícil de perderse frente al castillo.", "Busca una pequeña placa en la base de la estatua."]
+        },
+        {
+          chapter: "Escena 5",
+          text: "Karl Johan, quien dio nombre a la calle que has recorrido, era originalmente un general francés — Jean Baptiste Bernadotte. En 1810 se convirtió en príncipe heredero de Suecia. En 1814 se encontró como posible rey de dos países nórdicos.\n\nLos noruegos preferían la soberanía con Christian Fredrik. Hubo guerra, Noruega estaba mal preparada, y el país entró en unión con Suecia desde 1814 hasta la independencia en 1905.\n\nDirígete a <b>Rådhusplassen</b>. En la gran plaza, hacia el mar, encuentra la figura plateada que mira al océano.\n\n¿Cuál es el nombre de la escultura?",
+          answers: ["dykkar", "dykker", "diver", "buceador"],
+          hints: ["Es muy brillante.", "No es Ola Enstad."]
+        },
+        {
+          chapter: "Escena 6",
+          text: "Entra en la <b>Fortaleza de Akershus</b> hacia Festningsplassen. La construcción comenzó alrededor del año 1300 y ha sido clave en la defensa de Noruega. Hoy es la sede administrativa de las fuerzas armadas noruegas.\n\nEn Festningsplassen encontrarás una estatua de una mujer grande y un hombre más pequeño.\n\n<i>Hay muchos cafés cerca del Ayuntamiento de Oslo — ¡anímate a parar en Erketunet Gardsbakeri!</i>\n\n¿Cuál es el nombre del artista?",
+          answers: ["gunnar t. janson", "gunnar janson", "janson"],
+          hints: ["Está en el centro de una gran plaza rodeada de árboles."]
+        },
+        {
+          chapter: "Escena 7",
+          text: "La estatua conmemora a quienes murieron durante la ocupación alemana de Noruega del 9 de abril de 1940 al 8 de mayo de 1945. La Fortaleza de Akershus fue utilizada por las fuerzas de ocupación y varios resistentes fueron ejecutados allí. Al llegar la paz, Vidkun Quisling — quien se hizo jefe de estado como títere de los alemanes — corrió la misma suerte.\n\nSal de la fortaleza por <b>Kirkegata</b>. Casi de inmediato encontrarás un elegante edificio con puertas verdes.\n\n¿Cuál es el nombre de este edificio?",
+          answers: ["gamle logen"],
+          hints: ["Si llegas a un parque, has ido demasiado lejos.", "Está junto a la estatua de Otto Ruge."]
+        },
+        {
+          chapter: "Escena 8",
+          text: "Gamle Logen — la Logia Antigua — se terminó en 1839, construida como logia masónica, sala de conciertos y salón de baile. En 1849, el famoso violinista Ole Bull invitó a Myllargutten — Torgeir Augundsson — a tocar para la élite urbana. Cuando finalmente logró sacar su violín, todos sus miedos desaparecieron.\n\nUn espectador describió la experiencia: <i>“El molinero se sentó como quien contempla las profundidades de un río, y como puentes que se mecen, nuestros asientos temblaron a su ritmo.”</i>\n\nPara la última parada, gira a la derecha por <b>Glacisgata</b> hasta el paseo marítimo. Sigue el paseo hasta encontrar un edificio arquitectónicamente impresionante.\n\n¿Cuál es el edificio?",
+          answers: ["opera house", "opera", "operahuset", "den norske opera", "ópera"],
+          hints: ["La respuesta puede ser el nombre del edificio o la actividad que se realiza allí.", "¡Sube al tejado cuando lo encuentres!"]
+        }
+      ],
+
+      de: [
+        {
+          chapter: "Szene 1",
+          text: "Geh auf den Platz am unteren Ende der <b>Karl Johans gate</b>, vor dem Bahnhofsgebäude <b>Østbanehallen</b>. Dort findest du ein Tier, das in Norwegen nicht heimisch ist.\n\nWelches Tier steht auf dem Platz?",
+          answers: ["tiger"],
+          hints: ["Es ist größer als eine Katze."]
+        },
+        {
+          chapter: "Szene 2",
+          text: "Tigerstaden — Tigerstadt — ist einer der bekanntesten Spitznamen Oslos. Der Name geht auf ein Gedicht von Bjørnstjerne Bjørnson zurück, der auch den Text der norwegischen Nationalhymne schrieb. Der Tiger soll die Gefahren einer Großstadt symbolisieren.\n\nIn einer gefährlichen Stadt haben viele Zuflucht in der Religion gesucht. Geh zum <b>Stortinget</b> (dem norwegischen Parlament), 1866 eröffnet, als Norwegen in einer von Schweden kontrollierten Union war. Direkt vor dem Parlament, links, steht eine moderne Statue eines Mannes, der eine wichtige Rolle spielte.\n\nWen stellt die Statue dar?",
+          answers: ["christian fredrik", "kristian fredrik", "christian august"],
+          hints: ["Er hat einen vollständigen Körper — nicht nur Oberkörper und Kopf."]
+        },
+        {
+          chapter: "Szene 3",
+          text: "Anfang 1814 hatte Napoleon den Krieg verloren und der Kieler Vertrag wurde unterzeichnet. Der Sieger — u.a. Schweden — nimmt die Beute (Norwegen, damals unter Dänemark). Der Abgebildete — dänischer Kronprinz Christian VIII. — war damals Generalgouverneur in Norwegen und widersetzte sich den schwedischen Ansprüchen. Er unterstützte den Weg zur Unabhängigkeit und wurde am 17. Mai von der Nationalversammlung gewählt. An diesem Tag wurde die norwegische Verfassung unterzeichnet.\n\nGeh weiter die <b>Karl Johan</b> entlang zum <b>Nationaltheatret</b>. Erkunde die Umgebung und finde eine seltsam aussehende Statue.\n\nWelche Figur stellt die Statue dar?",
+          answers: ["jean de france"],
+          hints: ["Die Statue ist bartlos.", "Geh um das Theater herum — sie steht auf dem Platz auf der gegenüberliegenden Seite."]
+        },
+        {
+          chapter: "Szene 4",
+          text: "Jean de France, gespielt von Per Aabel am Nationaltheater, wurde 1744 von Ludvig Holberg geschrieben. Es geht um den 20-jährigen Dänen Hans Frandsen, der nach Paris reist und von der Mode besessen wird. Bei seiner Rückkehr wird er von seinem Vater abgewiesen.\n\nGeh hinauf zum <b>Slottet</b> (dem Königlichen Schloss), wo du einen Mann zu Pferd findest.\n\n<i>Wenn der Königinnenpark geöffnet ist, lohnt sich ein kurzer Spaziergang. Eingang links vom Schloss, geöffnet 18. Mai bis 1. Oktober.</i>\n\nWer ist er?",
+          answers: ["karl johan", "jean baptiste bernadotte", "karl iii johan", "carl johan"],
+          hints: ["Ziemlich groß — schwer zu übersehen, wenn du das Schloss siehst.", "Suche nach einem kleinen Schild am Sockel der Statue."]
+        },
+        {
+          chapter: "Szene 5",
+          text: "Karl Johan, der der Straße seinen Namen gab, war ursprünglich der französische General Jean Baptiste Bernadotte. 1810 wurde er Kronprinz von Schweden. 1814 sah er sich als möglichen König zweier nordeuropäischer Länder.\n\nDie Norweger bevorzugten die Souveränität mit Christian Fredrik. Es kam zum Krieg, Norwegen war schlecht vorbereitet, und das Land trat 1814 einer Union mit Schweden bei — bis zur Unabhängigkeit 1905.\n\nGeh zum <b>Rådhusplassen</b>. Auf dem großen Platz, Richtung Meer, finde die silberfarbene Figur, die auf den Ozean blickt.\n\nWie heißt die Skulptur?",
+          answers: ["dykkar", "dykker", "diver", "taucher"],
+          hints: ["Sie ist sehr glänzend.", "Es ist nicht Ola Enstad."]
+        },
+        {
+          chapter: "Szene 6",
+          text: "Geh in die <b>Festung Akershus</b> zum Festningsplassen. Der Bau begann um das Jahr 1300 und die Festung war seitdem zentral für Norwegens Verteidigung. Heute ist sie der Verwaltungssitz der norwegischen Streitkräfte.\n\nAuf dem Festningsplassen findest du eine Statue einer großen Frau und eines kleineren Mannes.\n\n<i>In der Nähe des Osloer Rathauses gibt es viele Cafés — probiere das Erketunet Gardsbakeri!</i>\n\nWie heißt der Künstler?",
+          answers: ["gunnar t. janson", "gunnar janson", "janson"],
+          hints: ["Sie steht in der Mitte eines großen Platzes, umgeben von Bäumen."]
+        },
+        {
+          chapter: "Szene 7",
+          text: "Die Statue erinnert an jene, die während der deutschen Besatzung Norwegens vom 9. April 1940 bis zum 8. Mai 1945 starben. Die Festung Akershus wurde von den Besatzungstruppen genutzt und mehrere Widerstandskämpfer wurden hier hingerichtet. Als der Frieden kam, traf Vidkun Quisling — der sich als Marionette der Deutschen zum Staatsoberhaupt gemacht hatte — dasselbe Schicksal.\n\nVerlasse die Festung durch die <b>Kirkegata</b>. Fast sofort findest du ein elegantes Gebäude mit grünen Türen.\n\nWie heißt dieses Gebäude?",
+          answers: ["gamle logen"],
+          hints: ["Wenn du einen Park erreichst, bist du zu weit gegangen.", "Es liegt neben der Otto-Ruge-Statue."]
+        },
+        {
+          chapter: "Szene 8",
+          text: "Gamle Logen — die Alte Loge — wurde 1839 fertiggestellt, ursprünglich als Freimaurerloge, Konzerthaus und Ballsaal. 1849 lud der berühmte Geiger Ole Bull Myllargutten — Torgeir Augundsson — ein, für die städtische Elite zu spielen. Als er endlich seine Geige herausholte, verschwanden alle seine Ängste.\n\nEin Zuschauer beschrieb das Erlebnis: <i>”Der Müllerbub saß wie einer, der erhaben in die Tiefen eines Flusses schaut, und wie Brücken, die darüber verweilen, so bebten unsere Sitze in seinem Rhythmus.“</i>\n\nFür den letzten Stopp biege rechts in die <b>Glacisgata</b> ab bis zur Uferpromenade. Folge der Promenade, bis du ein großes, architektonisch beeindruckendes Gebäude findest.\n\nWas ist das Gebäude?",
+          answers: ["opera house", "opera", "operahuset", "den norske opera", "oper"],
+          hints: ["Die Antwort kann der Name des Gebäudes oder die dort stattfindende Aktivität sein.", "Geh unbedingt auf das Dach, wenn du es gefunden hast!"]
+        }
+      ],
+
+      fr: [
+        {
+          chapter: "Scène 1",
+          text: "Rendez-vous sur la place au bas de la <b>Karl Johans gate</b>, devant le bâtiment de la gare <b>Østbanehallen</b>. Vous y trouverez un animal qui n'est pas natif de la faune norvégienne.\n\nQuel animal se trouve sur la place ?",
+          answers: ["tiger", "tigre"],
+          hints: ["Il est plus grand qu'un chat."]
+        },
+        {
+          chapter: "Scène 2",
+          text: "Tigerstaden — la Ville du Tigre — est l'un des surnoms les plus célèbres d'Oslo. Le nom provient d'un poème de Bjørnstjerne Bjørnson, qui a également écrit les paroles de l'hymne national norvégien. Le tigre symbolise les nombreux dangers qui rôdent dans une grande ville.\n\nDans une ville dangereuse, beaucoup ont cherché refuge dans la religion. Rendez-vous au <b>Stortinget</b> (le Parlement norvégien). Le bâtiment a ouvert en 1866, lorsque la Norvège était dans une union contrôlée par la Suède. Juste devant le parlement, à votre gauche, se trouve une statue moderne d'un homme qui a joué un rôle important.\n\nQui représente la statue ?",
+          answers: ["christian fredrik", "kristian fredrik", "christian august"],
+          hints: ["Il a un corps complet, pas seulement un buste et une tête."]
+        },
+        {
+          chapter: "Scène 3",
+          text: "Début 1814, Napoléon avait perdu la guerre et le Traité de Kiel fut signé. Le vainqueur — dont la Suède — prend le butin (la Norvège, alors sous domination danoise). L'homme représenté — le prince héritier danois Christian VIII — était alors gouverneur général de Norvège et s'opposait aux prétentions suédoises. Il soutint l'indépendance norvégienne et fut élu par l'Assemblée constituante le 17 mai. Ce même jour, la constitution norvégienne fut signée.\n\nContinuez sur la <b>Karl Johan</b> vers le <b>Nationaltheatret</b>. Explorez les alentours et trouvez une statue étrange.\n\nQuel personnage représente la statue ?",
+          answers: ["jean de france"],
+          hints: ["La statue est imberbe.", "Faites le tour du théâtre — elle se trouve sur la place de l'autre côté."]
+        },
+        {
+          chapter: "Scène 4",
+          text: "Jean de France, joué par Per Aabel au Théâtre National, a été écrit par Ludvig Holberg en 1744. Il s'agit d'un jeune Danois de 20 ans qui voyage à Paris et devient obsédé par la mode. À son retour, son père le rejette.\n\nMontez vers le <b>Slottet</b> (le Palais Royal), où vous trouverez un homme à cheval.\n\n<i>Si le Parc de la Reine est ouvert, c'est un bel endroit pour une petite promenade. Entrée à gauche du château, ouvert du 18 mai au 1er octobre.</i>\n\nQui est-il ?",
+          answers: ["karl johan", "jean baptiste bernadotte", "karl iii johan", "carl johan"],
+          hints: ["Assez grand — difficile à manquer devant le château.", "Cherchez une petite plaque à la base de la statue."]
+        },
+        {
+          chapter: "Scène 5",
+          text: "Karl Johan, qui a donné son nom à la rue que vous avez parcourue, était à l'origine un général français — Jean Baptiste Bernadotte. En 1810, il devint prince héritier de Suède. En 1814, il se retrouva potentiellement roi de deux pays nordiques.\n\nLes Norvégiens préféraient la souveraineté avec Christian Fredrik. La guerre éclata, la Norvège était mal préparée, et le pays entra dans une union avec la Suède de 1814 jusqu'à l'indépendance en 1905.\n\nRendez-vous au <b>Rådhusplassen</b>. Sur la grande place, vers la mer, trouvez la figure argentée qui regarde l'océan.\n\nQuel est le nom de la sculpture ?",
+          answers: ["dykkar", "dykker", "diver", "plongeur"],
+          hints: ["Elle est très brillante.", "Ce n'est pas Ola Enstad."]
+        },
+        {
+          chapter: "Scène 6",
+          text: "Pénétrez dans la <b>Forteresse d'Akershus</b> vers Festningsplassen. La construction débuta vers l'an 1300 et la forteresse est depuis lors au cœur de la défense norvégienne. Aujourd'hui, c'est le siège administratif des forces armées norvégiennes.\n\nSur Festningsplassen, vous trouverez une statue d'une grande femme et d'un homme plus petit.\n\n<i>Il y a de nombreux cafés près de l'hôtel de ville d'Oslo — faites un arrêt à l'Erketunet Gardsbakeri !</i>\n\nQuel est le nom de l'artiste ?",
+          answers: ["gunnar t. janson", "gunnar janson", "janson"],
+          hints: ["Elle se trouve au centre d'une grande place entourée d'arbres."]
+        },
+        {
+          chapter: "Scène 7",
+          text: "La statue commémore ceux qui sont morts pendant l'occupation allemande de la Norvège du 9 avril 1940 au 8 mai 1945. La forteresse d'Akershus fut utilisée par les forces d'occupation et plusieurs résistants y furent exécutés. Quand la paix arriva, Vidkun Quisling — qui s'était fait chef d'État comme marionnette des Allemands — connut le même sort.\n\nQuittez la forteresse par la <b>Kirkegata</b>. Presque immédiatement, vous trouverez un bâtiment élégant avec des portes vertes.\n\nQuel est le nom de ce bâtiment ?",
+          answers: ["gamle logen"],
+          hints: ["Si vous atteignez un parc, vous êtes allé trop loin.", "Il se trouve à côté de la statue d'Otto Ruge."]
+        },
+        {
+          chapter: "Scène 8",
+          text: "Gamle Logen — la Vieille Loge — fut achevée en 1839, construite comme loge maçonnique, salle de concert et de bal. En 1849, le célèbre violoniste Ole Bull invita Myllargutten — Torgeir Augundsson — à jouer pour l'élite urbaine. Lorsqu'il parvint enfin à sortir son violon, toutes ses craintes disparurent.\n\nUn spectateur décrivit l'expérience : <i>“Le garçon du moulin était assis comme quelqu'un qui contemple les profondeurs d'une rivière, et comme des ponts qui s'attardent, nos sièges tremblaient à son rythme.”</i>\n\nPour la dernière étape, tournez à droite dans la <b>Glacisgata</b> jusqu'au bord de l'eau. Suivez la promenade jusqu'à un grand bâtiment architecturalement remarquable.\n\nQuel est ce bâtiment ?",
+          answers: ["opera house", "opera", "operahuset", "den norske opera", "opéra"],
+          hints: ["La réponse peut être le nom du bâtiment ou l'activité qui s'y déroule.", "N'oubliez pas de monter sur le toit quand vous le trouvez !"]
+        }
       ]
     }
 
