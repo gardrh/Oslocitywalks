@@ -98,6 +98,8 @@ function handleAnswer() {
       window.location.href = `finish.html?tour=${tourId}`;
     } else {
       renderScene();
+      const card = document.getElementById('sceneCard');
+      if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   } else {
     setFeedback('wrong', '✕', T('wrongAnswer'));
