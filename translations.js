@@ -782,7 +782,14 @@ const t = {
 ══════════════════════════════════════════ */
 
 function getLang() {
-  return localStorage.getItem('los_lang') || 'en';
+  const stored = localStorage.getItem('los_lang');
+  // Validate stored value is a known language, reset if not
+  if (stored && LANGUAGES[stored]) return stored;
+  if (stored) localStorage.removeItem('los_lang'); // clear corrupt value
+  // Detect browser language
+  const browser = (navigator.language || 'en').substring(0, 2).toLowerCase();
+  const supported = ['en', 'no', 'es', 'de', 'fr'];
+  return supported.includes(browser) ? browser : 'en';
 }
 
 function setLang(code) {
