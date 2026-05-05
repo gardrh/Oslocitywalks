@@ -75,7 +75,8 @@
     </p>
     <div class="finish-actions">
       <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" class="finish-btn finish-btn-primary" id="finishFeedbackBtn">Leave feedback →</a>
-      <a href="index.html" class="finish-btn finish-btn-secondary">Back to home</a>
+      <a href="index.html" class="finish-btn finish-btn-secondary" id="finishBackBtn">Back to home</a>
+      <a href="https://buymeacoffee.com/loswalk" target="_blank" rel="noopener" class="finish-btn finish-btn-coffee">☕ Buy me a coffee</a>
     </div>
   </div>
 </div>
@@ -85,10 +86,12 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     initMenu();
+    buildLangSwitcher();
+    applyTranslations();
     initFinish();
+    initConsent();
   });
 </script>
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="loswalk" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 </body>
 </html>
