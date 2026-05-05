@@ -787,3 +787,31 @@ button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
   margin: 2rem auto 0;
   max-width: 280px;
 }
+
+/* ── ABOUT DONATE BLOCK ── */
+.about-donate {
+  background: #FFDD00;
+  border-radius: var(--r-sm);
+  padding: 1.1rem 1.2rem 1.2rem;
+  margin: 0.5rem 0;
+}
+.about-donate p {
+  margin: 0 0 0.9rem;
+  border: none !important;
+  padding: 0 !important;
+  color: #111;
+}
+.about-coffee-btn {
+  display: inline-block;
+  background: #111;
+  color: #FFDD00;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: opacity 0.15s;
+  touch-action: manipulation;
+}
+.about-coffee-btn:hover { opacity: 0.82; }
