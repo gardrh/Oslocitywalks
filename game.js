@@ -194,36 +194,17 @@ const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-
 
 function submitScore(tour, elapsedMs, duration) {
   if (!SHEET_URL) return;
+
   fetch(SHEET_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ tour, elapsed_ms: elapsedMs, duration })
-  }).catch(() => {});
-}
-
-/* ── FINISH PAGE INIT ── */
-function initFinish() {
-  const elapsedMs  = parseInt(sessionStorage.getItem('los!_elapsed') || '0');
-  const finishedId = sessionStorage.getItem('los!_finished_tour') || 'citycentre';
-  const tourTitle  = tours[finishedId]?.title || 'Tour';
-  const duration   = elapsedMs > 0 ? formatElapsed(elapsedMs) : null;
-
-  // Show tour name
-  const tourNameEl = document.getElementById('finishTourName');
-  if (tourNameEl) tourNameEl.textContent = tourTitle;
-
-  // Show elapsed time
-  const timeEl = document.getElementById('finishTime');
-  if (timeEl && duration) {
-    timeEl.textContent = duration;
-    timeEl.closest('.finish-time-wrap').style.display = 'flex';
-  }
-
-  // Submit to Google Sheets
-  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—');
-
-  // Clean up
-  sessionStorage.removeItem('los!_start_' + finishedId);
-  sessionStorage.removeItem('los!_elapsed');
-  sessionStorage.removeItem('los!_finished_tour');
+    body: JSON.stringify({
+      tour,
+      duration,
+      elapsed_ms: elapsedMs
+    })
+  })
+  .then(res => res.text())
+  .then(console.log)
+  .catch(console.error);
 }
