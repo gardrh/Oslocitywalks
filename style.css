@@ -58,12 +58,11 @@ body {
 }
 
 .logo {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-size: 1.45rem;
-  letter-spacing: -0.5px;
-  color: var(--ink);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
+.logo svg { display: block; }
 
 .hamburger {
   display: flex;
@@ -770,4 +769,21 @@ button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
   background: rgba(255,255,255,0.1);
   color: white;
   border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ── BUY ME A COFFEE BUTTON ── */
+.finish-btn-coffee {
+  background: #FFDD00;
+  color: #000;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.finish-btn-coffee:hover { opacity: 0.88; }
+
+.about-coffee {
+  display: block;
+  text-align: center;
+  margin: 2rem auto 0;
+  max-width: 280px;
 }
