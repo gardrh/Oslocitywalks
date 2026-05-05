@@ -198,7 +198,8 @@ function submitScore(tour, elapsedMs, duration) {
   if (!SHEET_URL) return;
   fetch(SHEET_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify({ tour, elapsed_ms: elapsedMs, duration })
   }).catch(() => {});
 }
