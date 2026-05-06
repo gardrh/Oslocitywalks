@@ -6,8 +6,8 @@
 /* ── TOURS (scene data lives in translations.js) ── */
 const tours = {
   seaside:    { title: "Short Tour of Central-Western Oslo" },
-  becoming:   { title: "Oslo and Norway’s Becoming" },
   greathits:  { title: "Oslo’s Greatest Hits" },
+  becoming:   { title: "Oslo and Norway’s Becoming" },
   citycentre: { title: "Oslo City Centre Tour" },
   akerselva:  { title: "Akerselva and Oslo’s Industrial Past" }
 };
@@ -20,7 +20,7 @@ const tours = {
 function getActiveTourId() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('tour');
-  return (id && tours[id]) ? id : 'becoming';
+  return (id && tours[id]) ? id : 'greathits';
 }
 
 /* ── STATE ── */
@@ -196,12 +196,14 @@ const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-
 
 function submitScore(tour, elapsedMs, duration) {
   if (!SHEET_URL) return;
-  fetch(SHEET_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: { 'Content-Type': 'text/plain' },
-    body: JSON.stringify({ tour, elapsed_ms: elapsedMs, duration })
-  }).catch(() => {});
+  // GET request via image ping — no CORS preflight, works from any origin
+  const params = new URLSearchParams({
+    tour: tour,
+    duration: duration || '',
+    elapsed_ms: elapsedMs
+  });
+  const img = new Image();
+  img.src = SHEET_URL + '?' + params.toString();
 }
 
 /* ── FINISH PAGE INIT ── */
