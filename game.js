@@ -58,7 +58,11 @@ function renderScene() {
   const s = tourScenes[currentScene];
 
   document.getElementById('chapterLabel').textContent = s.chapter;
-  document.getElementById('sceneCard').innerHTML = s.text;
+  document.getElementById('sceneCard').innerHTML = s.text
+    .replace(/\\n\\n/g, '<br><br>')
+    .replace(/\\n/g, '<br>')
+    .replace(/\n\n/g, '<br><br>')
+    .replace(/\n/g, '<br>');
   document.getElementById('answerInput').value = '';
   clearFeedback();
   hintIndex = 0;
