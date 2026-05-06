@@ -40,12 +40,12 @@ const t = {
       leaveFeedback:  'Leave feedback \u2192',
       backHome:       'Back to home',
       tourComplete:   'Tour complete!',
-      tour1Title:     'Oslo and Norway\u2019s Becoming',
-      tour1Desc:      'This tour starts at the bottom of Karl Johan and takes you through the history of how Oslo and Norway became what they are today \u2014 through conflict, culture and independence. About 4\u20135 km, roughly one hour.',
-      tour2Title:     'Short Tour of Central-Western Oslo',
-      tour2Desc:      'This tour starts at Nationaltheatret and takes you around the central-western part of the city and along the waterfront. Along the way, you will get to know local people and places. About 4\u20135 km, roughly one hour.',
-      tour3Title:     'Oslo\u2019s Greatest Hits',
-      tour3Desc:      'This tour starts at the bottom of Karl Johan and takes you through a selection of the most important sights in Oslo. About 4\u20135 km, roughly one hour.',
+      tour1Title:     'Les incontournables d’Oslo',
+      tour1Desc:      'Parcourez la Karl Johans gate de la gare au Palais Royal, en résolvant des énigmes et en découvrant les personnes et lieux importants de la rue principale de la ville. Environ 2–3 km, une heure environ.',
+      tour2Title:     'Oslo et la naissance de la Norvège',
+      tour2Desc:      'Cette visite commence au bas de Karl Johan et vous guide à travers l’histoire d’Oslo et de la Norvège. Environ 4–5 km, une heure environ.',
+      tour3Title:     'Courte visite du centre-ouest d’Oslo',
+      tour3Desc:      'Cette visite commence au Nationaltheatret et vous emène dans la partie centre-ouest de la ville et le long du bord de mer. Environ 4–5 km, une heure environ.',
       tour4Title:     'Oslo City Centre Tour',
       tour4Desc:      'This tour starts at the bottom of Karl Johan and takes you through both well-known and lesser-known sights in the city centre, focusing on historical events. About 4\u20135 km, roughly one hour.',
       aboutEyebrow:   'The project',
@@ -763,7 +763,7 @@ const t = {
       ]
     },
 
-    greathits:  { en: [] },
+    // greathits scenes loaded from tours/greathits.js — see getScenes()
     citycentre: { en: [] },
     akerselva:  { en: [] }
   }
@@ -799,6 +799,15 @@ function T(key) {
 
 function getScenes(tourId) {
   const lang = getLang();
+
+  // External tour files (tours/*.js)
+  const external = { greathits: typeof TOUR_GREATHITS !== 'undefined' ? TOUR_GREATHITS : null };
+  if (external[tourId]) {
+    const src = external[tourId];
+    return (src[lang] && src[lang].length) ? src[lang] : (src.en || []);
+  }
+
+  // Built-in scenes (seaside, becoming)
   const langScenes = t.scenes[tourId] && t.scenes[tourId][lang];
   const enScenes   = t.scenes[tourId] && t.scenes[tourId].en;
   return (langScenes && langScenes.length) ? langScenes : (enScenes || []);
