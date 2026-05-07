@@ -213,7 +213,7 @@ function submitScore(tour, elapsedMs, duration) {
 /* ── FINISH PAGE INIT ── */
 function initFinish() {
   const elapsedMs  = parseInt(sessionStorage.getItem('los!_elapsed') || '0');
-  const finishedId = sessionStorage.getItem('los!_finished_tour') || 'citycentre';
+  const finishedId = sessionStorage.getItem('los!_finished_tour') || 'greathits';
   const tourTitle  = tours[finishedId]?.title || 'Tour';
   const duration   = elapsedMs > 0 ? formatElapsed(elapsedMs) : null;
 
