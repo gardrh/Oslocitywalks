@@ -35,12 +35,12 @@ function initGame() {
   tourScenes = getScenes(tourId);
 
   // Restore progress for this specific tour
-  const saved = parseInt(sessionStorage.getItem(`los!_scene_${tourId}`) || '0');
+  const saved = parseInt(sessionStorage.getItem('los!_scene_' + tourId) || '0');
   currentScene = (saved < tourScenes.length) ? saved : 0;
 
-  // Start timer only on fresh start
-  if (currentScene === 0 && !sessionStorage.getItem(`los!_start_${tourId}`)) {
-    sessionStorage.setItem(`los!_start_${tourId}`, Date.now().toString());
+  // Start timer on fresh start only
+  if (currentScene === 0 && !sessionStorage.getItem('los!_start_' + tourId)) {
+    sessionStorage.setItem('los!_start_' + tourId, Date.now().toString());
   }
 
   applyTranslations();
@@ -88,15 +88,16 @@ function handleAnswer() {
 
   if (correct) {
     currentScene++;
-    sessionStorage.setItem(`los!_scene_${tourId}`, currentScene);
+    sessionStorage.setItem('los!_scene_' + tourId, currentScene);
 
     if (currentScene >= tourScenes.length) {
       // Tour complete — save elapsed time and tour id
-      sessionStorage.removeItem(`los!_scene_${tourId}`);
-      const startTime = parseInt(
-        sessionStorage.getItem(`los!_start_${tourId}`) || Date.now()
-      );
+      sessionStorage.removeItem('los!_scene_' + tourId);
+      const startRaw = sessionStorage.getItem('los!_start_' + tourId);
+      console.log('[Los!] startRaw:', startRaw, 'tourId:', tourId);
+      const startTime = startRaw ? parseInt(startRaw) : Date.now() - 60000;
       const elapsedMs = Date.now() - startTime;
+      console.log('[Los!] elapsedMs:', elapsedMs, 'startTime:', startTime);
       sessionStorage.setItem('los!_elapsed', elapsedMs.toString());
       sessionStorage.setItem('los!_finished_tour', tourId);
       window.location.href = `finish.html?tour=${tourId}`;
