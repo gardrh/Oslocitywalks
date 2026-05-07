@@ -228,10 +228,10 @@ function initFinish() {
     timeEl.closest('.finish-time-wrap').style.display = 'flex';
   }
 
-  // Submit to Google Sheets
-  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—');
+  // Submit to Google Sheets (before cleanup so data is still available)
+  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '\u2014');
 
-  // Clean up
+  // Clean up sessionStorage
   sessionStorage.removeItem('los!_start_' + finishedId);
   sessionStorage.removeItem('los!_elapsed');
   sessionStorage.removeItem('los!_finished_tour');
