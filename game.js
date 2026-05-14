@@ -94,10 +94,8 @@ function handleAnswer() {
       // Tour complete — save elapsed time and tour id
       sessionStorage.removeItem('los!_scene_' + tourId);
       const startRaw = sessionStorage.getItem('los!_start_' + tourId);
-      console.log('[Los!] startRaw:', startRaw, 'tourId:', tourId);
       const startTime = startRaw ? parseInt(startRaw) : Date.now() - 60000;
       const elapsedMs = Date.now() - startTime;
-      console.log('[Los!] elapsedMs:', elapsedMs, 'startTime:', startTime);
       sessionStorage.setItem('los!_elapsed', elapsedMs.toString());
       sessionStorage.setItem('los!_finished_tour', tourId);
       window.location.href = `finish.html?tour=${tourId}`;
