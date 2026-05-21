@@ -55,7 +55,9 @@ const t = {
       aboutP3:        'Each tour takes you through <strong>real streets and public spaces</strong>. Along the way, you will stop at statues, buildings and landmarks that each have a story to tell \u2014 places like Nationaltheatret, the Royal Palace, Akershus Fortress, Gamle Logen and the Oslo Opera House. The answers are always somewhere nearby \u2014 look around, read your surroundings and enjoy the walk.',
       aboutP4:        'Los! is currently in a <strong>pilot stage</strong>. The first tours are live and more are being developed. The app is <strong>free to use</strong>, but donations are very welcome.',
       aboutP5:        'Los! is developed by <strong>Gard Ringen H\u00f8ibjerg</strong>. The team is motivated by the idea of helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, please use our <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>.',
-      finishBody:     'Congratulations \u2014 you have finished the tour! This is where your real adventure in Oslo begins. We have brought you to one of the many wonderful places in the city centre. From here, you can easily make your way to wherever you wish to go next.<br><br>We hope you enjoyed the tour. Your feedback helps us improve the app and develop future tours. If you enjoyed this tour, you are welcome to support the project through the button below.<br><br>Have a lovely stay in Oslo!',
+      finishBody:       'Congratulations — you have finished the tour! This is where your real adventure in Oslo begins. From here, you can easily make your way to wherever you wish.\n\nWe hope you enjoyed the tour. If you have any feedback, we would love to hear from you — it helps us improve and create new tours.',
+      finishCoffeeBtn:  '☕ Buy me a coffee',
+      finishDonateText: 'If you enjoyed the tour, you are welcome to support Los! with a small donation — it helps keep the tours free and fund new ones.',
     },
     no: {
       navHome:        '\u2302\u00a0\u00a0Hjem',
@@ -96,7 +98,9 @@ const t = {
       aboutP3:        'Hver tur tar deg gjennom <strong>ekte gater og offentlige rom</strong>. Underveis stopper du ved statuer, bygninger og landemerker som alle har en historie \u00e5 fortelle \u2014 steder som Nationaltheatret, Slottet, Akershus festning, Gamle Logen og Operahuset. Svarene er alltid i n\u00e6rheten \u2014 se deg rundt og nyt turen.',
       aboutP4:        'Los! er for \u00f8yeblikket i en <strong>pilotfase</strong>. De f\u00f8rste turene er live og flere er under utvikling. Appen er <strong>gratis \u00e5 bruke</strong>, men donasjoner mottas med stor takk.',
       aboutP5:        'Los! er utviklet av <strong>Gard Ringen H\u00f8ibjerg</strong>. Teamet er motivert av tanken p\u00e5 \u00e5 hjelpe bes\u00f8kende med \u00e5 oppdage de mer interessante hj\u00f8rnene av byen. Har du tilbakemeldinger, finner du feil, eller \u00f8nsker \u00e5 ta kontakt, bruk gjerne v\u00e5rt <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">tilbakemeldingsskjema</a>.',
-      finishBody:     'Gratulerer \u2014 du har fullf\u00f8rt turen! Her begynner ditt egentlige eventyr i Oslo. Vi har ledet deg til et av byens mange flotte steder i sentrum. Herfra kan du enkelt g\u00e5 dit du \u00f8nsker.<br><br>Vi h\u00e5per du likte turen. Tilbakemeldingene dine hjelper oss med \u00e5 forbedre appen og utvikle fremtidige turer. Hvis du likte turen, er du velkommen til \u00e5 st\u00f8tte prosjektet via knappen nedenfor.<br><br>God tur videre i Oslo!',
+      finishBody:       'Gratulerer — du har fullført turen! Her begynner ditt virkelige eventyr i Oslo. Herfra kan du enkelt gå dit du vil.\n\nVi håper du likte turen. Har du tilbakemeldinger, hører vi gjerne fra deg — det hjelper oss med å forbedre og lage nye turer.',
+      finishCoffeeBtn:  '☕ Kjøp meg en kaffe',
+      finishDonateText: 'Likte du turen? Du er hjertelig velkommen til å støtte Los! med en liten donasjon — det hjelper oss å holde turene gratis og utvikle nye.',
     },
     es: {
       headline:       'Visitas turísticas autoguiadas gratuitas en Oslo',
@@ -137,7 +141,9 @@ const t = {
       aboutP3:        'Cada ruta te lleva por <strong>calles reales y espacios p\u00fablicos</strong>. A lo largo del camino, te detendr\u00e1s en estatuas, edificios y lugares emblem\u00e1ticos que tienen una historia que contar \u2014 lugares como el Nationaltheatret, el Palacio Real, la Fortaleza de Akershus, Gamle Logen y la \u00d3pera de Oslo. Las respuestas siempre est\u00e1n cerca \u2014 mira a tu alrededor y disfruta del paseo.',
       aboutP4:        'Los! se encuentra actualmente en una <strong>fase piloto</strong>. Las primeras rutas est\u00e1n activas y se est\u00e1n desarrollando m\u00e1s. La aplicaci\u00f3n es <strong>gratuita</strong>, pero las donaciones son muy bienvenidas.',
       aboutP5:        'Los! est\u00e1 desarrollada por <strong>Gard Ringen H\u00f8ibjerg</strong>. El equipo est\u00e1 motivado por la idea de ayudar a los visitantes a descubrir los rincones m\u00e1s interesantes de la ciudad. Si tienes comentarios, encuentras un error o quieres ponerte en contacto, usa nuestro <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario de comentarios</a>.',
-      finishBody:     'Enhorabuena \u2014 has completado la ruta! Aqu\u00ed es donde comienza tu verdadera aventura en Oslo. Te hemos llevado a uno de los muchos lugares maravillosos del centro de la ciudad. Desde aqu\u00ed puedes dirigirte f\u00e1cilmente a donde desees.<br><br>Esperamos que hayas disfrutado de la ruta. Tus comentarios nos ayudan a mejorar la aplicaci\u00f3n y a desarrollar futuras rutas. Si te ha gustado la ruta, eres bienvenido a apoyar el proyecto a trav\u00e9s del bot\u00f3n de abajo.<br><br>Que disfrutes de tu estancia en Oslo!',
+      finishBody:       '¡Enhorabuena — has completado la ruta! Aquí es donde comienza tu verdadera aventura en Oslo. Desde aquí puedes dirigirte fácilmente a donde quieras.\n\nEsperamos que hayas disfrutado la ruta. Si tienes alguna opinión, nos encanta escucharla — nos ayuda a mejorar y crear nuevas rutas.',
+      finishCoffeeBtn:  '☕ Invítame a un café',
+      finishDonateText: 'Si disfrutaste la ruta, puedes apoyar a Los! con una pequeña donación — nos ayuda a mantener las rutas gratuitas y a crear nuevas.',
     },
     de: {
       headline:       'Kostenlose Stadtführungen zu Fuß in Oslo',
@@ -178,7 +184,9 @@ const t = {
       aboutP3:        'Jede Tour f\u00fchrt dich durch <strong>echte Stra\u00dfen und \u00f6ffentliche R\u00e4ume</strong>. Unterwegs h\u00e4ltst du an Statuen, Geb\u00e4uden und Wahrzeichen, die alle eine Geschichte zu erz\u00e4hlen haben \u2014 Orte wie das Nationaltheatret, das K\u00f6nigliche Schloss, die Festung Akershus, Gamle Logen und das Osloer Opernhaus. Die Antworten sind immer in der N\u00e4he \u2014 schau dich um und genie\u00df den Spaziergang.',
       aboutP4:        'Los! befindet sich derzeit in einer <strong>Pilotphase</strong>. Die ersten Touren sind live und weitere sind in Entwicklung. Die App ist <strong>kostenlos</strong>, aber Spenden sind sehr willkommen.',
       aboutP5:        'Los! wurde von <strong>Gard Ringen H\u00f8ibjerg</strong> entwickelt. Das Team ist motiviert, Besuchern die interessanteren Ecken der Stadt zu zeigen. Wenn du Feedback hast, einen Fehler entdeckst oder Kontakt aufnehmen m\u00f6chtest, nutze bitte unser <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Feedback-Formular</a>.',
-      finishBody:     'Herzlichen Gl\u00fcckwunsch \u2014 du hast die Tour abgeschlossen! Hier beginnt dein eigentliches Abenteuer in Oslo. Wir haben dich zu einem der vielen sch\u00f6nen Orte im Stadtzentrum gef\u00fchrt. Von hier kannst du leicht deinen Weg dorthin finden, wohin du m\u00f6chtest.<br><br>Wir hoffen, dass dir die Tour gefallen hat. Dein Feedback hilft uns, die App zu verbessern und zuk\u00fcnftige Touren zu entwickeln. Wenn dir die Tour gefallen hat, kannst du das Projekt gerne \u00fcber den Button unten unterst\u00fctzen.<br><br>Genie\u00df deinen Aufenthalt in Oslo!',
+      finishBody:       'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Hier beginnt dein echtes Abenteuer in Oslo. Von hier aus kannst du leicht dorthin gehen, wo du möchtest.\n\nWir hoffen, dir hat die Tour gefallen. Wenn du Feedback hast, freuen wir uns davon zu hören — es hilft uns, neue Touren zu verbessern und zu entwickeln.',
+      finishCoffeeBtn:  '☕ Kauf mir einen Kaffee',
+      finishDonateText: 'Wenn dir die Tour gefallen hat, kannst du Los! gerne mit einer kleinen Spende unterstützen — das hilft uns, die Touren kostenlos zu halten und neue zu entwickeln.',
     },
     fr: {
       navHome:        '\u2302\u00a0\u00a0Accueil',
@@ -219,7 +227,9 @@ const t = {
       aboutP3:        'Chaque visite vous m\u00e8ne \u00e0 travers de <strong>vraies rues et des espaces publics</strong>. En chemin, vous vous arr\u00eaterez devant des statues, des b\u00e2timents et des monuments qui ont chacun une histoire \u00e0 raconter \u2014 des lieux comme le Nationaltheatret, le Palais Royal, la forteresse d\u2019Akershus, Gamle Logen et l\u2019Op\u00e9ra d\u2019Oslo. Les r\u00e9ponses sont toujours quelque part \u00e0 proximit\u00e9 \u2014 regardez autour de vous et profitez de la balade.',
       aboutP4:        'Los! est actuellement en <strong>phase pilote</strong>. Les premi\u00e8res visites sont en ligne et d\u2019autres sont en cours de d\u00e9veloppement. L\u2019application est <strong>gratuite</strong>, mais les dons sont les bienvenus.',
       aboutP5:        'Los! est d\u00e9velopp\u00e9 par <strong>Gard Ringen H\u00f8ibjerg</strong>. L\u2019\u00e9quipe est motiv\u00e9e par l\u2019id\u00e9e d\u2019aider les visiteurs \u00e0 d\u00e9couvrir les coins les plus int\u00e9ressants de la ville. Si vous avez des commentaires, d\u00e9tectez une erreur ou souhaitez nous contacter, veuillez utiliser notre <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire de retour</a>.',
-      finishBody:     "F\u00e9licitations \u2014 vous avez termin\u00e9 la visite\u00a0! C\u2019est ici que commence votre v\u00e9ritable aventure \u00e0 Oslo. Nous vous avons conduit vers l\u2019un des nombreux endroits merveilleux du centre-ville. De l\u00e0, vous pouvez facilement vous rendre o\u00f9 vous le souhaitez.<br><br>Nous esp\u00e9rons que cette visite vous a plu. Vos retours nous aident \u00e0 am\u00e9liorer l\u2019application et \u00e0 d\u00e9velopper de futures visites. Si vous avez appr\u00e9ci\u00e9 la visite, vous pouvez soutenir le projet via le bouton ci-dessous.<br><br>Profitez bien de votre s\u00e9jour \u00e0 Oslo\u00a0!",
+      finishBody:       'Félicitations — vous avez terminé la visite ! C’est ici que votre vraie aventure à Oslo commence. De là, vous pouvez facilement vous rendre où vous le souhaitez.\n\nNous espérons que vous avez apprécié la visite. Si vous avez des commentaires, nous serions ravis de les lire — cela nous aide à améliorer et à créer de nouvelles visites.',
+      finishCoffeeBtn:  '☕ Offrez-moi un café',
+      finishDonateText: 'Si vous avez apprécié la visite, vous pouvez soutenir Los! avec un petit don — cela nous aide à garder les visites gratuites et à en créer de nouvelles.',
     },
   },
   scenes: {
@@ -332,6 +342,8 @@ function applyTranslations() {
   _setText('finishTimeLbl', T('yourTime'));
   _set('finishFeedbackBtn', T('leaveFeedback'));
   _set('finishBackBtn',     T('backHome'));
+  _set('finishDonateText',  T('finishDonateText'));
+  _set('finishCoffeeBtn',   T('finishCoffeeBtn'));
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
