@@ -57,7 +57,7 @@ const TOUR_BECOMING = {
     },
     {
       chapter: "Scene 9",
-      text: "During the Second World War, Norwegian collaborators helped German forces deport 772 Jews from Norway. Most were sent to Auschwitz, and only 37 survived. Many departed from these very docks on German ships.\n\nCross the street and enter <b>Akershus Festning</b> (Akershus Fortress) through the small gate in the fortress wall behind the grass field.\n\nConstruction of the fortress began around 1300. Since then, it has played an important role in Norway\u2019s defence. Today it serves as the headquarters of the Norwegian armed forces.\n\nInside, at <b>Festningsplassen</b>, you will find a statue of a large woman beside a smaller man.\n\n\n What is the name of the artist?",
+      text: "During the Second World War, Norwegian collaborators helped German forces deport 772 Jews from Norway. Most were sent to Auschwitz, and only 37 survived. Many departed from these very docks on German ships.\n\nCross the street and enter <b>Akershus Festning</b> (Akershus Fortress) through the small gate in the fortress wall behind the grass field.\n\nConstruction of the fortress began around 1300. Since then, it has played an important role in Norway\u2019s defence. Today it serves as the headquarters of the Norwegian armed forces.\n\nInside, at <b>Festningsplassen</b>, you will find a statue of a large woman beside a smaller man.\n\nWhat is the name of the artist?",
       answers: ["gunnar t. janson", "gunnar janson", "janson"],
       hints: ["The statue stands in the middle of a large open square surrounded by trees."]
     },
@@ -126,7 +126,7 @@ const TOUR_BECOMING = {
     },
     {
       chapter: "Scene 9",
-      text: "Under andre verdenskrig hjalp norske kollaborat\u00f8rer de tyske okkupasjonsstyrkene med \u00e5 deportere 772 j\u00f8der fra Norge. De fleste ble sendt til Auschwitz, og bare 37 overlevde. Mange ble fraktet fra disse bryggene med tyske skip.\n\nKryss gaten og g\u00e5 inn i <b>Akershus festning</b> gjennom den lille porten i festningsmuren bak gressomr\u00e5det.\n\nByggingen av festningen startet rundt \u00e5r 1300. Siden da har den spilt en viktig rolle i Norges forsvar. I dag fungerer den som hovedkvarter for Forsvaret.\n\nInne p\u00e5 <b>Festningsplassen</b> finner du en statue av en stor kvinne ved siden av en mindre mann.\n\n\nHva heter kunstneren?",
+      text: "Under andre verdenskrig hjalp norske kollaborat\u00f8rer de tyske okkupasjonsstyrkene med \u00e5 deportere 772 j\u00f8der fra Norge. De fleste ble sendt til Auschwitz, og bare 37 overlevde. Mange ble fraktet fra disse bryggene med tyske skip.\n\nKryss gaten og g\u00e5 inn i <b>Akershus festning</b> gjennom den lille porten i festningsmuren bak gressomr\u00e5det.\n\nByggingen av festningen startet rundt \u00e5r 1300. Siden da har den spilt en viktig rolle i Norges forsvar. I dag fungerer den som hovedkvarter for Forsvaret.\n\nInne p\u00e5 <b>Festningsplassen</b> finner du en statue av en stor kvinne ved siden av en mindre mann.\n\nHva heter kunstneren?",
       answers: ["gunnar t. janson", "gunnar janson", "janson"],
       hints: ["Statuen st\u00e5r midt p\u00e5 en stor \u00e5pen plass omgitt av tr\u00e6r."]
     },
@@ -264,7 +264,7 @@ const TOUR_BECOMING = {
     },
     {
       chapter: "Szene 9",
-      text: "W\u00e4hrend des Zweiten Weltkriegs halfen norwegische Kollaborateure den deutschen Besatzungstruppen dabei, 772 Juden aus Norwegen zu deportieren. Die meisten wurden nach Auschwitz geschickt, und nur 37 \u00fcberlebten. Viele wurden von genau diesen Docks aus auf deutschen Schiffen deportiert.\n\n\u00dcberquere die Stra\u00dfe und betrete die <b>Akershus Festning</b> durch das kleine Tor in der Festungsmauer hinter der Gr\u00fcnfl\u00e4che.\n\nDer Bau der Festung begann um das Jahr 1300. Seitdem spielt sie eine wichtige Rolle in der Verteidigung Norwegens. Heute dient sie als Hauptquartier der norwegischen Streitkr\u00e4fte.\n\nAuf dem <b>Festningsplassen</b> findest du eine Statue einer gro\u00dfen Frau neben einem kleineren Mann.\n\n\nWie hei\u00dft der K\u00fcnstler?",
+      text: "W\u00e4hrend des Zweiten Weltkriegs halfen norwegische Kollaborateure den deutschen Besatzungstruppen dabei, 772 Juden aus Norwegen zu deportieren. Die meisten wurden nach Auschwitz geschickt, und nur 37 \u00fcberlebten. Viele wurden von genau diesen Docks aus auf deutschen Schiffen deportiert.\n\n\u00dcberquere die Stra\u00dfe und betrete die <b>Akershus Festning</b> durch das kleine Tor in der Festungsmauer hinter der Gr\u00fcnfl\u00e4che.\n\nDer Bau der Festung begann um das Jahr 1300. Seitdem spielt sie eine wichtige Rolle in der Verteidigung Norwegens. Heute dient sie als Hauptquartier der norwegischen Streitkr\u00e4fte.\n\nAuf dem <b>Festningsplassen</b> findest du eine Statue einer gro\u00dfen Frau neben einem kleineren Mann.\n\nWie hei\u00dft der K\u00fcnstler?",
       answers: ["gunnar t. janson", "gunnar janson", "janson"],
       hints: ["Die Statue steht mitten auf einem gro\u00dfen offenen Platz, umgeben von B\u00e4umen."]
     },
