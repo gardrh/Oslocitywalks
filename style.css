@@ -63,6 +63,31 @@ body {
   text-decoration: none;
 }
 .logo svg { display: block; }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-ig-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.header-ig-btn:hover {
+  background: rgba(12,26,26,0.1);
+}
+
+.header-ig-btn svg {
+  display: block;
+}
+
 
 .hamburger {
   display: flex;
