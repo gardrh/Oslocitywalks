@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Los! – Free Walking Tours in Oslo</title>
-  <meta name="description" content="Los! is a free self-guided walking tour app for Oslo. Discover the city's history, statues and stories at your own pace.">
+  <title>Tour Complete! – Los! Oslo Walking Tours</title>
+  <meta name="description" content="You have completed an Oslo walking tour with Los! Share your experience and explore more of the city.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://loswalk.com/about.html">
+  <link rel="canonical" href="https://loswalk.com/finish.html">
 
   <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://loswalk.com/about.html">
-  <meta property="og:title" content="About Los! – Free Walking Tours in Oslo">
-  <meta property="og:description" content="Los! is a free self-guided walking tour app for Oslo. Discover the city's history, statues and stories at your own pace.">
+  <meta property="og:url" content="https://loswalk.com/finish.html">
+  <meta property="og:title" content="Tour Complete! – Los! Oslo Walking Tours">
+  <meta property="og:description" content="You have completed an Oslo walking tour with Los! Share your experience and explore more of the city.">
   <meta property="og:image" content="https://loswalk.com/osloskyline.png">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Los!">
 
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Los! – Free Walking Tours in Oslo">
-  <meta name="twitter:description" content="Los! is a free self-guided walking tour app for Oslo. Discover the city's history, statues and stories at your own pace.">
+  <meta name="twitter:title" content="Tour Complete! – Los! Oslo Walking Tours">
+  <meta name="twitter:description" content="You have completed an Oslo walking tour with Los! Share your experience and explore more of the city.">
   <meta name="twitter:image" content="https://loswalk.com/osloskyline.png">
 
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -29,36 +29,6 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#0c1a1a">
   <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Los!",
-  "url": "https://loswalk.com",
-  "description": "Los! provides free self-guided walking tours in Oslo, Norway. Discover the city's history, statues and stories at your own pace — no guide needed, no booking required.",
-  "founder": {
-    "@type": "Person",
-    "name": "Gard Ringen Høibjerg"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Oslo",
-    "containedInPlace": {
-      "@type": "Country",
-      "name": "Norway"
-    }
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "NOK",
-    "description": "Free self-guided walking tours"
-  },
-  "sameAs": [
-    "https://loswalk.com"
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -119,30 +89,43 @@
 
 <!-- PAGE -->
 <div class="page-wrap">
-  <div class="skyline-wrap sm">
-    <img src="osloskyline.png" alt="Oslo skyline silhouette" />
-  </div>
+  <div class="finish-content">
+    <div class="finish-badge">🎉</div>
+    <p class="finish-tour-name" id="finishTourName"></p>
+    <h1 class="finish-title" id="finishTourComplete">Tour complete!</h1>
 
-  <div class="about-content">
-    <p class="eyebrow" id="aboutEyebrow">The project</p>
-    <h1 class="page-title" id="aboutTitle">About Los!</h1>
-        <div class="about-body">
-      <p id="aboutP1"><em>Los</em> is a Norwegian word for a maritime pilot: a person who helps ships navigate in local waters. In the Oslofjord, you may see los-boats helping large cruise ships find their way to the docks.</p>
-      <p id="aboutP2">Los! is a <strong>free</strong>, self-guided walking tour app for Oslo. The idea is simple: show up, follow the clues, and discover the city’s history, people, and places at your own pace — no guide needed, no booking required.</p>
-      <p id="aboutP3">Each tour takes you through <strong>real streets and public spaces</strong>, stopping at statues, buildings, and landmarks that each carry a story. The answers are always somewhere nearby — look around, read the environment, and enjoy the walk.</p>
-      <div class="about-donate">
-        <p id="aboutP4">Los! is currently in a <strong>pilot stage</strong>. The first tour is live and more are in development. The app is <strong>free to use</strong>, but donations are very welcome.</p>
-        <a href="https://buymeacoffee.com/loswalk" target="_blank" rel="noopener" class="about-coffee-btn">☕ Buy me a coffee</a>
-      </div>
-      <p id="aboutP5">Los! is developed by <strong>Gard Ringen Høibjerg</strong>, and the team is motivated by helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, let us know through our <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>.</p>
+    <!-- Time display — hidden until JS populates it -->
+    <div class="finish-time-wrap" style="display:none" aria-live="polite">
+      <p class="finish-time-label" id="finishTimeLbl">Your time</p>
+      <p class="finish-time" id="finishTime"></p>
+    </div>
+
+    <p class="finish-body" id="finishBody"></p>
+
+    <div class="finish-donate-block">
+      <p class="finish-donate-text" id="finishDonateText">If you enjoyed the tour, you are welcome to support Los! with a small donation — it helps keep the tours free and fund new ones.</p>
+      <a href="https://buymeacoffee.com/loswalk" target="_blank" rel="noopener" class="finish-btn finish-btn-coffee" id="finishCoffeeBtn">☕ Buy me a coffee</a>
+    </div>
+
+    <div class="finish-actions">
+      <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" class="finish-btn finish-btn-primary" id="finishFeedbackBtn">Leave feedback →</a>
+      <a href="index.html" class="finish-btn finish-btn-secondary" id="finishBackBtn">Back to home</a>
     </div>
   </div>
 </div>
 
+<script src="tours/greathits.js"></script>
+<script src="tours/becoming.js"></script>
 <script src="translations.js"></script>
 <script src="game.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => { initMenu(); buildLangSwitcher(); applyTranslations(); initConsent(); });
+  document.addEventListener('DOMContentLoaded', () => {
+    initMenu();
+    buildLangSwitcher();
+    applyTranslations();
+    initFinish();
+    initConsent();
+  });
 </script>
 
 </body>
