@@ -27,7 +27,8 @@ function getActiveTourId() {
 let tourId       = null;  // set in initGame()
 let tourScenes   = [];
 let currentScene = 0;
-let hintIndex    = 0;
+let hintIndex       = 0;
+let sceneStartTime  = Date.now();
 
 /* ── INIT GAME ── */
 function initGame() {
@@ -76,6 +77,7 @@ function renderScene() {
 
   document.getElementById('answerInput').style.display = '';
   document.getElementById('answerBtn').textContent = T('answer');
+  sceneStartTime = Date.now();
 }
 
 /* ── HANDLE ANSWER ── */
@@ -91,7 +93,8 @@ function handleAnswer() {
     sessionStorage.setItem('los!_scene_' + tourId, currentScene);
 
     // Log scene progress to sheet
-    submitScore(tourId, 'scene', currentScene + '_of_' + tourScenes.length, '', 0);
+    const sceneElapsed = Math.round((Date.now() - sceneStartTime) / 1000);
+    submitScore(tourId, 'scene', currentScene + '_of_' + tourScenes.length, sceneElapsed + 's', 0);
 
     if (currentScene >= tourScenes.length) {
       // Tour complete — save elapsed time and tour id
