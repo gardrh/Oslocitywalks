@@ -198,7 +198,7 @@ function formatElapsed(ms) {
      Execute as: Me  |  Who has access: Anyone
   5. Copy the deployment URL and paste it below.
 ──────────────────────────────────────────────────── */
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-r9F2mKe4BhgBKJ7ZKMzsNQraMdXG0BOBsCHy3vcBd4iN7K/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycby3B070CtDplDqpMEPnLBzKWclaaN1bNo26Y3SS1gFxOYj63NS3Jd5N_e21WPWTj8Qw/exec';
 
 function submitScore(tour, type, scene, duration, elapsedMs) {
   if (!SHEET_URL) return;
