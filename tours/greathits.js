@@ -15,7 +15,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Scene 2",
-      text: "Now that you have found a means of transportation, cross the road and enter <b>Karl Johans gate</b> — the city's main street. Every year, on 17 May, this street fills with around 30,000 school children and 100,000 spectators as Norway celebrates its constitution.\n\nWalk up Karl Johan until you find a shop with a small pink baby on your left. Directly to its right, you will find a small blue plaque.\n\nWhat name is written on the sign?",
+      text: "Now that you have found a means of transportation, cross the road and enter <b>Karl Johans gate</b> — the city's main street. Every year, on 17 May, this street fills with around 30,000 school children and 100,000 spectators as Norway celebrates its constitution.\n\nWalk up Karl Johan until you find a shop with a small pink angel on your left. Directly to its right, you will find a small blue plaque.\n\nWhat name is written on the sign?",
       answers: ["elise sem"],
       hints: ["It is directly below a small street number sign, number 10."]
     },
@@ -66,7 +66,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Scene 2",
-      text: "N\u00e5 som du har funnet et transportmiddel, kryss veien og g\u00e5 inn i <b>Karl Johans gate</b> \u2014 byens hovedgate. Hvert \u00e5r, den 17. mai, fylles gaten med rundt 30 000 skoleelever og 100 000 tilskuere n\u00e5r Norge feirer grunnloven.\n\nG\u00e5 opp Karl Johan til du finner en butikk med en liten rosa baby p\u00e5 venstre side. Rett ved siden av, mot h\u00f8yre, finner du en liten bl\u00e5 plakett.\n\nHva er navnet p\u00e5 skiltet?",
+      text: "N\u00e5 som du har funnet et transportmiddel, kryss veien og g\u00e5 inn i <b>Karl Johans gate</b> \u2014 byens hovedgate. Hvert \u00e5r, den 17. mai, fylles gaten med rundt 30 000 skoleelever og 100 000 tilskuere n\u00e5r Norge feirer grunnloven.\n\nG\u00e5 opp Karl Johan til du finner en butikk med en liten rosa engel p\u00e5 venstre side. Rett ved siden av, mot h\u00f8yre, finner du en liten bl\u00e5 plakett.\n\nHva er navnet p\u00e5 skiltet?",
       answers: ["elise sem"],
       hints: ["Den henger rett under et lite gatenummerskilt, nummer 10."]
     },
@@ -117,7 +117,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Escena 2",
-      text: "Ahora que has encontrado un medio de transporte, cruza la calle y entra en <b>Karl Johans gate</b>, la calle principal de la ciudad. Cada a\u00f1o, el 17 de mayo, esta calle se llena de unos 30.000 escolares y 100.000 espectadores cuando Noruega celebra su constituci\u00f3n.\n\nCamina por Karl Johan hasta que encuentres una tienda con un peque\u00f1o beb\u00e9 rosa a tu izquierda. Justo a su derecha encontrar\u00e1s una peque\u00f1a placa azul.\n\n\u00bfQu\u00e9 nombre aparece en el letrero?",
+      text: "Ahora que has encontrado un medio de transporte, cruza la calle y entra en <b>Karl Johans gate</b>, la calle principal de la ciudad. Cada a\u00f1o, el 17 de mayo, esta calle se llena de unos 30.000 escolares y 100.000 espectadores cuando Noruega celebra su constituci\u00f3n.\n\nCamina por Karl Johan hasta que encuentres una tienda con un peque\u00f1o \u00c1ngel rosa a tu izquierda. Justo a su derecha encontrar\u00e1s una peque\u00f1a placa azul.\n\n\u00bfQu\u00e9 nombre aparece en el letrero?",
       answers: ["elise sem"],
       hints: ["Est\u00e1 justo debajo de un peque\u00f1o letrero con el n\u00famero de la calle, el n\u00famero 10."]
     },
@@ -168,7 +168,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Szene 2",
-      text: "Nun, da du ein Transportmittel gefunden hast, \u00fcberquere die Stra\u00dfe und betrete die <b>Karl Johans gate</b> \u2014 die Hauptstra\u00dfe der Stadt. Jeden Jahr am 17. Mai f\u00fcllt sich diese Stra\u00dfe mit rund 30.000 Schulkindern und 100.000 Zuschauern, wenn Norwegen seinen Verfassungstag feiert.\n\nGeh die Karl Johan entlang, bis du auf der linken Seite ein Gesch\u00e4ft mit einem kleinen rosafarbenen Baby findest. Direkt daneben, rechts davon, findest du eine kleine blaue Plakette.\n\nWelcher Name steht auf dem Schild?",
+      text: "Nun, da du ein Transportmittel gefunden hast, \u00fcberquere die Stra\u00dfe und betrete die <b>Karl Johans gate</b> \u2014 die Hauptstra\u00dfe der Stadt. Jeden Jahr am 17. Mai f\u00fcllt sich diese Stra\u00dfe mit rund 30.000 Schulkindern und 100.000 Zuschauern, wenn Norwegen seinen Verfassungstag feiert.\n\nGeh die Karl Johan entlang, bis du auf der linken Seite ein Gesch\u00e4ft mit einem kleinen rosafarbenen Engel findest. Direkt daneben, rechts davon, findest du eine kleine blaue Plakette.\n\nWelcher Name steht auf dem Schild?",
       answers: ["elise sem"],
       hints: ["Sie h\u00e4ngt direkt unter einem kleinen Hausnummernschild, Nummer 10."]
     },
@@ -219,7 +219,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Sc\u00e8ne 2",
-      text: "Maintenant que vous avez trouv\u00e9 un moyen de transport, traversez la rue et entrez dans la <b>Karl Johans gate</b> \u2014 la rue principale de la ville. Chaque ann\u00e9e, le 17 mai, cette rue se remplit d\u2019environ 30\u00a0000 \u00e9coliers et 100\u00a0000 spectateurs lorsque la Norv\u00e8ge c\u00e9l\u00e8bre sa constitution.\n\nRemontez Karl Johan jusqu\u2019\u00e0 trouver une boutique avec un petit b\u00e9b\u00e9 rose sur votre gauche. Juste \u00e0 sa droite, vous trouverez une petite plaque bleue.\n\nQuel nom est inscrit sur le panneau\u00a0?",
+      text: "Maintenant que vous avez trouv\u00e9 un moyen de transport, traversez la rue et entrez dans la <b>Karl Johans gate</b> \u2014 la rue principale de la ville. Chaque ann\u00e9e, le 17 mai, cette rue se remplit d\u2019environ 30\u00a0000 \u00e9coliers et 100\u00a0000 spectateurs lorsque la Norv\u00e8ge c\u00e9l\u00e8bre sa constitution.\n\nRemontez Karl Johan jusqu\u2019\u00e0 trouver une boutique avec un petit ange rose sur votre gauche. Juste \u00e0 sa droite, vous trouverez une petite plaque bleue.\n\nQuel nom est inscrit sur le panneau\u00a0?",
       answers: ["elise sem"],
       hints: ["Elle se trouve juste en dessous d\u2019un petit panneau de num\u00e9ro de rue, le num\u00e9ro 10."]
     },
