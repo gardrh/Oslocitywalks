@@ -29,7 +29,7 @@ const TOUR_GREATHITS = {
       chapter: "Scene 4",
       text: "Christian Michelsen was the prime minister of Norway when the country gained independence from Sweden in 1905. Independence came through a clever political manoeuvre — a resolution by the Norwegian parliament declaring the end of the union with Sweden. A newspaper account of the meeting describes how: <em>\"When the words regarding the dissolution of the union came, a sigh of relief went through the room.\"</em>\n\nNext to the parliament stands the Grand Hotel — perhaps the most famous hotel in Oslo. Along the building's facade, you will find a little girl in a poncho. Like many young children, she is counting.\n\nTo what number is she counting?",
       answers: ["10", "ten", "ti", "dix", "zehn", "diez"],
-      hints: ["Look carefully at what she is doing with her hands."]
+      hints: ["Look carefully at what she is doing with her hands.", "Look at the plaque at her feet"]
     },
     {
       chapter: "Scene 5",
@@ -80,7 +80,7 @@ const TOUR_GREATHITS = {
       chapter: "Scene 4",
       text: "Christian Michelsen var statsminister i Norge da landet fikk sin selvstendighet fra Sverige i 1905. Selvstendigheten kom som resultat av et klokt politisk spill \u2014 en resolusjon fra Stortinget som kunngjorde avslutningen av unionen med Sverige. En avisberetning fra m\u00f8tet beskriver hvordan: <em>\u00abDa ordene om oppgivelse av unionen kom, gikk et lettelsens sukk gjennom salen.\u00bb</em>\n\nVed siden av Stortinget st\u00e5r det kanskje mest kjente hotellet i Oslo: Grand Hotel. Langs fasaden vil du finne en liten jente i poncho. Som mange sm\u00e5 barn er hun opptatt med \u00e5 telle.\n\nHvilket tall teller hun til?",
       answers: ["10", "ti", "ten"],
-      hints: ["Se n\u00f8ye p\u00e5 hva hun gj\u00f8r med hendene."]
+      hints: ["Se n\u00f8ye p\u00e5 hva hun gj\u00f8r med hendene.", "Se p\u00e5 plaketten ved f\u00f8ttene hennes"]
     },
     {
       chapter: "Scene 5",
@@ -131,7 +131,7 @@ const TOUR_GREATHITS = {
       chapter: "Escena 4",
       text: "Christian Michelsen fue el primer ministro de Noruega cuando el pa\u00eds obtuvo la independencia de Suecia en 1905. La independencia lleg\u00f3 gracias a una habilidosa maniobra pol\u00edtica: una resoluci\u00f3n del parlamento noruego que declaraba el fin de la uni\u00f3n con Suecia. Una cr\u00f3nica period\u00edstica de la reuni\u00f3n describe c\u00f3mo: <em>\u00abCuando llegaron las palabras sobre la disoluci\u00f3n de la uni\u00f3n, un suspiro de alivio recorri\u00f3 la sala.\u00bb</em>\n\nJunto al parlamento se encuentra el Grand Hotel, quiz\u00e1s el hotel m\u00e1s conocido de Oslo. A lo largo de la fachada del edificio encontrar\u00e1s a una ni\u00f1a peque\u00f1a con poncho. Como muchos ni\u00f1os peque\u00f1os, est\u00e1 contando.\n\n\u00bfHasta qu\u00e9 n\u00famero cuenta?",
       answers: ["10", "ten", "ti", "diez", "dix", "zehn"],
-      hints: ["Observa con cuidado lo que hace con las manos."]
+      hints: ["Observa con cuidado lo que hace con las manos.",   "Mira la placa a sus pies"]
     },
     {
       chapter: "Escena 5",
@@ -182,7 +182,7 @@ const TOUR_GREATHITS = {
       chapter: "Szene 4",
       text: "Christian Michelsen war der Ministerpr\u00e4sident Norwegens, als das Land 1905 die Unabh\u00e4ngigkeit von Schweden erlangte. Die Unabh\u00e4ngigkeit kam durch ein kluges politisches Man\u00f6ver \u2014 eine Resolution des norwegischen Parlaments, die das Ende der Union mit Schweden erkl\u00e4rte. Ein Zeitungsbericht \u00fcber die Sitzung beschreibt, wie: <em>\u201eAls die Worte \u00fcber die Aufl\u00f6sung der Union fielen, ging ein Aufatmen durch den Saal.\u201c</em>\n\nNeben dem Parlament steht das Grand Hotel \u2014 vielleicht das bekannteste Hotel Oslos. An der Fassade des Geb\u00e4udes wirst du ein kleines M\u00e4dchen in einem Poncho finden. Wie viele kleine Kinder z\u00e4hlt sie.\n\nBis zu welcher Zahl z\u00e4hlt sie?",
       answers: ["10", "zehn", "ten", "ti", "dix", "diez"],
-      hints: ["Achte genau darauf, was sie mit ihren H\u00e4nden macht."]
+      hints: ["Achte genau darauf, was sie mit ihren H\u00e4nden macht.", "Sehen Sie sich die Gedenktafel zu ihren F\u00fc\u00dfen an."]
     },
     {
       chapter: "Szene 5",
@@ -233,7 +233,7 @@ const TOUR_GREATHITS = {
       chapter: "Sc\u00e8ne 4",
       text: "Christian Michelsen \u00e9tait le premier ministre de Norv\u00e8ge lorsque le pays obtint son ind\u00e9pendance de la Su\u00e8de en 1905. L\u2019ind\u00e9pendance est venue gr\u00e2ce \u00e0 une habile manoeuvre politique \u2014 une r\u00e9solution du parlement norv\u00e9gien d\u00e9clarant la fin de l\u2019union avec la Su\u00e8de. Un compte rendu journalistique de la r\u00e9union d\u00e9crit comment\u00a0: <em>\u00ab Lorsque les mots concernant la dissolution de l\u2019union furent prononc\u00e9s, un soupir de soulagement parcourut la salle. \u00bb</em>\n\nA c\u00f4t\u00e9 du parlement se trouve le Grand H\u00f4tel \u2014 peut-\u00eatre le plus c\u00e9l\u00e8bre h\u00f4tel d\u2019Oslo. Le long de la fa\u00e7ade du b\u00e2timent, vous trouverez une petite fille en poncho. Comme beaucoup de jeunes enfants, elle est en train de compter.\n\nJusqu\u2019\u00e0 quel chiffre compte-t-elle\u00a0?",
       answers: ["10", "dix", "ten", "ti", "zehn", "diez"],
-      hints: ["Regardez attentivement ce qu\u2019elle fait avec ses mains."]
+      hints: ["Regardez attentivement ce qu\u2019elle fait avec ses mains.",   "Regardez la plaque \u00e0 ses pieds"]
     },
     {
       chapter: "Sc\u00e8ne 5",
