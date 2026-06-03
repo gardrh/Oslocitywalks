@@ -91,7 +91,7 @@ function handleAnswer() {
     sessionStorage.setItem('los!_scene_' + tourId, currentScene);
 
     // Log scene progress to sheet
-    submitScore(tourId, 0, 'scene_' + currentScene + '_of_' + tourScenes.length, 'scene');
+    submitScore(tourId, 'scene', currentScene + '_of_' + tourScenes.length, '', 0);
 
     if (currentScene >= tourScenes.length) {
       // Tour complete — save elapsed time and tour id
@@ -200,14 +200,15 @@ function formatElapsed(ms) {
 ──────────────────────────────────────────────────── */
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-r9F2mKe4BhgBKJ7ZKMzsNQraMdXG0BOBsCHy3vcBd4iN7K/exec';
 
-function submitScore(tour, elapsedMs, duration, type) {
+function submitScore(tour, type, scene, duration, elapsedMs) {
   if (!SHEET_URL) return;
   // GET request via image ping — no CORS preflight, works from any origin
   const params = new URLSearchParams({
-    tour: tour,
-    type: type || 'complete',
-    duration: duration || '',
-    elapsed_ms: elapsedMs
+    tour:       tour,
+    type:       type,
+    scene:      scene      || '',
+    duration:   duration   || '',
+    elapsed_ms: elapsedMs  || ''
   });
   const img = new Image();
   img.src = SHEET_URL + '?' + params.toString();
@@ -232,7 +233,7 @@ function initFinish() {
   }
 
   // Submit to Google Sheets (before cleanup so data is still available)
-  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—', 'complete');
+  if (elapsedMs > 0) submitScore(finishedId, 'complete', '', duration || '—', elapsedMs);
 
   // Clean up sessionStorage
   sessionStorage.removeItem('los!_start_' + finishedId);
