@@ -90,6 +90,9 @@ function handleAnswer() {
     currentScene++;
     sessionStorage.setItem('los!_scene_' + tourId, currentScene);
 
+    // Log scene progress to sheet
+    submitScore(tourId, 0, 'scene_' + currentScene + '_of_' + tourScenes.length, 'scene');
+
     if (currentScene >= tourScenes.length) {
       // Tour complete — save elapsed time and tour id
       sessionStorage.removeItem('los!_scene_' + tourId);
@@ -174,7 +177,7 @@ function formatElapsed(ms) {
 /* ── GOOGLE SHEETS SCORE SUBMISSION ──────────────────
   HOW TO SET UP:
   1. Go to https://sheets.google.com → new spreadsheet.
-  2. Row 1 headers: Date | Tour | Duration | Elapsed (ms)
+  2. Row 1 headers: Date | Tour | Type | Duration | Elapsed (ms)
   3. Extensions → Apps Script → replace default code with:
 
      function doGet(e) {
@@ -182,6 +185,7 @@ function formatElapsed(ms) {
        sheet.appendRow([
          Utilities.formatDate(new Date(), 'Europe/Oslo', 'yyyy-MM-dd HH:mm:ss'),
          e.parameter.tour,
+         e.parameter.type,
          e.parameter.duration,
          e.parameter.elapsed_ms
        ]);
@@ -196,13 +200,14 @@ function formatElapsed(ms) {
 ──────────────────────────────────────────────────── */
 const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwczyykYSUrIsTtirNsG-r9F2mKe4BhgBKJ7ZKMzsNQraMdXG0BOBsCHy3vcBd4iN7K/exec';
 
-function submitScore(tour, elapsedMs, duration) {
+function submitScore(tour, elapsedMs, duration, type) {
   if (!SHEET_URL) return;
   // GET request via image ping — no CORS preflight, works from any origin
   const params = new URLSearchParams({
     tour: tour,
     duration: duration || '',
-    elapsed_ms: elapsedMs
+    elapsed_ms: elapsedMs,
+    type: type || 'complete'
   });
   const img = new Image();
   img.src = SHEET_URL + '?' + params.toString();
@@ -227,7 +232,7 @@ function initFinish() {
   }
 
   // Submit to Google Sheets (before cleanup so data is still available)
-  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—');
+  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—', 'complete');
 
   // Clean up sessionStorage
   sessionStorage.removeItem('los!_start_' + finishedId);
