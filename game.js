@@ -15,7 +15,7 @@ const tours = {
 
 /* ── RESOLVE ACTIVE TOUR ──
    Reads ?tour=citycentre from the URL.
-   Falls back to 'citycentre' if missing or unknown.
+   Falls back to 'greathits' if missing or unknown.
 ─────────────────────────────────────────── */
 function getActiveTourId() {
   const params = new URLSearchParams(window.location.search);
@@ -113,8 +113,8 @@ function handleAnswer() {
 function handleHint() {
   const s = tourScenes[currentScene];
   if (!s.hints?.length) return;
-  const hint = s.hints[Math.min(hintIndex, s.hints.length - 1)];
-  hintIndex = Math.min(hintIndex + 1, s.hints.length);
+  const hint = s.hints[hintIndex % s.hints.length];
+  hintIndex = (hintIndex + 1) % s.hints.length;
   setFeedback('hint', '💡', hint);
 }
 
@@ -177,18 +177,17 @@ function formatElapsed(ms) {
   2. Row 1 headers: Date | Tour | Duration | Elapsed (ms)
   3. Extensions → Apps Script → replace default code with:
 
-     function doPost(e) {
+     function doGet(e) {
        const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-       const data  = JSON.parse(e.postData.contents);
        sheet.appendRow([
-         new Date().toISOString(),
-         data.tour,
-         data.duration,
-         data.elapsed_ms
+         Utilities.formatDate(new Date(), 'Europe/Oslo', 'yyyy-MM-dd HH:mm:ss'),
+         e.parameter.tour,
+         e.parameter.duration,
+         e.parameter.elapsed_ms
        ]);
        return ContentService
-         .createTextOutput(JSON.stringify({ status: 'ok' }))
-         .setMimeType(ContentService.MimeType.JSON);
+         .createTextOutput('ok')
+         .setMimeType(ContentService.MimeType.TEXT);
      }
 
   4. Deploy → New deployment → Web app
@@ -228,7 +227,7 @@ function initFinish() {
   }
 
   // Submit to Google Sheets (before cleanup so data is still available)
-  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '\u2014');
+  if (elapsedMs > 0) submitScore(finishedId, elapsedMs, duration || '—');
 
   // Clean up sessionStorage
   sessionStorage.removeItem('los!_start_' + finishedId);
