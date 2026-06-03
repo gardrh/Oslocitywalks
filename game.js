@@ -205,9 +205,9 @@ function submitScore(tour, elapsedMs, duration, type) {
   // GET request via image ping — no CORS preflight, works from any origin
   const params = new URLSearchParams({
     tour: tour,
+    type: type || 'complete',
     duration: duration || '',
-    elapsed_ms: elapsedMs,
-    type: type || 'complete'
+    elapsed_ms: elapsedMs
   });
   const img = new Image();
   img.src = SHEET_URL + '?' + params.toString();
