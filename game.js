@@ -146,11 +146,17 @@ function initMenu() {
   const menuPanel   = document.getElementById('menuPanel');
   const menuClose   = document.getElementById('menuClose');
 
+  // All focusable elements inside the panel
+  const panelFocusable = () => menuPanel.querySelectorAll(
+    'a, button, [tabindex]:not([tabindex="-1"])'
+  );
+
   function openMenu() {
     menuOverlay.classList.add('open');
     menuPanel.classList.add('open');
     menuBtn.setAttribute('aria-expanded', 'true');
     menuPanel.setAttribute('aria-hidden', 'false');
+    panelFocusable().forEach(el => el.removeAttribute('tabindex'));
     menuClose.focus();
   }
   function closeMenu() {
@@ -158,8 +164,11 @@ function initMenu() {
     menuPanel.classList.remove('open');
     menuBtn.setAttribute('aria-expanded', 'false');
     menuPanel.setAttribute('aria-hidden', 'true');
+    panelFocusable().forEach(el => el.setAttribute('tabindex', '-1'));
     menuBtn.focus();
   }
+  // Start with panel hidden — set tabindex=-1 on all focusable children
+  panelFocusable().forEach(el => el.setAttribute('tabindex', '-1'));
 
   menuBtn.addEventListener('click', openMenu);
   menuClose.addEventListener('click', closeMenu);
