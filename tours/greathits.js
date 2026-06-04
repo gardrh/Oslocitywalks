@@ -60,7 +60,7 @@ const TOUR_GREATHITS = {
   no: [
     {
       chapter: "Scene 1",
-      text: "G\u00e5 til plassen foran jernbanestasjonen, nederst i <b>Karl Johans gate</b>. Bygningen bak deg er <b>\u00d8stbanehallen</b> \u2014 som opprinnelig betjente \u00f8stbanen. Den var opprinnelig paret med en stasjon for vestbanen, som l\u00e5 der Nobels Fredssenter st\u00e5r i dag.\n\nF\u00f8r de siste togreisene ble overf\u00f8rt til \u00f8stbanehallen i 1989, m\u00e5tte reisende g\u00e5, ta buss, trikk eller drosje mellom de to stasjonene.\n\nI dag finnes det enda et alternativ for \u00e5 komme fra \u00d8stbanehallen til Nobels Fredssenter. Midt p\u00e5 plassen st\u00e5r et dyr som kunne vises til transport \u2014 hvis du har mot nok.\n\nHva er dyret?",
+      text: "G\u00e5 til plassen foran jernbanestasjonen, nederst i <b>Karl Johans gate</b>. Bygningen bak deg er <b>\u00d8stbanehallen</b> \u2014 som opprinnelig betjente \u00f8stbanen. Den var opprinnelig paret med en stasjon for vestbanen, som l\u00e5 der Nobels Fredssenter st\u00e5r i dag.\n\nF\u00f8r de siste togreisene ble overf\u00f8rt til \u00f8stbanehallen i 1989, m\u00e5tte reisende g\u00e5, ta buss, trikk eller drosje mellom de to stasjonene.\n\nI dag finnes det enda et alternativ for \u00e5 komme fra \u00d8stbanehallen til Nobels Fredssenter. Midt p\u00e5 plassen st\u00e5r et dyr som kan brukes til transport \u2014 hvis du har mot nok.\n\Hvilket dyr er det?",
       answers: ["tiger"],
       hints: ["Det kan spise deg f\u00f8r du n\u00e5r frem."]
     },
@@ -86,7 +86,7 @@ const TOUR_GREATHITS = {
       chapter: "Scene 5",
       text: "Grand Hotel og den tilst\u00f8tende Grand Caf\u00e9 har lenge v\u00e6rt en viktig institusjon i Oslo. Her kom kunstnere, forfattere og kjente personligheter som Edvard Munch, Roald Amundsen, Gustav Vigeland og Fridtjof Nansen for \u00e5 spise, drikke og sosialisere.\n\nHenrik Ibsen, en av Norges mest kjente forfattere, skal ha stukket innom hver dag klokken tolv for sin faste lunsj: en drink, et glass tysk \u00f8l og en bunke utenlandske aviser.\n\nIbsens skuespill \u2014 som <em>Et dukkehjem</em> og <em>Peer Gynt</em> \u2014 ble hyppig satt opp p\u00e5 neste stopp p\u00e5 turen. G\u00e5 mot <b>Nationaltheatret</b>. P\u00e5 veien vil du passere en mann med en notatbok i venstre h\u00e5nd og en blyant i h\u00f8yre.\n\nHvem er han?",
       answers: ["henrik wergeland", "wergeland"],
-      hints: ["Har du krysset gaten og st\u00e5r rett foran Nationaltheatret, har du g\u00e5tt for langt.", "Han st\u00e5r ved enden av et stort fontenebassin."]
+      hints: ["Har du krysset gaten og st\u00e5r rett foran Nationaltheatret, har du g\u00e5tt for langt.", "Han st\u00e5r ved enden av en stor fontene (Spikersuppa)"]
     },
     {
       chapter: "Scene 6",
@@ -102,7 +102,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Scene 8",
-      text: "Peter Andreas Munch (1810\u20131863) var norsk historiker, spr\u00e5kviter og geograf. Blant hans mange bidrag arbeidet han for \u00e5 etablere et skriftlig norsk spr\u00e5k adskilt fra dansk, som var den dominerende skriftformen p\u00e5 den tiden. Dette var en del av arbeidet med \u00e5 bygge en selvstendig norsk nasjonal identitet. Spr\u00e5kpolitikken p\u00e5 1800-tallet f\u00f8rte til den peculiære situasjonen at Norge i dag har to offisielle skriftlig spr\u00e5k: <em>bokm\u00e5l</em> og <em>nynorsk</em>.\n\nG\u00e5 n\u00e5 til siste stopp: <b>Slottet</b>, ferdigstilt i 1848 for en svensk konge og n\u00e5 offisiell bolig for den norske kongefamilien.\n\nForan slottet vil du finne en mann til hest. Han var opprinnelig en fransk general f\u00f8r han ble svensk kronprins, og senere konge av unionen mellom Sverige og Norge fra 1814 til 1905. Til tross for at han motarbeidet norsk selvstendighet og gikk til krig for \u00e5 hevde sin rett til landet, huskes han p\u00e5 en eller annen m\u00e5te med varme i dag.\n\n<i>Hvis Dronningens park til venstre for slottet er \u00e5pen, er det vel verdt en liten spasertur. \u00c5pent fra 18. mai til 1. oktober.</i>\n\nHvem var han?",
+      text: "Peter Andreas Munch (1810\u20131863) var norsk historiker, spr\u00e5kviter og geograf. Blant hans mange bidrag arbeidet han for \u00e5 etablere et skriftlig norsk spr\u00e5k adskilt fra dansk, som var den dominerende skriftformen p\u00e5 den tiden. Dette var en del av arbeidet med \u00e5 bygge en selvstendig norsk nasjonal identitet. Spr\u00e5kpolitikken p\u00e5 1800-tallet f\u00f8rte til at Norge i dag har to offisielle skriftlig spr\u00e5k: <em>bokm\u00e5l</em> og <em>nynorsk</em>.\n\nG\u00e5 n\u00e5 til siste stopp: <b>Slottet</b>, ferdigstilt i 1848 for en svensk konge og n\u00e5 offisiell bolig for den norske kongefamilien.\n\nForan slottet vil du finne en mann til hest. Han var opprinnelig en fransk general f\u00f8r han ble svensk kronprins, og senere konge av unionen mellom Sverige og Norge fra 1814 til 1905. Til tross for at han motarbeidet norsk selvstendighet og gikk til krig for \u00e5 hevde sin rett til landet, huskes han p\u00e5 en eller annen m\u00e5te med varme i dag.\n\n<i>Hvis Dronningens park til venstre for slottet er \u00e5pen, er det vel verdt en liten spasertur. \u00c5pent fra 18. mai til 1. oktober.</i>\n\nHvem var han?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
       hints: ["Han er veldig stor \u2014 vanskelig \u00e5 overse.", "Navnet hans st\u00e5r p\u00e5 en plakett ved sokkelen.", "Hovedgaten er oppkalt etter ham."]
     }
@@ -117,7 +117,7 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Escena 2",
-      text: "Ahora que has encontrado un medio de transporte, cruza la calle y entra en <b>Karl Johans gate</b>, la calle principal de la ciudad. Cada a\u00f1o, el 17 de mayo, esta calle se llena de unos 30.000 escolares y 100.000 espectadores cuando Noruega celebra su constituci\u00f3n.\n\nCamina por Karl Johan hasta que encuentres una tienda con un peque\u00f1o \u00c1ngel rosa a tu izquierda. Justo a su derecha encontrar\u00e1s una peque\u00f1a placa azul.\n\n\u00bfQu\u00e9 nombre aparece en el letrero?",
+      text: "Ahora que has encontrado un medio de transporte, cruza la calle y entra en <b>Karl Johans gate</b>, la calle principal de la ciudad. Cada a\u00f1o, el 17 de mayo, esta calle se llena de unos 30.000 escolares y 100.000 espectadores cuando Noruega celebra su constituci\u00f3n.\n\nCamina por Karl Johan hasta que encuentres una tienda con un peque\u00f1o \u00e1ngel rosa a tu izquierda. Justo a su derecha encontrar\u00e1s una peque\u00f1a placa azul.\n\n\u00bfQu\u00e9 nombre aparece en el letrero?",
       answers: ["elise sem"],
       hints: ["Est\u00e1 en el lado opuesto a la catedral de Oslo", "Est\u00e1 justo debajo de un peque\u00f1o letrero con el n\u00famero de la calle, el n\u00famero 10."]
     },
