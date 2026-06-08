@@ -6,7 +6,7 @@
 /* ── TOURS (scene data lives in translations.js) ── */
 const tours = {
   seaside:    { title: "Short Tour of Central-Western Oslo" },
-  greathits:  { title: "Oslo’s Greatest Hits" },
+  greathits:  { title: "The Search for Karl Johan" },
   becoming:   { title: "Oslo and Norway’s Becoming" },
   citycentre: { title: "Oslo City Centre Tour" },
   akerselva:  { title: "Akerselva and Oslo’s Industrial Past" }
