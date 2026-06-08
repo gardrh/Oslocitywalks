@@ -83,7 +83,7 @@ const t = {
       leaveFeedback:  'Gi tilbakemelding \u2192',
       backHome:       'Tilbake til start',
       tourComplete:   'Tur fullf\u00f8rt!',
-      tour1Title:       'Søket etter Karl Johan',
+      tour1Title:       'Jakten på Karl Johan',
       tour1Desc:       'Denne korte, interaktive turen tar deg gjennom hjertet av Oslo langs Karl Johans gate — følg ledetrådene, utforsk byen og oppdag historier om kjente nordmenn, politiske kamper, forfattere, kunstnere og Norges historie. Start: Oslo sentralstasjon — Slutt: Slottet',
       tour2Title:     'Oslo og Norges tilblivelse',
       tour2Desc:       'Denne turen starter nederst på Karl Johan og tar deg gjennom historien om hvordan Oslo og Norge ble det de er i dag — gjennom konflikt, kultur og selvstendighet. Ca. 4–5 km, omtrent 1–2 timer. Start: Oslo sentralstasjon — Slutt: Nær Operahuset',
