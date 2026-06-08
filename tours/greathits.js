@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════
    Los! – tours/greathits.js
-   Oslo's Greatest Hits — 8 scenes, 5 languages
+   The Search for Karl Johan — 7 scenes, 5 languages
 ══════════════════════════════════════════ */
 
 const TOUR_GREATHITS = {
