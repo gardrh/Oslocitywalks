@@ -129,4 +129,105 @@ const TOUR_GREATHITS = {
     },
     {
       chapter: "Escena 6",
-      text: "Henrik Ibsen (1828\u20131906) es posiblemente el escritor noruego m\u00e1s famoso, y uno de los dram\u00e1turgos m\u00e1s celebrados del mundo. Su obra <em>Casa de mu\u00f1ecas</em> \u2014 sobre una mujer que abandona a su marido \u2014 se estren\u00f3 en 1879 y caus\u00f3 un intenso debate p\u00fablico.\n\nDesde el Teatro Nacional, gira a la derecha, cruza la calle y entra en la plaza rodeada de tres grandes edificios. La <b>Universidad de Oslo</b> se fund\u00f3 en 1811, cuando Noruega estaba en uni\u00f3n con Dinamarca. Los edificios que ves se comenzaron en 1841 y hoy albergan la Facultad de Derecho.\n\nDelante de la universidad hay dos grandes estatuas. Encuentra la del hombre que comparte apellido con el pintor m\u00e1s famoso de Noruega \u2014 conocido, entre otras obras, por <em>El gr
+      text: "Henrik Ibsen (1828\u20131906) es posiblemente el escritor noruego m\u00e1s famoso, y uno de los dram\u00e1turgos m\u00e1s celebrados del mundo. Su obra <em>Casa de mu\u00f1ecas</em> \u2014 sobre una mujer que abandona a su marido \u2014 se estren\u00f3 en 1879 y caus\u00f3 un intenso debate p\u00fablico.\n\nDesde el Teatro Nacional, gira a la derecha, cruza la calle y entra en la plaza rodeada de tres grandes edificios. La <b>Universidad de Oslo</b> se fund\u00f3 en 1811, cuando Noruega estaba en uni\u00f3n con Dinamarca. Los edificios que ves se comenzaron en 1841 y hoy albergan la Facultad de Derecho.\n\nDelante de la universidad hay dos grandes estatuas. Encuentra la del hombre que comparte apellido con el pintor m\u00e1s famoso de Noruega \u2014 conocido, entre otras obras, por <em>El grito</em>.\n\n\u00bfC\u00f3mo se llama?",
+      answers: ["peter andreas munch", "p.a. munch", "pa munch", "peter munch"],
+      hints: ["El pintor en cuesti\u00f3n tiene un museo dedicado a \u00e9l cerca de la \u00f3pera.", "Su pie izquierdo est\u00e1 delante del derecho."]
+    },
+    {
+      chapter: "Escena 7",
+      text: "Peter Andreas Munch (1810\u20131863) fue un historiador, ling\u00fcista y ge\u00f3grafo noruego. Entre sus muchas contribuciones, trabaj\u00f3 para establecer una lengua escrita noruega distinta del dan\u00e9s. La pol\u00edtica ling\u00fc\u00edstica del siglo XIX llev\u00f3 a la singular situaci\u00f3n de que Noruega tiene hoy dos lenguas escritas oficiales: <em>bokm\u00e5l</em> y <em>nynorsk</em>.\n\nAhora dir\u00edgete a la parada final: <b>Slottet</b> (el Palacio Real), terminado en 1848 para un rey sueco y hoy residencia oficial de la familia real noruega.\n\nFrente al castillo encontrar\u00e1s a un hombre a caballo. Era originalmente un general franc\u00e9s antes de convertirse en pr\u00edncipe heredero de Suecia, y m\u00e1s tarde rey de la uni\u00f3n entre Suecia y Noruega de 1814 a 1905. A pesar de oponerse a la independencia noruega, es recordado con afecto.\n\n<i>Si el Parque de la Reina a la izquierda del castillo est\u00e1 abierto, merece la pena dar un paseo. Abierto del 18 de mayo al 1 de octubre.</i>\n\n\u00bfQui\u00e9n era?",
+      answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
+      hints: ["Es muy grande \u2014 dif\u00edcil de pasar por alto.", "Su nombre est\u00e1 escrito en una placa en la base de la estatua.", "La calle principal lleva su nombre."]
+    }
+  ],
+
+  de: [
+    {
+      chapter: "Szene 1",
+      text: "Begib dich auf den Platz vor dem Bahnhof, am unteren Ende der <b>Karl Johans gate</b>. Das Geb\u00e4ude hinter dir ist die <b>\u00d8stbanehallen</b> \u2014 ehemals f\u00fcr die \u00f6stliche Bahnlinie zust\u00e4ndig. Urspr\u00fcnglich war sie mit einem Bahnhof f\u00fcr die westliche Linie gepaart, der dort stand, wo heute das Nobelfriedenszentrum steht.\n\nBevor die letzten Zuglinien 1989 in den \u00f6stlichen Bahnhof verlegt wurden, mussten Reisende zu Fu\u00df gehen oder Bus, Stra\u00dfenbahn oder Taxi nehmen.\n\nHeute k\u00f6nnten Reisende eine andere M\u00f6glichkeit w\u00e4hlen. In der Mitte des Platzes steht ein Tier, das als Transportmittel dienen k\u00f6nnte \u2014 wenn man mutig genug ist.\n\nWelches Tier ist es?",
+      answers: ["tiger"],
+      hints: ["Es k\u00f6nnte dich fressen, bevor du dein Ziel erreichst."]
+    },
+    {
+      chapter: "Szene 2",
+      text: "Jetzt, da du ein Transportmittel gefunden hast, \u00fcberquere die Stra\u00dfe und betritt die <b>Karl Johans gate</b> \u2014 die Hauptstra\u00dfe der Stadt. Jeden Jahr am 17. Mai f\u00fcllt sich diese Stra\u00dfe mit rund 30.000 Schulkindern und 100.000 Zuschauern, wenn Norwegen seine Verfassung feiert.\n\nGeh die Karl Johan entlang, bis du auf der linken Seite ein Gesch\u00e4ft mit einem kleinen rosa Engel findest. Direkt daneben, auf der rechten Seite, findest du eine kleine blaue Plakette.\n\nWelcher Name steht auf dem Schild?",
+      answers: ["elise sem"],
+      hints: ["Sie befindet sich auf der gegen\u00fcberliegenden Seite des Osloer Doms", "Sie h\u00e4ngt direkt unter einem kleinen Stra\u00dfennummernschild, Nummer 10."]
+    },
+    {
+      chapter: "Szene 3",
+      text: "Elise Sem war die erste weibliche Rechtsanw\u00e4ltin in Europa und erhielt ihre Zulassung im Jahr 1904. Drei Jahre zuvor hatten sie und vier andere Jurastudentinnen an das Justizministerium geschrieben und gefordert, dass Frauen eine Anwaltszulassung erhalten d\u00fcrfen. Nach Debatten im Parlament und im Rechtssystem wurde das Recht durch ein Gesetz namens <em>Lex Elisiana</em> \u2014 Elises Gesetz \u2014 gew\u00e4hrt.\n\nHinter dir befindet sich der <b>Oslo Domkirke</b> (Osloer Dom) und <b>Kirkeristen</b>, der alte Basar. Der Grundstein des Doms wurde 1697 gelegt. Hier finden k\u00f6nigliche Beerdigungen statt.\n\nGeh die H\u00fcgel hinauf an Egertorget vorbei, dann wieder hinunter, bis du ein Geb\u00e4ude siehst, das wie ein Parlament aussieht. Es ist tats\u00e4chlich das Parlament.\n\nAuf dem Platz vor dem Parlament stehen mehrere Statuen. Finde den Torso eines Mannes mit Schnurrbart.\n\nWie hei\u00dft er?",
+      answers: ["christian michelsen", "chr. michelsen", "michelsen"],
+      hints: ["Er steht direkt vor dem Parlament, nahe den W\u00e4nden unter dem Laufsteg."]
+    },
+    {
+      chapter: "Szene 4",
+      text: "Christian Michelsen war Ministerpr\u00e4sident Norwegens, als das Land 1905 die Unabh\u00e4ngigkeit von Schweden erlangte. Die Unabh\u00e4ngigkeit kam durch ein cleveres politisches Man\u00f6ver \u2014 eine Resolution des norwegischen Parlaments, die das Ende der Union mit Schweden erkl\u00e4rte. Ein Zeitungsbericht der Sitzung beschreibt: <em>\u201eAls die Worte zur Aufl\u00f6sung der Union kamen, ging ein Seufzer der Erleichterung durch den Raum.\u201c</em>\n\nNeben dem Parlament steht das Grand Hotel \u2014 vielleicht das ber\u00fchmteste Hotel Oslos. An der Fassade findest du ein kleines M\u00e4dchen in einem Poncho. Wie viele kleine Kinder z\u00e4hlt sie.\n\nBis zu welcher Zahl z\u00e4hlt sie?",
+      answers: ["10", "ten", "ti", "dix", "zehn", "diez"],
+      hints: ["Schau genau, was sie mit ihren H\u00e4nden macht.", "Schau auf die Plakette an ihren F\u00fc\u00dfen"]
+    },
+    {
+      chapter: "Szene 5",
+      text: "Das Grand Hotel und das angrenzende Grand Caf\u00e9 sind seit langem eine wichtige Institution in Oslo. Hier kamen K\u00fcnstler, Schriftsteller und bekannte Pers\u00f6nlichkeiten wie Edvard Munch, Roald Amundsen, Gustav Vigeland und Fridtjof Nansen zum Essen, Trinken und Geselligkeit.\n\nHenrik Ibsen, einer von Norwegens ber\u00fchmtesten Schriftstellern, soll jeden Tag um die Mittagszeit vorbeigekommen sein: ein Schnaps, ein Glas deutsches Bier und ein Stapel ausl\u00e4ndischer Zeitungen.\n\nGeh weiter die <b>Karl Johans gate</b> hinauf zum <b>Nationaltheatret</b>. Rund um das Theater findest du mehrere Statuen. Eine von ihnen hat einen markanten Bart.\n\nWer ist er?",
+      answers: ["henrik ibsen", "ibsen"],
+      hints: ["Du hast auf dieser Tour bereits von ihm geh\u00f6rt.", "Er mochte Bier und Zeitungen.", "Er steht auf der linken Seite des Theaters."]
+    },
+    {
+      chapter: "Szene 6",
+      text: "Henrik Ibsen (1828\u20131906) gilt als Norwegens ber\u00fchmtester Schriftsteller und einer der gefeiertsten Dramatiker der Welt. Sein St\u00fcck <em>Nora oder Ein Puppenheim</em> \u2014 \u00fcber eine Frau, die ihren Mann verl\u00e4sst \u2014 hatte 1879 Premiere und l\u00f6ste eine heftige \u00f6ffentliche Debatte aus.\n\nVom Nationaltheater aus biegst du rechts ab, \u00fcberquerst die Stra\u00dfe und betrittst den Platz zwischen drei gro\u00dfen Geb\u00e4uden. Die <b>Universit\u00e4t Oslo</b> wurde 1811 gegr\u00fcndet, als Norwegen in einer Union mit D\u00e4nemark war. Die Geb\u00e4ude wurden 1841 begonnen und beherbergen heute die Rechtswissenschaftliche Fakult\u00e4t.\n\nVor der Universit\u00e4t stehen zwei gro\u00dfe Statuen. Finde den Mann, der denselben Nachnamen tr\u00e4gt wie Norwegens ber\u00fchmtester Maler \u2014 bekannt unter anderem f\u00fcr <em>Der Schrei</em>.\n\nWie hei\u00dft er?",
+      answers: ["peter andreas munch", "p.a. munch", "pa munch", "peter munch"],
+      hints: ["Dem Maler ist ein Museum in der N\u00e4he des Opernhauses gewidmet.", "Sein linker Fu\u00df steht vor dem rechten."]
+    },
+    {
+      chapter: "Szene 7",
+      text: "Peter Andreas Munch (1810\u20131863) war ein norwegischer Historiker, Linguist und Geograf. Er arbeitete daran, eine norwegische Schriftsprache zu etablieren, die sich vom D\u00e4nischen unterschied. Die Sprachpolitik des 19. Jahrhunderts f\u00fchrte dazu, dass Norwegen heute zwei offizielle Schriftsprachen hat: <em>bokm\u00e5l</em> und <em>nynorsk</em>.\n\nBegib dich nun zur letzten Station: <b>Slottet</b> (das K\u00f6nigliche Schloss), 1848 f\u00fcr einen schwedischen K\u00f6nig fertiggestellt und heute offizielle Residenz der norwegischen K\u00f6nigsfamilie.\n\nVor dem Schloss findest du einen Mann auf einem Pferd. Er war urspr\u00fcnglich ein franz\u00f6sischer General, bevor er Kronprinz von Schweden wurde, und sp\u00e4ter K\u00f6nig der Union zwischen Schweden und Norwegen von 1814 bis 1905. Trotz seines Widerstands gegen die norwegische Unabh\u00e4ngigkeit wird er mit Zuneigung erinnert.\n\n<i>Wenn der K\u00f6niginnenpark links vom Schloss ge\u00f6ffnet ist, lohnt sich ein kurzer Spaziergang. Ge\u00f6ffnet vom 18. Mai bis 1. Oktober.</i>\n\nWer war er?",
+      answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
+      hints: ["Er ist sehr gro\u00df \u2014 schwer zu \u00fcbersehen.", "Sein Name steht auf einer Plakette am Fu\u00df der Statue.", "Die Hauptstra\u00dfe ist nach ihm benannt."]
+    }
+  ],
+
+  fr: [
+    {
+      chapter: "Sc\u00e8ne 1",
+      text: "Rendez-vous sur la place devant la gare, au bas de la <b>Karl Johans gate</b>. Le b\u00e2timent derri\u00e8re vous est l\u2019<b>\u00d8stbanehallen</b> \u2014 autrefois desservant la ligne ferroviaire est. Il \u00e9tait \u00e0 l\u2019origine appari\u00e9 avec une gare desservant la ligne ouest, situ\u00e9e l\u00e0 o\u00f9 se trouve aujourd\u2019hui le Centre Nobel de la Paix.\n\nAvant que les derni\u00e8res lignes de train soient d\u00e9plac\u00e9es vers la gare est en 1989, les voyageurs devaient marcher ou prendre un bus, un tramway ou un taxi entre les deux gares.\n\nAujourd\u2019hui, les voyageurs pourraient choisir une autre option. Au centre de la place se trouve un animal qui pourrait servir de transport \u2014 si vous avez suffisamment de courage.\n\nQuel est cet animal\u00a0?",
+      answers: ["tiger", "tigre"],
+      hints: ["Il pourrait vous manger avant que vous n\u2019arriviez \u00e0 destination."]
+    },
+    {
+      chapter: "Sc\u00e8ne 2",
+      text: "Maintenant que vous avez trouv\u00e9 un moyen de transport, traversez la rue et entrez dans la <b>Karl Johans gate</b> \u2014 la rue principale de la ville. Chaque ann\u00e9e, le 17 mai, cette rue se remplit d\u2019environ 30 000 \u00e9coliers et 100 000 spectateurs lorsque la Norv\u00e8ge c\u00e9l\u00e8bre sa constitution.\n\nRemontez Karl Johan jusqu\u2019\u00e0 trouver une boutique avec un petit ange rose sur votre gauche. Juste \u00e0 sa droite, vous trouverez une petite plaque bleue.\n\nQuel nom est \u00e9crit sur le panneau\u00a0?",
+      answers: ["elise sem"],
+      hints: ["Elle se trouve du c\u00f4t\u00e9 oppos\u00e9 \u00e0 la cath\u00e9drale d\u2019Oslo", "Elle est juste en dessous d\u2019un petit panneau de num\u00e9ro de rue, le num\u00e9ro 10."]
+    },
+    {
+      chapter: "Sc\u00e8ne 3",
+      text: "Elise Sem fut la premi\u00e8re femme avocate d\u2019Europe, obtenant sa licence en 1904. Trois ans auparavant, elle et quatre autres \u00e9tudiantes en droit avaient \u00e9crit au minist\u00e8re de la Justice pour exiger que les femmes soient autoris\u00e9es \u00e0 obtenir une licence d\u2019avocat. Apr\u00e8s d\u00e9bat au parlement et dans le syst\u00e8me juridique, le droit fut accord\u00e9 par une loi connue sous le nom de <em>Lex Elisiana</em> \u2014 la loi d\u2019Elise.\n\nDerri\u00e8re vous se trouve l\u2019<b>Oslo Domkirke</b> (la cath\u00e9drale d\u2019Oslo) et <b>Kirkeristen</b>, l\u2019ancien bazar. La premi\u00e8re pierre de la cath\u00e9drale fut pos\u00e9e en 1697. C\u2019est l\u00e0 que se d\u00e9roulent les fun\u00e9railles royales.\n\nContinuez \u00e0 monter la colline en passant par Egertorget, puis redescendez jusqu\u2019\u00e0 voir un b\u00e2timent qui ressemble \u00e0 un parlement. C\u2019est effectivement le parlement.\n\nSur la place devant le parlement se trouvent plusieurs statues. Trouvez le buste d\u2019un homme moustachu.\n\nQuel est son nom\u00a0?",
+      answers: ["christian michelsen", "chr. michelsen", "michelsen"],
+      hints: ["Il se trouve juste devant le parlement, pr\u00e8s des murs sous la passerelle."]
+    },
+    {
+      chapter: "Sc\u00e8ne 4",
+      text: "Christian Michelsen \u00e9tait le Premier ministre de Norv\u00e8ge lorsque le pays obtint son ind\u00e9pendance de la Su\u00e8de en 1905. L\u2019ind\u00e9pendance vint gr\u00e2ce \u00e0 une habile manoeuvre politique \u2014 une r\u00e9solution du parlement norv\u00e9gien d\u00e9clarant la fin de l\u2019union avec la Su\u00e8de. Un compte-rendu de journal de la r\u00e9union d\u00e9crit comment\u00a0: <em>\u00ab\u00a0Lorsque les mots sur la dissolution de l\u2019union vinrent, un soupir de soulagement traversa la salle.\u00a0\u00bb</em>\n\nA c\u00f4t\u00e9 du parlement se trouve le Grand H\u00f4tel \u2014 peut-\u00eatre le plus c\u00e9l\u00e8bre h\u00f4tel d\u2019Oslo. Le long de la fa\u00e7ade, vous trouverez une petite fille en poncho. Comme beaucoup de jeunes enfants, elle compte.\n\nJusqu\u2019\u00e0 quel nombre compte-t-elle\u00a0?",
+      answers: ["10", "ten", "ti", "dix", "zehn", "diez"],
+      hints: ["Regardez attentivement ce qu\u2019elle fait avec ses mains.", "Regardez la plaque \u00e0 ses pieds"]
+    },
+    {
+      chapter: "Sc\u00e8ne 5",
+      text: "Le Grand H\u00f4tel et le Grand Caf\u00e9 attenant ont longtemps \u00e9t\u00e9 une institution importante \u00e0 Oslo. Des artistes, \u00e9crivains et personnages notables comme Edvard Munch, Roald Amundsen, Gustav Vigeland et Fridtjof Nansen venaient y manger, boire et socialiser.\n\nHenrik Ibsen, l\u2019un des \u00e9crivains norv\u00e9giens les plus c\u00e9l\u00e8bres, s\u2019y arr\u00eatait pr\u00e9tendument tous les jours \u00e0 midi pour son d\u00e9jeuner habituel\u00a0: un verre, une bi\u00e8re allemande et une pile de journaux \u00e9trangers.\n\nContinuez le long de la <b>Karl Johans gate</b> vers le <b>Nationaltheatret</b>. Autour du th\u00e9\u00e2tre vous trouverez plusieurs statues. L\u2019une d\u2019elles a ce qu\u2019on pourrait appeler une barbe distinctive.\n\nQui est-il\u00a0?",
+      answers: ["henrik ibsen", "ibsen"],
+      hints: ["Vous avez d\u00e9j\u00e0 entendu parler de lui lors de cette visite.", "Il aimait la bi\u00e8re et les journaux.", "Il se trouve sur le c\u00f4t\u00e9 gauche du th\u00e9\u00e2tre."]
+    },
+    {
+      chapter: "Sc\u00e8ne 6",
+      text: "Henrik Ibsen (1828\u20131906) est sans doute l\u2019\u00e9crivain norv\u00e9gien le plus c\u00e9l\u00e8bre, et l\u2019un des dramaturges les plus c\u00e9l\u00e8bres du monde. Sa pi\u00e8ce <em>Une maison de poupe</em> \u2014 sur une femme qui quitte son mari \u2014 a \u00e9t\u00e9 cr\u00e9\u00e9e en 1879 et a provoqu\u00e9 un vif d\u00e9bat public.\n\nDepuis le Th\u00e9\u00e2tre National, tournez \u00e0 droite, traversez la rue et entrez sur la place entour\u00e9e de trois grands b\u00e2timents. L\u2019<b>Universit\u00e9 d\u2019Oslo</b> a \u00e9t\u00e9 fond\u00e9e en 1811, lorsque la Norv\u00e8ge \u00e9tait en union avec le Danemark. Les b\u00e2timents ont \u00e9t\u00e9 commenc\u00e9s en 1841 et abritent aujourd\u2019hui la Facult\u00e9 de droit.\n\nDevant l\u2019universit\u00e9 se trouvent deux grandes statues. Trouvez celui qui partage son nom de famille avec le peintre le plus c\u00e9l\u00e8bre de Norv\u00e8ge \u2014 connu notamment pour <em>Le Cri</em>.\n\nQuel est son nom\u00a0?",
+      answers: ["peter andreas munch", "p.a. munch", "pa munch", "peter munch"],
+      hints: ["Le peintre en question a un mus\u00e9e qui lui est d\u00e9di\u00e9 pr\u00e8s de l\u2019op\u00e9ra.", "Son pied gauche est devant le droit."]
+    },
+    {
+      chapter: "Sc\u00e8ne 7",
+      text: "Peter Andreas Munch (1810\u20131863) \u00e9tait un historien, linguiste et g\u00e9ographe norv\u00e9gien. Il a travaill\u00e9 \u00e0 \u00e9tablir une langue \u00e9crite norv\u00e9gienne distincte du danois. La politique linguistique du XIXe si\u00e8cle a conduit \u00e0 la situation inhabituelle que la Norv\u00e8ge a aujourd\u2019hui deux langues \u00e9crites officielles\u00a0: le <em>bokm\u00e5l</em> et le <em>nynorsk</em>.\n\nRendez-vous maintenant au dernier arr\u00eat\u00a0: <b>Slottet</b> (le Palais Royal), achev\u00e9 en 1848 pour un roi su\u00e9dois et aujourd\u2019hui r\u00e9sidence officielle de la famille royale norv\u00e9gienne.\n\nDevant le ch\u00e2teau, vous trouverez un homme \u00e0 cheval. Il \u00e9tait \u00e0 l\u2019origine un g\u00e9n\u00e9ral fran\u00e7ais avant de devenir prince h\u00e9ritier de Su\u00e8de, puis roi de l\u2019union entre la Su\u00e8de et la Norv\u00e8ge de 1814 \u00e0 1905. Malgr\u00e9 son opposition \u00e0 l\u2019ind\u00e9pendance norv\u00e9gienne, il est aujourd\u2019hui rappel\u00e9 avec affection.\n\n<i>Si le parc de la Reine \u00e0 gauche du ch\u00e2teau est ouvert, cela vaut la peine de s\u2019y promener. Ouvert du 18 mai au 1er octobre.</i>\n\nQui \u00e9tait-il\u00a0?",
+      answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
+      hints: ["Il est tr\u00e8s grand \u2014 difficile de le manquer.", "Son nom est \u00e9crit sur une plaque \u00e0 la base de la statue.", "La rue principale porte son nom."]
+    }
+  ]
+};
