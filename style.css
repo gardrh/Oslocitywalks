@@ -900,3 +900,18 @@ button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
   touch-action: manipulation;
 }
 .about-coffee-btn:hover { opacity: 0.82; }
+
+.about-email-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--ink);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+.about-email-btn:hover { opacity: 0.82; }
