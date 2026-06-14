@@ -54,7 +54,8 @@ const t = {
       aboutP2:        'Los! is a <strong>free</strong>, self-guided walking tour app for Oslo. The idea is simple: show up, follow the clues, and discover the city\u2019s history, people and places at your own pace \u2014 no guide needed, no booking required.',
       aboutP3:        'Each tour takes you through <strong>real streets and public spaces</strong>. Along the way, you will stop at statues, buildings and landmarks that each have a story to tell \u2014 places like Nationaltheatret, the Royal Palace, Akershus Fortress, Gamle Logen and the Oslo Opera House. The answers are always somewhere nearby \u2014 look around, read your surroundings and enjoy the walk.',
       aboutP4:        'Los! is currently in a <strong>pilot stage</strong>. The first tours are live and more are being developed. The app is <strong>free to use</strong>, but donations are very welcome.',
-      aboutP5:        'Los! is developed by <strong>Gard Ringen H\u00f8ibjerg</strong>. The team is motivated by the idea of helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, please use our <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">feedback form</a>.',
+      aboutP5:       'Los! is developed by <strong>Gard Ringen Høibjerg</strong>, and the team is motivated by helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, we’d love to hear from you.',
+      aboutEmailBtn:       '✉️ Email us',
       finishBody:       'Congratulations — you have finished the tour! This is where your real adventure in Oslo begins. From here, you can easily make your way to wherever you wish.\n\nWe hope you enjoyed the tour. If you have any feedback, we would love to hear from you — it helps us improve and create new tours.',
       finishCoffeeBtn:  '☕ Buy me a coffee',
       skipScene:  'I’m stuck! (Skip this scene)',
@@ -100,7 +101,8 @@ const t = {
       aboutP2:        'Los! er en <strong>gratis</strong> selvguidet byvandring for Oslo. Id\u00e9en er enkel: m\u00f8t opp, f\u00f8lg ledetr\u00e5dene og oppdag byens historie, mennesker og steder i ditt eget tempo \u2014 ingen guide n\u00f8dvendig, ingen bestilling.',
       aboutP3:        'Hver tur tar deg gjennom <strong>ekte gater og offentlige rom</strong>. Underveis stopper du ved statuer, bygninger og landemerker som alle har en historie \u00e5 fortelle \u2014 steder som Nationaltheatret, Slottet, Akershus festning, Gamle Logen og Operahuset. Svarene er alltid i n\u00e6rheten \u2014 se deg rundt og nyt turen.',
       aboutP4:        'Los! er for \u00f8yeblikket i en <strong>pilotfase</strong>. De f\u00f8rste turene er live og flere er under utvikling. Appen er <strong>gratis \u00e5 bruke</strong>, men donasjoner mottas med stor takk.',
-      aboutP5:        'Los! er utviklet av <strong>Gard Ringen H\u00f8ibjerg</strong>. Teamet er motivert av tanken p\u00e5 \u00e5 hjelpe bes\u00f8kende med \u00e5 oppdage de mer interessante hj\u00f8rnene av byen. Har du tilbakemeldinger, finner du feil, eller \u00f8nsker \u00e5 ta kontakt, bruk gjerne v\u00e5rt <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">tilbakemeldingsskjema</a>.',
+      aboutP5:       'Los! er utviklet av <strong>Gard Ringen Høibjerg</strong>, og teamet drives av ønsket om å hjelpe bесøkende med å oppdage de mer interessante krokene av byen. Har du tilbakemeldinger, oppdager en feil, eller vil komme i kontakt — vi hører gjerne fra deg.',
+      aboutEmailBtn:       '✉️ Send oss en e-post',
       finishBody:       'Gratulerer — du har fullført turen! Her begynner ditt virkelige eventyr i Oslo. Herfra kan du enkelt gå dit du vil.\n\nVi håper du likte turen. Har du tilbakemeldinger, hører vi gjerne fra deg — det hjelper oss med å forbedre og lage nye turer.',
       finishCoffeeBtn:  '☕ Kjøp meg en kaffe',
       skipScene:  'Jeg sitter fast! (Hopp over denne scenen)',
@@ -146,7 +148,8 @@ const t = {
       aboutP2:        'Los! es una aplicaci\u00f3n <strong>gratuita</strong> de visitas autoguiadas a pie por Oslo. La idea es sencilla: pres\u00e9ntate, sigue las pistas y descubre la historia, las personas y los lugares de la ciudad a tu propio ritmo \u2014 sin gu\u00eda ni reserva.',
       aboutP3:        'Cada ruta te lleva por <strong>calles reales y espacios p\u00fablicos</strong>. A lo largo del camino, te detendr\u00e1s en estatuas, edificios y lugares emblem\u00e1ticos que tienen una historia que contar \u2014 lugares como el Nationaltheatret, el Palacio Real, la Fortaleza de Akershus, Gamle Logen y la \u00d3pera de Oslo. Las respuestas siempre est\u00e1n cerca \u2014 mira a tu alrededor y disfruta del paseo.',
       aboutP4:        'Los! se encuentra actualmente en una <strong>fase piloto</strong>. Las primeras rutas est\u00e1n activas y se est\u00e1n desarrollando m\u00e1s. La aplicaci\u00f3n es <strong>gratuita</strong>, pero las donaciones son muy bienvenidas.',
-      aboutP5:        'Los! est\u00e1 desarrollada por <strong>Gard Ringen H\u00f8ibjerg</strong>. El equipo est\u00e1 motivado por la idea de ayudar a los visitantes a descubrir los rincones m\u00e1s interesantes de la ciudad. Si tienes comentarios, encuentras un error o quieres ponerte en contacto, usa nuestro <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulario de comentarios</a>.',
+      aboutP5:       'Los! está desarrollada por <strong>Gard Ringen Høibjerg</strong>, y el equipo está motivado por ayudar a los visitantes a descubrir los rincones más interesantes de la ciudad. Si tienes comentarios, encuentras un error o quieres ponerte en contacto, nos encanta saber de ti.',
+      aboutEmailBtn:       '✉️ Envíanos un correo',
       finishBody:       '¡Enhorabuena — has completado la ruta! Aquí es donde comienza tu verdadera aventura en Oslo. Desde aquí puedes dirigirte fácilmente a donde quieras.\n\nEsperamos que hayas disfrutado la ruta. Si tienes alguna opinión, nos encanta escucharla — nos ayuda a mejorar y crear nuevas rutas.',
       finishCoffeeBtn:  '☕ Invítame a un café',
       skipScene:  '¡Estoy atascado! (Saltar esta escena)',
@@ -192,7 +195,8 @@ const t = {
       aboutP2:        'Los! ist eine <strong>kostenlose</strong> App f\u00fcr selbstgef\u00fchrte Stadtrundg\u00e4nge in Oslo. Die Idee ist einfach: Komm vorbei, folge den Hinweisen und entdecke die Geschichte, die Menschen und die Orte der Stadt in deinem eigenen Tempo \u2014 kein Reiseleiter, keine Buchung n\u00f6tig.',
       aboutP3:        'Jede Tour f\u00fchrt dich durch <strong>echte Stra\u00dfen und \u00f6ffentliche R\u00e4ume</strong>. Unterwegs h\u00e4ltst du an Statuen, Geb\u00e4uden und Wahrzeichen, die alle eine Geschichte zu erz\u00e4hlen haben \u2014 Orte wie das Nationaltheatret, das K\u00f6nigliche Schloss, die Festung Akershus, Gamle Logen und das Osloer Opernhaus. Die Antworten sind immer in der N\u00e4he \u2014 schau dich um und genie\u00df den Spaziergang.',
       aboutP4:        'Los! befindet sich derzeit in einer <strong>Pilotphase</strong>. Die ersten Touren sind live und weitere sind in Entwicklung. Die App ist <strong>kostenlos</strong>, aber Spenden sind sehr willkommen.',
-      aboutP5:        'Los! wurde von <strong>Gard Ringen H\u00f8ibjerg</strong> entwickelt. Das Team ist motiviert, Besuchern die interessanteren Ecken der Stadt zu zeigen. Wenn du Feedback hast, einen Fehler entdeckst oder Kontakt aufnehmen m\u00f6chtest, nutze bitte unser <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">Feedback-Formular</a>.',
+      aboutP5:       'Los! wurde von <strong>Gard Ringen Høibjerg</strong> entwickelt. Das Team ist motiviert, Besuchern dabei zu helfen, die interessanteren Ecken der Stadt zu entdecken. Wenn du Feedback hast, einen Fehler entdeckst oder Kontakt aufnehmen möchtest, freuen wir uns von dir zu hören.',
+      aboutEmailBtn:       '✉️ Schreib uns',
       finishBody:       'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Hier beginnt dein echtes Abenteuer in Oslo. Von hier aus kannst du leicht dorthin gehen, wo du möchtest.\n\nWir hoffen, dir hat die Tour gefallen. Wenn du Feedback hast, freuen wir uns davon zu hören — es hilft uns, neue Touren zu verbessern und zu entwickeln.',
       finishCoffeeBtn:  '☕ Kauf mir einen Kaffee',
       skipScene:  'Ich stecke fest! (Diese Szene überspringen)',
@@ -238,7 +242,8 @@ const t = {
       aboutP2:        'Los! est une application de visites <strong>gratuites</strong> et autoguides \u00e0 pied \u00e0 Oslo. L\u2019id\u00e9e est simple\u00a0: venez, suivez les indices et d\u00e9couvrez l\u2019histoire, les gens et les lieux de la ville \u00e0 votre rythme \u2014 sans guide, sans r\u00e9servation.',
       aboutP3:        'Chaque visite vous m\u00e8ne \u00e0 travers de <strong>vraies rues et des espaces publics</strong>. En chemin, vous vous arr\u00eaterez devant des statues, des b\u00e2timents et des monuments qui ont chacun une histoire \u00e0 raconter \u2014 des lieux comme le Nationaltheatret, le Palais Royal, la forteresse d\u2019Akershus, Gamle Logen et l\u2019Op\u00e9ra d\u2019Oslo. Les r\u00e9ponses sont toujours quelque part \u00e0 proximit\u00e9 \u2014 regardez autour de vous et profitez de la balade.',
       aboutP4:        'Los! est actuellement en <strong>phase pilote</strong>. Les premi\u00e8res visites sont en ligne et d\u2019autres sont en cours de d\u00e9veloppement. L\u2019application est <strong>gratuite</strong>, mais les dons sont les bienvenus.',
-      aboutP5:        'Los! est d\u00e9velopp\u00e9 par <strong>Gard Ringen H\u00f8ibjerg</strong>. L\u2019\u00e9quipe est motiv\u00e9e par l\u2019id\u00e9e d\u2019aider les visiteurs \u00e0 d\u00e9couvrir les coins les plus int\u00e9ressants de la ville. Si vous avez des commentaires, d\u00e9tectez une erreur ou souhaitez nous contacter, veuillez utiliser notre <a href="https://forms.gle/ZnFbVnRitNRhxWGB6" target="_blank" rel="noopener" class="about-link">formulaire de retour</a>.',
+      aboutP5:       'Los! est développé par <strong>Gard Ringen Høibjerg</strong>, et l’équipe est motivée par l’envie d’aider les visiteurs à découvrir les coins les plus intéressants de la ville. Si vous avez des commentaires, repérez une erreur ou souhaitez nous contacter, nous serions ravis de vous entendre.',
+      aboutEmailBtn:       '✉️ Envoyez-nous un e-mail',
       finishBody:       'Félicitations — vous avez terminé la visite ! C’est ici que votre vraie aventure à Oslo commence. De là, vous pouvez facilement vous rendre où vous le souhaitez.\n\nNous espérons que vous avez apprécié la visite. Si vous avez des commentaires, nous serions ravis de les lire — cela nous aide à améliorer et à créer de nouvelles visites.',
       finishCoffeeBtn:  '☕ Offrez-moi un café',
       skipScene:  'Je suis bloqué ! (Passer cette scène)',
@@ -344,6 +349,7 @@ function applyTranslations() {
   _set('aboutP3',       T('aboutP3'));
   _set('aboutP4',       T('aboutP4'));
   _set('aboutP5',       T('aboutP5'));
+  _set('aboutEmailBtn',   T('aboutEmailBtn'));
 
   const ansBtn  = document.getElementById('answerBtn');
   const hintBtn = document.getElementById('hintBtn');
