@@ -821,6 +821,50 @@ button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
   letter-spacing: 0.01em;
 }
 .finish-btn-coffee:hover { opacity: 0.88; }
+.btn-skip {
+  width: 100%;
+  margin-top: 6px;
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid rgba(12,26,26,0.25);
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 10px 20px;
+  opacity: 0.6;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s, background 0.15s;
+}
+.btn-skip:hover { opacity: 1; background: rgba(12,26,26,0.06); }
+
+.finish-skip-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(232,168,76,0.10);
+  border: 1.5px solid rgba(232,168,76,0.3);
+  border-radius: 14px;
+  padding: 14px 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.finish-skip-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  opacity: 0.6;
+  margin: 0;
+}
+.finish-skip-count {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--sand);
+  margin: 0;
+}
+
 
 .about-coffee {
   display: block;
