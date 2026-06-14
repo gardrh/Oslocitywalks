@@ -47,7 +47,7 @@ const TOUR_GREATHITS = {
       chapter: "Scene 7",
       text: "Peter Andreas Munch (1810\u20131863) was a Norwegian historian, linguist and geographer. Among his many contributions, he worked to establish a written Norwegian language distinct from Danish, which was the dominant written form at the time. This effort was part of building a distinct Norwegian national identity. The language politics of the 1800s led to the unusual situation that Norway today has two official written languages: <em>bokm\u00e5l</em> (book language) and <em>nynorsk</em> (new Norwegian).\n\nNow make your way to the final stop: <b>Slottet</b> (the Royal Palace), completed in 1848 for a Swedish king and now the official residence of the Norwegian royal family.\n\nIn front of the castle, you will find a man on a horse. He was originally a French general before becoming Crown Prince of Sweden, and later king of the union between Sweden and Norway from 1814 to 1905. Despite opposing Norwegian independence and going to war to claim his right to the country, he is somehow remembered with affection today.\n\n<i>If the Queen\u2019s Park to the left of the castle is open, it is well worth a short stroll. Open from 18 May to 1 October.</i>\n\nWho was he?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
-      hints: ["He is very large \u2014 difficult to miss.", "His name is written on a plaque at the base of the statue.", "The main street is named after him."]
+      hints: ["He is very large \u2014 difficult to miss.", "His name is written on a plaque at the base of the statue."]
     }
   ],
 
@@ -92,7 +92,7 @@ const TOUR_GREATHITS = {
       chapter: "Scene 7",
       text: "Peter Andreas Munch (1810\u20131863) var norsk historiker, spr\u00e5kviter og geograf. Blant hans mange bidrag arbeidet han for \u00e5 etablere et skriftlig norsk spr\u00e5k adskilt fra dansk, som var den dominerende skriftformen p\u00e5 den tiden. Dette var en del av arbeidet med \u00e5 bygge en selvstendig norsk nasjonal identitet. Spr\u00e5kpolitikken p\u00e5 1800-tallet f\u00f8rte til at Norge i dag har to offisielle skriftlig spr\u00e5k: <em>bokm\u00e5l</em> og <em>nynorsk</em>.\n\nG\u00e5 n\u00e5 til siste stopp: <b>Slottet</b>, ferdigstilt i 1848 for en svensk konge og n\u00e5 offisiell bolig for den norske kongefamilien.\n\nForan slottet vil du finne en mann til hest. Han var opprinnelig en fransk general f\u00f8r han ble svensk kronprins, og senere konge av unionen mellom Sverige og Norge fra 1814 til 1905. Til tross for at han motarbeidet norsk selvstendighet og gikk til krig for \u00e5 hevde sin rett til landet, huskes han p\u00e5 en eller annen m\u00e5te med varme i dag.\n\n<i>Hvis Dronningens park til venstre for slottet er \u00e5pen, er det vel verdt en liten spasertur. \u00c5pent fra 18. mai til 1. oktober.</i>\n\nHvem var han?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
-      hints: ["Han er veldig stor \u2014 vanskelig \u00e5 overse.", "Navnet hans st\u00e5r p\u00e5 en plakett ved sokkelen.", "Hovedgaten er oppkalt etter ham."]
+      hints: ["Han er veldig stor \u2014 vanskelig \u00e5 overse.", "Navnet hans st\u00e5r p\u00e5 en plakett ved sokkelen."]
     }
   ],
 
@@ -137,7 +137,7 @@ const TOUR_GREATHITS = {
       chapter: "Escena 7",
       text: "Peter Andreas Munch (1810\u20131863) fue un historiador, ling\u00fcista y ge\u00f3grafo noruego. Entre sus muchas contribuciones, trabaj\u00f3 para establecer una lengua escrita noruega distinta del dan\u00e9s. La pol\u00edtica ling\u00fc\u00edstica del siglo XIX llev\u00f3 a la singular situaci\u00f3n de que Noruega tiene hoy dos lenguas escritas oficiales: <em>bokm\u00e5l</em> y <em>nynorsk</em>.\n\nAhora dir\u00edgete a la parada final: <b>Slottet</b> (el Palacio Real), terminado en 1848 para un rey sueco y hoy residencia oficial de la familia real noruega.\n\nFrente al castillo encontrar\u00e1s a un hombre a caballo. Era originalmente un general franc\u00e9s antes de convertirse en pr\u00edncipe heredero de Suecia, y m\u00e1s tarde rey de la uni\u00f3n entre Suecia y Noruega de 1814 a 1905. A pesar de oponerse a la independencia noruega, es recordado con afecto.\n\n<i>Si el Parque de la Reina a la izquierda del castillo est\u00e1 abierto, merece la pena dar un paseo. Abierto del 18 de mayo al 1 de octubre.</i>\n\n\u00bfQui\u00e9n era?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
-      hints: ["Es muy grande \u2014 dif\u00edcil de pasar por alto.", "Su nombre est\u00e1 escrito en una placa en la base de la estatua.", "La calle principal lleva su nombre."]
+      hints: ["Es muy grande \u2014 dif\u00edcil de pasar por alto.", "Su nombre est\u00e1 escrito en una placa en la base de la estatua."]
     }
   ],
 
@@ -182,7 +182,7 @@ const TOUR_GREATHITS = {
       chapter: "Szene 7",
       text: "Peter Andreas Munch (1810\u20131863) war ein norwegischer Historiker, Linguist und Geograf. Er arbeitete daran, eine norwegische Schriftsprache zu etablieren, die sich vom D\u00e4nischen unterschied. Die Sprachpolitik des 19. Jahrhunderts f\u00fchrte dazu, dass Norwegen heute zwei offizielle Schriftsprachen hat: <em>bokm\u00e5l</em> und <em>nynorsk</em>.\n\nBegib dich nun zur letzten Station: <b>Slottet</b> (das K\u00f6nigliche Schloss), 1848 f\u00fcr einen schwedischen K\u00f6nig fertiggestellt und heute offizielle Residenz der norwegischen K\u00f6nigsfamilie.\n\nVor dem Schloss findest du einen Mann auf einem Pferd. Er war urspr\u00fcnglich ein franz\u00f6sischer General, bevor er Kronprinz von Schweden wurde, und sp\u00e4ter K\u00f6nig der Union zwischen Schweden und Norwegen von 1814 bis 1905. Trotz seines Widerstands gegen die norwegische Unabh\u00e4ngigkeit wird er mit Zuneigung erinnert.\n\n<i>Wenn der K\u00f6niginnenpark links vom Schloss ge\u00f6ffnet ist, lohnt sich ein kurzer Spaziergang. Ge\u00f6ffnet vom 18. Mai bis 1. Oktober.</i>\n\nWer war er?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
-      hints: ["Er ist sehr gro\u00df \u2014 schwer zu \u00fcbersehen.", "Sein Name steht auf einer Plakette am Fu\u00df der Statue.", "Die Hauptstra\u00dfe ist nach ihm benannt."]
+      hints: ["Er ist sehr gro\u00df \u2014 schwer zu \u00fcbersehen.", "Sein Name steht auf einer Plakette am Fu\u00df der Statue."]
     }
   ],
 
@@ -227,7 +227,7 @@ const TOUR_GREATHITS = {
       chapter: "Sc\u00e8ne 7",
       text: "Peter Andreas Munch (1810\u20131863) \u00e9tait un historien, linguiste et g\u00e9ographe norv\u00e9gien. Il a travaill\u00e9 \u00e0 \u00e9tablir une langue \u00e9crite norv\u00e9gienne distincte du danois. La politique linguistique du XIXe si\u00e8cle a conduit \u00e0 la situation inhabituelle que la Norv\u00e8ge a aujourd\u2019hui deux langues \u00e9crites officielles\u00a0: le <em>bokm\u00e5l</em> et le <em>nynorsk</em>.\n\nRendez-vous maintenant au dernier arr\u00eat\u00a0: <b>Slottet</b> (le Palais Royal), achev\u00e9 en 1848 pour un roi su\u00e9dois et aujourd\u2019hui r\u00e9sidence officielle de la famille royale norv\u00e9gienne.\n\nDevant le ch\u00e2teau, vous trouverez un homme \u00e0 cheval. Il \u00e9tait \u00e0 l\u2019origine un g\u00e9n\u00e9ral fran\u00e7ais avant de devenir prince h\u00e9ritier de Su\u00e8de, puis roi de l\u2019union entre la Su\u00e8de et la Norv\u00e8ge de 1814 \u00e0 1905. Malgr\u00e9 son opposition \u00e0 l\u2019ind\u00e9pendance norv\u00e9gienne, il est aujourd\u2019hui rappel\u00e9 avec affection.\n\n<i>Si le parc de la Reine \u00e0 gauche du ch\u00e2teau est ouvert, cela vaut la peine de s\u2019y promener. Ouvert du 18 mai au 1er octobre.</i>\n\nQui \u00e9tait-il\u00a0?",
       answers: ["karl johan", "carl johan", "karl iii johan", "carl iii johan", "bernadotte", "jean baptiste bernadotte"],
-      hints: ["Il est tr\u00e8s grand \u2014 difficile de le manquer.", "Son nom est \u00e9crit sur une plaque \u00e0 la base de la statue.", "La rue principale porte son nom."]
+      hints: ["Il est tr\u00e8s grand \u2014 difficile de le manquer.", "Son nom est \u00e9crit sur une plaque \u00e0 la base de la statue."]
     }
   ]
 };
