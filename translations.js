@@ -359,6 +359,8 @@ function applyTranslations() {
   _set('finishBackBtn',     T('backHome'));
   _set('finishDonateText',  T('finishDonateText'));
   _set('finishCoffeeBtn',   T('finishCoffeeBtn'));
+  _setText('skipBtn',         T('skipScene'));
+  _setText('finishSkipLbl',   T('finishSkipLbl'));
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
