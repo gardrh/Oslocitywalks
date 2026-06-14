@@ -245,6 +245,8 @@ const SHEET_URL = 'https://script.google.com/macros/s/AKfycby3B070CtDplDqpMEPnLB
 
 function submitScore(tour, type, scene, duration, elapsedMs) {
   if (!SHEET_URL) return;
+  // Skip tracking in sandbox mode (?sandbox=true)
+  if (new URLSearchParams(window.location.search).get('sandbox') === 'true') return;
   // GET request via image ping — no CORS preflight, works from any origin
   const params = new URLSearchParams({
     tour:       tour,
