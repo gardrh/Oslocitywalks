@@ -29,6 +29,7 @@ let tourScenes   = [];
 let currentScene = 0;
 let hintIndex       = 0;
 let sceneStartTime  = Date.now();
+let skipCount       = 0;
 
 /* ── INIT GAME ── */
 function initGame() {
@@ -38,6 +39,9 @@ function initGame() {
   // Restore progress for this specific tour
   const saved = parseInt(sessionStorage.getItem('los!_scene_' + tourId) || '0');
   currentScene = (saved < tourScenes.length) ? saved : 0;
+
+  // Restore skip count for this tour
+  skipCount = parseInt(sessionStorage.getItem('los!_skips_' + tourId) || '0');
 
   // Start timer on fresh start only
   if (currentScene === 0 && !sessionStorage.getItem('los!_start_' + tourId)) {
@@ -49,6 +53,7 @@ function initGame() {
 
   document.getElementById('answerBtn').addEventListener('click', handleAnswer);
   document.getElementById('hintBtn').addEventListener('click', handleHint);
+  document.getElementById('skipBtn').addEventListener('click', handleSkip);
   document.getElementById('answerInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') handleAnswer();
   });
@@ -122,6 +127,32 @@ function handleHint() {
   const hint = s.hints[hintIndex % s.hints.length];
   hintIndex = (hintIndex + 1) % s.hints.length;
   setFeedback('hint', '💡', hint);
+}
+
+/* ── HANDLE SKIP ── */
+function handleSkip() {
+  const sceneElapsed = Math.round((Date.now() - sceneStartTime) / 1000);
+  submitScore(tourId, 'skip', (currentScene + 1) + '_of_' + tourScenes.length, sceneElapsed + 's', 0);
+
+  skipCount++;
+  currentScene++;
+  sessionStorage.setItem('los!_scene_' + tourId, currentScene);
+  sessionStorage.setItem('los!_skips_' + tourId, skipCount.toString());
+
+  if (currentScene >= tourScenes.length) {
+    sessionStorage.removeItem('los!_scene_' + tourId);
+    const startRaw = sessionStorage.getItem('los!_start_' + tourId);
+    const startTime = startRaw ? parseInt(startRaw) : Date.now() - 60000;
+    const elapsedMs = Date.now() - startTime;
+    sessionStorage.setItem('los!_elapsed', elapsedMs.toString());
+    sessionStorage.setItem('los!_finished_tour', tourId);
+    window.location.href = `finish.html?tour=${tourId}`;
+  } else {
+    setFeedback('hint', '⏭', T('skippedScene'));
+    renderScene();
+    const card = document.getElementById('sceneCard');
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 /* ── FEEDBACK ── */
@@ -247,8 +278,18 @@ function initFinish() {
   // Submit to Google Sheets (before cleanup so data is still available)
   if (elapsedMs > 0) submitScore(finishedId, 'complete', '', duration || '—', elapsedMs);
 
+  // Show skip count
+  const skips = parseInt(sessionStorage.getItem('los!_skips_' + finishedId) || '0');
+  const skipWrap = document.getElementById('finishSkipWrap');
+  const skipCountEl = document.getElementById('finishSkipCount');
+  if (skipWrap && skips > 0) {
+    skipCountEl.textContent = skips;
+    skipWrap.style.display = 'flex';
+  }
+
   // Clean up sessionStorage
   sessionStorage.removeItem('los!_start_' + finishedId);
   sessionStorage.removeItem('los!_elapsed');
   sessionStorage.removeItem('los!_finished_tour');
+  sessionStorage.removeItem('los!_skips_' + finishedId);
 }
