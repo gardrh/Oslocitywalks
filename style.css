@@ -823,19 +823,19 @@ button, .menu-item, .start-btn, .finish-btn { touch-action: manipulation; }
 .finish-btn-coffee:hover { opacity: 0.88; }
 .btn-skip {
   width: 100%;
-  margin-top: 6px;
-  background: transparent;
+  margin-top: 8px;
+  background: rgba(232,168,76,0.15);
   color: var(--ink);
-  border: 1.5px solid rgba(12,26,26,0.25);
+  border: 1.5px solid rgba(232,168,76,0.5);
   border-radius: 50px;
-  font-size: 14px;
-  padding: 10px 20px;
-  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 20px;
   cursor: pointer;
   font-family: inherit;
-  transition: opacity 0.15s, background 0.15s;
+  transition: background 0.15s, border-color 0.15s;
 }
-.btn-skip:hover { opacity: 1; background: rgba(12,26,26,0.06); }
+.btn-skip:hover { background: rgba(232,168,76,0.28); border-color: rgba(232,168,76,0.8); }
 
 .finish-skip-wrap {
   display: flex;
