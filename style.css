@@ -725,6 +725,12 @@ body {
 .finish-btn:hover { opacity: 0.85; }
 .finish-btn-primary { background: var(--ink); color: white; }
 .finish-btn-secondary { background: rgba(12,26,26,0.14); color: var(--ink); border: 1.5px solid rgba(12,26,26,0.2); }
+.finish-btn-tripadvisor {
+  background: #34e0a1;
+  color: #000000;
+}
+.finish-btn-tripadvisor:hover { opacity: 0.88; }
+
 
 /* ── TOUCH FIXES ── */
 @media (hover: none) {
