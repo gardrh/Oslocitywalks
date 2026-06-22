@@ -56,6 +56,7 @@ const t = {
       aboutP4:        'Los! is currently in a <strong>pilot stage</strong>. The first tours are live and more are being developed. The app is <strong>free to use</strong>, but donations are very welcome.',
       aboutP5:       'Los! is developed by <strong>Gard Ringen Høibjerg</strong>, and the team is motivated by helping visitors discover the more interesting corners of the city. If you have feedback, spot an error, or would like to get in touch, we’d love to hear from you.',
       aboutEmailBtn:       '✉️ Email us',
+      aboutTripAdvisorBtn:  '★ Review us on Tripadvisor',
       finishBody:       'Congratulations — you have finished the tour! This is where your real adventure in Oslo begins. From here, you can easily make your way to wherever you wish.\n\nWe hope you enjoyed the tour. If you have any feedback, we would love to hear from you — it helps us improve and create new tours.',
       finishCoffeeBtn:  '☕ Buy me a coffee',
       finishTripAdvisorBtn:  '★ Review on Tripadvisor',
@@ -104,6 +105,7 @@ const t = {
       aboutP4:        'Los! er for \u00f8yeblikket i en <strong>pilotfase</strong>. De f\u00f8rste turene er live og flere er under utvikling. Appen er <strong>gratis \u00e5 bruke</strong>, men donasjoner mottas med stor takk.',
       aboutP5:       'Los! er utviklet av <strong>Gard Ringen Høibjerg</strong>, og teamet drives av ønsket om å hjelpe bесøkende med å oppdage de mer interessante krokene av byen. Har du tilbakemeldinger, oppdager en feil, eller vil komme i kontakt — vi hører gjerne fra deg.',
       aboutEmailBtn:       '✉️ Send oss en e-post',
+      aboutTripAdvisorBtn:  '★ Anmeld oss på Tripadvisor',
       finishBody:       'Gratulerer — du har fullført turen! Her begynner ditt virkelige eventyr i Oslo. Herfra kan du enkelt gå dit du vil.\n\nVi håper du likte turen. Har du tilbakemeldinger, hører vi gjerne fra deg — det hjelper oss med å forbedre og lage nye turer.',
       finishCoffeeBtn:  '☕ Kjøp meg en kaffe',
       finishTripAdvisorBtn:  '★ Anmeld på Tripadvisor',
@@ -152,6 +154,7 @@ const t = {
       aboutP4:        'Los! se encuentra actualmente en una <strong>fase piloto</strong>. Las primeras rutas est\u00e1n activas y se est\u00e1n desarrollando m\u00e1s. La aplicaci\u00f3n es <strong>gratuita</strong>, pero las donaciones son muy bienvenidas.',
       aboutP5:       'Los! está desarrollada por <strong>Gard Ringen Høibjerg</strong>, y el equipo está motivado por ayudar a los visitantes a descubrir los rincones más interesantes de la ciudad. Si tienes comentarios, encuentras un error o quieres ponerte en contacto, nos encanta saber de ti.',
       aboutEmailBtn:       '✉️ Envíanos un correo',
+      aboutTripAdvisorBtn:  '★ Reséñanos en Tripadvisor',
       finishBody:       '¡Enhorabuena — has completado la ruta! Aquí es donde comienza tu verdadera aventura en Oslo. Desde aquí puedes dirigirte fácilmente a donde quieras.\n\nEsperamos que hayas disfrutado la ruta. Si tienes alguna opinión, nos encanta escucharla — nos ayuda a mejorar y crear nuevas rutas.',
       finishCoffeeBtn:  '☕ Invítame a un café',
       finishTripAdvisorBtn:  '★ Reseñar en Tripadvisor',
@@ -200,6 +203,7 @@ const t = {
       aboutP4:        'Los! befindet sich derzeit in einer <strong>Pilotphase</strong>. Die ersten Touren sind live und weitere sind in Entwicklung. Die App ist <strong>kostenlos</strong>, aber Spenden sind sehr willkommen.',
       aboutP5:       'Los! wurde von <strong>Gard Ringen Høibjerg</strong> entwickelt. Das Team ist motiviert, Besuchern dabei zu helfen, die interessanteren Ecken der Stadt zu entdecken. Wenn du Feedback hast, einen Fehler entdeckst oder Kontakt aufnehmen möchtest, freuen wir uns von dir zu hören.',
       aboutEmailBtn:       '✉️ Schreib uns',
+      aboutTripAdvisorBtn:  '★ Bewerte uns auf Tripadvisor',
       finishBody:       'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Hier beginnt dein echtes Abenteuer in Oslo. Von hier aus kannst du leicht dorthin gehen, wo du möchtest.\n\nWir hoffen, dir hat die Tour gefallen. Wenn du Feedback hast, freuen wir uns davon zu hören — es hilft uns, neue Touren zu verbessern und zu entwickeln.',
       finishCoffeeBtn:  '☕ Kauf mir einen Kaffee',
       finishTripAdvisorBtn:  '★ Auf Tripadvisor bewerten',
@@ -248,6 +252,7 @@ const t = {
       aboutP4:        'Los! est actuellement en <strong>phase pilote</strong>. Les premi\u00e8res visites sont en ligne et d\u2019autres sont en cours de d\u00e9veloppement. L\u2019application est <strong>gratuite</strong>, mais les dons sont les bienvenus.',
       aboutP5:       'Los! est développé par <strong>Gard Ringen Høibjerg</strong>, et l’équipe est motivée par l’envie d’aider les visiteurs à découvrir les coins les plus intéressants de la ville. Si vous avez des commentaires, repérez une erreur ou souhaitez nous contacter, nous serions ravis de vous entendre.',
       aboutEmailBtn:       '✉️ Envoyez-nous un e-mail',
+      aboutTripAdvisorBtn:  '★ Donnez-nous un avis sur Tripadvisor',
       finishBody:       'Félicitations — vous avez terminé la visite ! C’est ici que votre vraie aventure à Oslo commence. De là, vous pouvez facilement vous rendre où vous le souhaitez.\n\nNous espérons que vous avez apprécié la visite. Si vous avez des commentaires, nous serions ravis de les lire — cela nous aide à améliorer et à créer de nouvelles visites.',
       finishCoffeeBtn:  '☕ Offrez-moi un café',
       finishTripAdvisorBtn:  '★ Laisser un avis sur Tripadvisor',
@@ -355,6 +360,7 @@ function applyTranslations() {
   _set('aboutP4',       T('aboutP4'));
   _set('aboutP5',       T('aboutP5'));
   _set('aboutEmailBtn',   T('aboutEmailBtn'));
+    _set('aboutTripAdvisorBtn', T('aboutTripAdvisorBtn'));
 
   const ansBtn  = document.getElementById('answerBtn');
   const hintBtn = document.getElementById('hintBtn');
