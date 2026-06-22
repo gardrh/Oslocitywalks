@@ -58,6 +58,7 @@ const t = {
       aboutEmailBtn:       '✉️ Email us',
       finishBody:       'Congratulations — you have finished the tour! This is where your real adventure in Oslo begins. From here, you can easily make your way to wherever you wish.\n\nWe hope you enjoyed the tour. If you have any feedback, we would love to hear from you — it helps us improve and create new tours.',
       finishCoffeeBtn:  '☕ Buy me a coffee',
+      finishTripAdvisorBtn:  '★ Review on Tripadvisor',
       skipScene:  'I’m stuck! (Skip this scene)',
       skippedScene:  'Scene skipped — moving on!',
       finishSkipLbl:  'Scenes skipped',
@@ -105,6 +106,7 @@ const t = {
       aboutEmailBtn:       '✉️ Send oss en e-post',
       finishBody:       'Gratulerer — du har fullført turen! Her begynner ditt virkelige eventyr i Oslo. Herfra kan du enkelt gå dit du vil.\n\nVi håper du likte turen. Har du tilbakemeldinger, hører vi gjerne fra deg — det hjelper oss med å forbedre og lage nye turer.',
       finishCoffeeBtn:  '☕ Kjøp meg en kaffe',
+      finishTripAdvisorBtn:  '★ Anmeld på Tripadvisor',
       skipScene:  'Jeg sitter fast! (Hopp over denne scenen)',
       skippedScene:  'Scene hoppet over — videre!',
       finishSkipLbl:  'Scener hoppet over',
@@ -152,6 +154,7 @@ const t = {
       aboutEmailBtn:       '✉️ Envíanos un correo',
       finishBody:       '¡Enhorabuena — has completado la ruta! Aquí es donde comienza tu verdadera aventura en Oslo. Desde aquí puedes dirigirte fácilmente a donde quieras.\n\nEsperamos que hayas disfrutado la ruta. Si tienes alguna opinión, nos encanta escucharla — nos ayuda a mejorar y crear nuevas rutas.',
       finishCoffeeBtn:  '☕ Invítame a un café',
+      finishTripAdvisorBtn:  '★ Reseñar en Tripadvisor',
       skipScene:  '¡Estoy atascado! (Saltar esta escena)',
       skippedScene:  'Escena omitida — ¡seguimos!',
       finishSkipLbl:  'Escenas omitidas',
@@ -199,6 +202,7 @@ const t = {
       aboutEmailBtn:       '✉️ Schreib uns',
       finishBody:       'Herzlichen Glückwunsch — du hast die Tour abgeschlossen! Hier beginnt dein echtes Abenteuer in Oslo. Von hier aus kannst du leicht dorthin gehen, wo du möchtest.\n\nWir hoffen, dir hat die Tour gefallen. Wenn du Feedback hast, freuen wir uns davon zu hören — es hilft uns, neue Touren zu verbessern und zu entwickeln.',
       finishCoffeeBtn:  '☕ Kauf mir einen Kaffee',
+      finishTripAdvisorBtn:  '★ Auf Tripadvisor bewerten',
       skipScene:  'Ich stecke fest! (Diese Szene überspringen)',
       skippedScene:  'Szene übersprungen — weiter!',
       finishSkipLbl:  'Szenen übersprungen',
@@ -246,6 +250,7 @@ const t = {
       aboutEmailBtn:       '✉️ Envoyez-nous un e-mail',
       finishBody:       'Félicitations — vous avez terminé la visite ! C’est ici que votre vraie aventure à Oslo commence. De là, vous pouvez facilement vous rendre où vous le souhaitez.\n\nNous espérons que vous avez apprécié la visite. Si vous avez des commentaires, nous serions ravis de les lire — cela nous aide à améliorer et à créer de nouvelles visites.',
       finishCoffeeBtn:  '☕ Offrez-moi un café',
+      finishTripAdvisorBtn:  '★ Laisser un avis sur Tripadvisor',
       skipScene:  'Je suis bloqué ! (Passer cette scène)',
       skippedScene:  'Scène passée — on continue !',
       finishSkipLbl:  'Scènes passées',
@@ -365,6 +370,7 @@ function applyTranslations() {
   _set('finishBackBtn',     T('backHome'));
   _set('finishDonateText',  T('finishDonateText'));
   _set('finishCoffeeBtn',   T('finishCoffeeBtn'));
+    _set('finishTripAdvisorBtn',  T('finishTripAdvisorBtn'));
   _setText('skipBtn',         T('skipScene'));
   _setText('finishSkipLbl',   T('finishSkipLbl'));
 
